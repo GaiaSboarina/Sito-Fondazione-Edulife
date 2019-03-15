@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+<script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="evento1">
+            <h2>INCONTRO CON L'INTI</h2>
+            <p>Attraverso uno spettacolo di danze sudamericane e con la testimonianza di numerose figure rappresentative della città, il 25 marzo 2011 è stata presentata alla cittadinanza di Verona la Fondazione Edulife<span id="dots">...</span><span id="more">. Le danze, eseguite dai ragazzi e le ragazze del corpo di danza dell’Universidad Politécnica Salesiana de Ecuador, la musica (molti gli strumenti tradizionali) e i colori dei costumi tipici agli insieme agli interventi di giovani e adulti hanno dato vita, nella cornice incomparabile della Gran Guardia, ad una serata all’insegna dell’incontro intergenerazionale, del dialogo interculturale e della ricerca di uno spazio comune in cui sia possibile co-costruire una società migliore.
+            Tra le testimonianze, quelle del vescovo di Verona Giuseppe Zenti, del sindaco Flavio Tosi, del dirigente dell’ufficio scolastico provinciale Giovanni Pontara, di Carlo Fratta Pasini e Paolo Bedoni, presidenti della Banca Popolare e di Cattolica Assicurazioni, rispettivamente, e del rettore dell’Università di Verona.
+            In chiusura della serata è arrivato il saluto dal Cile dal padre Fabio Attard, consigliere per la Pastorale Giovanile dei salesiani, che ha definito Edulife un esempio veronese «della carità evangelica che si lascia coinvolgere dalla realtà del proprio tempo».</span></p>
+            <button onclick="myFunction('more', 'myBtn', 'dots')" id="myBtn">Leggi ancora</button>
+        </div>
+        <div id="evento2">
+            <h2>STELLE SULLA TERRA</h2>
+            <p>Il 31 gennaio 2012, con motivo della festività di Don Bosco, la Fondazione Edulife ha proiettato nella nuova palestra del Istituto Don Bosco di via Provolo il film “Stelle sulla terra”, del rinomato regista indiano Aamir Khan<span id="dots1">...</span><span id="more1">. Ambientato in India, il film - dal sottotitolo “Ogni bambino è speciale” - racconta il difficile rapporto con la scuola di un bambino di otto anni, che fatica a seguire le lezioni perché affetto da dislessia. Tuttavia quando i genitori lo trasferiscono in un collegio, il maestro d’arte viene colpito dal suo talento e dalla sua creatività. L’attenzione, la pazienza e l’affetto dell’insegnante aiuteranno il bambino a trovare se stesso.
+            Un racconto simbolico che illustra gli obiettivi della Fondazione Edulife, in quanto pone l’accento nella consapevolezza che gli adulti hanno una grande responsabilità: quella di essere i custodi e gli interpreti della crescita dei giovani, diventando veri e propri educatori per bambini e adolescenti, in modo da accompagnarli nella ricerca del loro progetto di vita.
+            Durante l’evento la Fondazione ha presentato inoltre il progetto Edulife Travel Education (ETE), che promuove i giovani alla scoperta delle proprie potenzialità, attraverso esperienze di studio e di lavoro in Cina, un paese le cui caratteristiche culturali, sociali ed economiche offrono inesplorate possibilità di crescita umana e professionale (vedere sezione progetti).</span></p>
+            <button onclick="myFunction('more1', 'myBtn1', 'dots1')" id="myBtn1">Leggi ancora</button>
+        </div>    
+        <div id ="news1">
+            <h2>PROGETTO YACHAY - LA CITTA' DELLA CONOSCENZA</h2>
+            <p>La Fondazione Edulife collabora con il governo ecuadoriano nella progettazione di Yachay, la Citta della Conoscenza, che sarà una delle Università più moderne dell'America Latina e del mondo<span id="dots2">...</span><span id="more2">. La Fondazione Edulife collabora con il governo ecuadoriano nella progettazione di Yachay, la Citta della Conoscenza, che sarà una delle Università più moderne dell'America Latina e del mondo.
+            Un ecosistema di innovazione tecnologica; una vera e propria città, che avrà come obiettivo quello di generare felicità e soddisfazione tra tutti gli abitanti, e di costruire un collegamento tra le tradizioni del paese, le nuove metodologie didattiche e le tecnologie più avanzate.
+            Un progetto molto ambizioso e strettamente legato al territorio, che funzionerà da ponte tra Università e mondo del lavoro.</span></p>
+            <button onclick="myFunction('more2', 'myBtn2', 'dots2')" id="myBtn2">Leggi ancora</button>
+        </div>
+        <div id ="news2">
+            <h2>"PRESENTAZIONE DELLA RICERCA SUL PROGETTO IUS: "UN PROCESSO DI COSTRUZIONE PARTECIPATA DEL PROFILO DOCENTE IN UNA RETE DI ISTITUZIONI DI EDUCAZIONE SUPERIORE IN AMERICA LATINA"</h2>
+            <p>A Roma dal 10 al 14 luglio p.v. Si terrà l'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa<span id="dots3">...</span><span id="more3">. A Roma dal 10 al 14 luglio p.v. Si terrà l'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa.
+            Durante l'incontro porterà un suo contributo istituzionale anche il Rettor Maggiore p. Pasqual Chavez, la massima autorità della Congregazione Salesiana.
+            Durante l’Assemblea sarà presentata dal Comitato Scientifico della Fondazione Edulife la ricerca sul progetto IUS, “Gestione Integrata delle Risorse Umane”, che ha visto coinvolta una rete di 17 università (sudamericane ed europee), che hanno lavorato assieme attraverso una comunità di pratica, sviluppando i profili del docente universitario, del direttivo e dell'amministrativo.
+            Alla conferenza sarà presente anche il prof. Ernesto González, Consigliere Accademico dell'Istituto Internazionale della UNESCO per l'Educazione Superiore in America Latina e nei Caraibi (IESALC).</span></p>
+            <button onclick="myFunction('more3', 'myBtn3', 'dots3')" id="myBtn3">Leggi ancora</button>
+        </div>
+        <script>  
+            function myFunction(nome, bottone, puntini) {
+            var dots = document.getElementById(puntini);
+            var moreText = document.getElementById(nome);
+            var btnText = document.getElementById(bottone);
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Leggi ancora"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Leggi meno"; 
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>    
+    </body>
+</html>
