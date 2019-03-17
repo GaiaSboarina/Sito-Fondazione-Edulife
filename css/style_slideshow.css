@@ -27,4 +27,10 @@
   body .no-padding{
     padding-left: 0;
     padding-right: 0;
-     }
+  }
+
+  .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
