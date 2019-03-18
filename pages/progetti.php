@@ -13,6 +13,6 @@
 </head>
 <body>
     <h1>Placeholder pagina progetti</h1>
-    <?= ciao() ?>
+    <?= getAllProjects() ?>
 </body>
 </html>
