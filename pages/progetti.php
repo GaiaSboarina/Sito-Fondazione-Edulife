@@ -1,6 +1,4 @@
-<?php
-
-?>
+<?php include "../php/insert_progetti.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,5 +13,6 @@
 </head>
 <body>
     <h1>Placeholder pagina progetti</h1>
+    <?= ciao() ?>
 </body>
 </html>
