@@ -1,3 +1,19 @@
+#footer {
+    background: #000;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+
+#footer .footer-top {
+    background: #111;
+    padding: 60px 0px 30px 0px;
+}
+
+#footer .footer-top .footer-info{
+    margin-bottom: 30px;
+}
+
 #footer .footer-top .footer-links ul a:hover {
     color : #f4511c;
 }
@@ -20,7 +36,7 @@
     width: 65%;
 }
 
-#footer .footer-top .footer-newsletter input[type= "email"] {
+#footer .footer-top .footer-newsletter input[type= "submit"] {
     background: #f4511e;
     border: 0;
     width: 35%;
@@ -29,5 +45,36 @@
     color: #fff;
     transition: 0.3s;
     cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+    background: #13a456;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.footer-contact {
+    font-size: 35px; 
+}
+
+#img {
+    border-bottom: #f4511c solid 3px;
+    padding-bottom: 5px;
+    margin-left: 60px;
+    width: 100px;
+   
+}
+
+#testo{
+    padding-top: 10px;
 }
 

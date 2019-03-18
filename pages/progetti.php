@@ -1,3 +1,5 @@
+<?php include "../php/insert_progetti.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,5 +13,6 @@
 </head>
 <body>
     <h1>Placeholder pagina progetti</h1>
+    <?= getAllProjects() ?>
 </body>
 </html>
