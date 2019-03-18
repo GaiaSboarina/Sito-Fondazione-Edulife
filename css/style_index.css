@@ -52,7 +52,7 @@ header::before {
     right: 0;
     top: 0;
     display: block;
-    background-image: url(/media/img/template.jpg);
+    background-image: url(../media/img/template.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
