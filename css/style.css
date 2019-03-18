@@ -1,35 +1,11 @@
-#more
-{
-    display: none;
-}
-#more1
-{
-    display: none;
-}
-#more2
-{
-    display: none;
-}
-#more3
-{
-    display: none;
-}
 h1
 {
     text-align: center;
     color: crimson;
 }
-h2
-{
-    color: darkred;
-}
-h3
-{
-    color: firebrick;
-}
 h4
 {
-    color: brown;
+    color: firebrick;
 }
 .container
 {
@@ -37,32 +13,9 @@ h4
     width: 50%;
     padding: 10px;
 }
-#spaziatura
-{
-    height: 5px;
-}
 #spaziatura1
 {
     height: 60px;
-}
-button
-{
-    height: 30px;
-    width: 110px;
-    color: white;
-    background-color: tomato;
-}
-input
-{
-    width: 200px;
-}
-#informazioni
-{
-    height: 30px;
-    width: 200px;
-    margin-left: 20px;
-    color: white;
-    background-color: tomato;   
 }
 form
 {
@@ -72,11 +25,4 @@ form
 {
     height: 30px;
     width: 200px;
-}
-img
-{
-    float: left;
-    width: 100%;
-    max-width: 100px;
-    height: auto;
 }
