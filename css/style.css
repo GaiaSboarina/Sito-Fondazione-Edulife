@@ -26,3 +26,13 @@ form
     height: 30px;
     width: 200px;
 }
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a.nav-link{
+    color: red;
+}
