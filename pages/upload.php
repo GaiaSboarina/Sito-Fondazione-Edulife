@@ -38,30 +38,31 @@
 </nav>
     </header>    
 
-    <form>
+    <form action="../php/up_progetti.php" method="POST">
         <div class="container">
             <div class="form-group">
                 <label for="titolo">Titolo</label>
-                <input type="text" class="form-control" id="titolo" placeholder="Titolo">
+                <input type="text" class="form-control" id="titolo" placeholder="Titolo" name="titolo">
             </div>
         
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="text">Example textarea</label>
+                <textarea class="form-control" id="text" rows="3" name="text"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="exampleFormControlFile1">Example file input</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <label for="file">Example file input</label>
+                <input type="file" class="form-control-file" id="file" name="file">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <label for="tipo">Example select</label>
+                <select class="form-control" id="tipo" name="tipo">
                     <option>Progetto</option>
                     <option>Evento</option>
                     <option>News</option>
                 </select>
             </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
 
         
