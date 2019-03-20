@@ -1,75 +1,73 @@
-html,body {
-    height: 100%;
-    overflow: hidden;
+html, body{
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-header {
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 30vw 0 5vw;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-}
-
-#image {
-    position: absolute;
-    top: 10px;
-    left: 370px;
-}
-
-.responsive {
-    max-width: 490px;
-    height: auto;
-    width: 100%;
-}
-
-header h1 {
-    margin-top: -600px;
-    margin-left: -2200px;
-    font-size: 130px;
-}
-
-header p {
-    margin-top: -200px;
-}
-
-header, header::before {
-    background: 50% 50% / cover;
-}
-
-header::before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url(../media/img/template.jpg);
+.parallax { 
+    /* The image used */
+    background-image: url("../media/img/back.jpg");
+  
+    /* Set a specific height */
+    height: 1300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
 }
 
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
+nav {
+   background: transparent !important;
+}
+
+nav .navbar-nav  li{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+nav .navbar-nav li a{
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+nav .navbar-nav li a:hover{
+    color: white !important;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+
+}
+
+.ml-auto {
+    padding: 30px;
+}
+
+.nav-item {
+    color: white;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+nav.scrolled {
+    height: 70px;
+    transition: all ease .2s;
+    background: rgb(116, 116, 116) !important;
+    
+}
+
+.abc.ncol {
+    color: rgba(121, 49, 49, 0.671) !important;
+}
+
+.abc.ncol:hover {
+    color: firebrick !important;
+    border-bottom: 2px solid firebrick;
+    padding-bottom: 2px;
+}
+
+
+
+#text {
+    font-size: 25px;
 }
