@@ -1,38 +1,22 @@
 h1
 {
     text-align: center;
-    color: crimson;
+    color: red;
 }
-h4
+h3
 {
     color: firebrick;
 }
 .container
 {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-#spaziatura1
-{
-    height: 60px;
-}
-form
-{
     text-align: center;
 }
-#mail
+#email
 {
-    height: 30px;
-    width: 200px;
+    width: 220px;
+    margin-left: 450px;
 }
-
-.abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-a.nav-link{
-    color: red;
+#spaziatura
+{
+    height: 50px;
 }
