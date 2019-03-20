@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-<link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
-<script src="../js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css"/>
 <title>News ed Eventi</title>
 <h1>NEWS ED EVENTI DI FONDAZIONE EDULIFE</h1>
     </head>
     <body>
-    <div class="container">
-            <button type="button" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-            <div id="demo" class="collapse">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="container">
+            <h3>INCONTRO CON L'INTI</h3>
+            <button type="button" class="btn btn-success">Leggi</button>
+            <button type="button" class="btn btn-warning">Leggi meno</button> 
+              
+            <div class="collapse">
+              <p>Attraverso uno spettacolo di danze sudamericane e con la testimonianza di numerose figure rappresentative della città, il 25 marzo 2011 è stata presentata alla cittadinanza di Verona la Fondazione Edulife.</p>
+              <p>Le danze, eseguite dai ragazzi e le ragazze del corpo di danza dell’Universidad Politécnica Salesiana de Ecuador, la musica (molti gli strumenti tradizionali) e i colori dei costumi tipici agli insieme agli interventi di giovani e adulti hanno dato vita, nella cornice incomparabile della Gran Guardia, ad una serata all’insegna dell’incontro intergenerazionale, del dialogo interculturale e della ricerca di uno spazio comune in cui sia possibile co-costruire una società migliore.</p>
+              <p>Tra le testimonianze, quelle del vescovo di Verona Giuseppe Zenti, del sindaco Flavio Tosi, del dirigente dell’ufficio scolastico provinciale Giovanni Pontara, di Carlo Fratta Pasini e Paolo Bedoni, presidenti della Banca Popolare e di Cattolica Assicurazioni, rispettivamente, e del rettore dell’Università di Verona.</p>
+              <p>In chiusura della serata è arrivato il saluto dal Cile dal padre Fabio Attard, consigliere per la Pastorale Giovanile dei salesiani, che ha definito Edulife un esempio veronese «della carità evangelica che si lascia coinvolgere dalla realtà del proprio tempo».</p>
             </div>
-        <div id="spaziatura1"></div>
-        <form>
-                <label for="email"><h4>Inserisci la mail per maggiori informazioni:</h4></label>
-                <input type="email" class="form-control" id="email" placeholder="Inserire email" name="email">
-                <a href="mailto:gaia.sboarina@gmail.com">Richiedi</a>
-        </form>
-    </div>
-
-    <script>
-        $('.collapse').collapse()
-        $(document).ready(function(){
-  $("#demo").on("hide.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
-  });
-  $("#demo").on("show.bs.collapse", function(){
-    $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
-  });
+            <div id="spaziatura"></div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"><b>Richiedi maggiori informazioni inserendo la tua mail:</b></label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Inserisci la tua email">
+                  </div>
+                <button type="submit" class="btn btn-primary">Richiedi</button>
+</div>
+          <script>
+$(document).ready(function(){
+    $(".btn-success").click(function(){
+        $(".collapse").collapse('show');
+    });
+    $(".btn-warning").click(function(){
+        $(".collapse").collapse('hide');
+    });
 });
-            </script>
+          </script>   
+               </div>
     </body>
 </html>
