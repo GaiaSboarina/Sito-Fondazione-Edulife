@@ -1,39 +1,10 @@
 <?php
 
-    function connection(){
-        $connection = mysqli_connect("localhost", "root", "", "edulife");
-        return $connection;
-    }
-
-    if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['file']) && isset($_POST['tipo'])){
-
-        $titolo = $_POST['titolo'];
-        $text = $_POST['text'];
-        $file = $_POST['file'];
-        $tipo = $_POST['tipo'];
-        $table = "progetti";
-
+    function connection($table, $titolo, $text, $file){
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "edulife";
-
-        switch ($tipo) {
-            case 'progetto':
-                $table = 'progetti';
-                break;
-            case 'news':
-                $table = 'news';
-                break;
-            case 'evento':
-                $table = 'eventi';
-                break;
-            default:
-                # code...
-                break;
-        }
-
-        echo $table;
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -41,7 +12,6 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } 
-
 
         if ($table == "news"){
             $data = date('Y-m-d H:i:s');
@@ -92,6 +62,27 @@
         }
 
         $conn->close();
+
+        return $connection;
+    }
+
+    if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['file']) && isset($_POST['tipo'])){
+
+        $titolo = $_POST['titolo'];
+        $text = $_POST['text'];
+        $file = $_POST['file'];
+        $tipo = $_POST['tipo'];
+        
+        $table = $tipo;
+
+        echo $table;
+
+        connection($table, $titolo, $text, $file);
+
+        
+
+
+        
         
 
         }
