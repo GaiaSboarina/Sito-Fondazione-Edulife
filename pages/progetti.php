@@ -14,7 +14,7 @@
     <title>Progetti</title>
 </head>
 <body>
-<header class="parallax">
+        <header class="parallax">
             <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-center">
                 <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                         <span class="navbar-toggler-icon"></span>
@@ -36,10 +36,6 @@
                         <li class="nav-item">
                                 <a class="nav-link abc" href="#">Contatti</a> 
                         </li>
-                    </ul>
-                    <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
-                        <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
-                        <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-twitter"></i></a> </li>
                     </ul>
                 </div>
             </nav>
