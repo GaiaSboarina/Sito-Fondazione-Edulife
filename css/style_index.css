@@ -69,7 +69,7 @@ nav .navbar-nav li a{
 nav.scrolled {
     height: 70px;
     transition: all ease .2s;
-    background: rgb(116, 116, 116) !important;  
+    background: white !important;  
 
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
