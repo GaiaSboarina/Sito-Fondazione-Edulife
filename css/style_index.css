@@ -67,20 +67,20 @@ nav .navbar-nav li a{
 }
 
 nav.scrolled {
-    height: 70px;
+    height: 40px;
     transition: all ease .2s;
     background: white !important;  
 
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 1px 8px -6px black;
+    -moz-box-shadow: 0 1px 8px -6px black;
+    box-shadow: 0 1px 8px -6px black;
 }
 
 .abc.ncol {
     color: rgba(121, 49, 49, 0.671) !important;
     display: inline-block;
     position: relative;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     margin-right: 10px;
 }
 
@@ -101,6 +101,7 @@ nav.scrolled {
 .abc.ncol:hover:after{
     width: 100%;
     background: firebrick;
+    color: firebrick;
 }
 
 #text {
