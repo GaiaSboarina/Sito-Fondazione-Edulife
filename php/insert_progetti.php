@@ -1,6 +1,7 @@
 <?php
     function getAllProjects(){
         $connection = mysqli_connect("localhost", "root", "", "edulife");
+        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $connection->query("SET NAMES 'utf8'");
         $rsProjects = mysqli_query($connection, "SELECT * FROM progetti");
         $projects = mysqli_fetch_all($rsProjects, MYSQLI_ASSOC);
