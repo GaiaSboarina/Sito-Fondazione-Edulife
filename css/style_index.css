@@ -24,19 +24,32 @@ nav {
    background: transparent !important;
 }
 
-nav .navbar-nav  li{
-    padding-left:30px;
-    padding-right:30px;
+nav .navbar-nav  li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+nav .navbar-nav  li:last-child {
+    margin-right: 0px;
+}
+nav .navbar-nav  li:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .3s ease;  
 }
 
 nav .navbar-nav li a{
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
-nav .navbar-nav li a:hover{
-    color: white !important;
-    border-bottom: 2px solid white;
-    padding-bottom: 2px;
+nav .navbar-nav li:hover::after{
+    width: 100%;
+    background: white;
 
 }
 
