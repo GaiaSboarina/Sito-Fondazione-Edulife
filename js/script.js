@@ -5,8 +5,10 @@ $(window).scroll(function() {
 $(window).scroll(function() {
     if($(this).scrollTop() > 1200) {
         $('.abc').addClass('ncol');
+        $('.nav').addClass('transparentoff');
     } else {
         $('.abc').removeClass('ncol');
+        $('.nav').removeClass('transparentoff');
     }
 });
 
