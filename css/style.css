@@ -1,23 +1,22 @@
-h1
-{
+h1 {
     text-align: center;
-    color: red;
+    color: #e21212;
 }
-h3
-{
-    color: firebrick;
+
+h3 {
+    color: #a30b0b;
 }
-.container
-{
+
+.container {
     text-align: center;
 }
-#email
-{
+
+#email {
     width: 220px;
     margin-left: 450px;
 }
-#spaziatura
-{
+
+#spaziatura {
     height: 50px;
 }
 
@@ -50,12 +49,12 @@ nav .navbar-nav li:after {
     transition: width .5s ease, background-color .3s ease;  
 }
  
-nav .navbar-nav li:hover:after{
+nav .navbar-nav li:hover:after {
     width: 100%;
     background: white;
 }
  
-nav .navbar-nav li a{
+nav .navbar-nav li a {
     color: #e21212 !important;
 }
  
@@ -83,7 +82,7 @@ nav.scrolled {
 }
  
 .ncol {
-    color: rgba(121, 49, 49, 0.514) !important;
+    color: #a30b0b !important;
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
@@ -109,7 +108,7 @@ nav.scrolled {
     transition: width .5s ease, background-color .3s ease;  
 }
  
-.ncol:hover:after{
+.ncol:hover:after {
     width: 100%;
     background: #e21212 !important;
 }
@@ -120,7 +119,6 @@ nav.scrolled {
  
 #footer {
     background: #eee;
-    padding: 0 0 30px 0;
     color: #000000;
     font-size: 14px;
 }
@@ -130,7 +128,7 @@ nav.scrolled {
     padding: 30px 0px 15px 0px;
 }
 
-#footer .footer-top .footer-info{
+#footer .footer-top .footer-info {
     margin-bottom: 15px;
 }
 
@@ -170,10 +168,9 @@ nav.scrolled {
     padding-bottom: 5px;
     margin-left: 60px;
     width: 100px;
-   
 }
 
-#testoFooter{
+#testoFooter {
     padding-top: 10px;
 }
 
@@ -185,13 +182,23 @@ nav.scrolled {
     color: #a30b0b;
 }
 
+h1, h2, h3, h4, blockquote, q, .maia-nav ul {
+    font-family: 'open sans',arial,sans-serif;
+}
+
+b {
+    color: #a30b0b;
+}
+
+.imgChiSiamo {
+    margin-top: 10%;
+    width: 500px;
+    height: 300px;
+}
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
-}
-
-h1, h2, h3, h4, blockquote, q, .maia-nav ul {
-    font-family: 'open sans',arial,sans-serif;
 }
