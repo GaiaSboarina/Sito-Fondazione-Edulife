@@ -1,6 +1,6 @@
 h1
 {
-    color: firebrick;
+    color: red;
     text-align: center;
 }
 b
@@ -10,10 +10,12 @@ b
 img
 {
     margin-top: 10%;
+    width: 500px;
+    height: 300px;
 } 
 p
 {
-    padding-top: 15%;
+    padding-top: 14%;
 }
 @media screen and (min-width: 601px) {
     div.testo {
