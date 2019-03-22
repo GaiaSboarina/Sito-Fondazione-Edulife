@@ -1,46 +1,50 @@
 #footer {
-    background: #000;
+    background: #eee;
     padding: 0 0 30px 0;
-    color: #eee;
+    color: #000000;
     font-size: 14px;
 }
 
 #footer .footer-top {
-    background: #111;
-    padding: 60px 0px 30px 0px;
+    background: #eee;
+    padding: 30px 0px 15px 0px;
 }
 
 #footer .footer-top .footer-info{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #e21212;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color : #f4511c;
+    color : #a30b0b;
 }
 
 #footer .footer-top .footer-contact {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #footer .footer-top .footer-contact {
-    line-height: 25px;
+    line-height: 15px;
 }
 
 #footer .footer-top .footer-newsletter {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #footer .footer-top .footer-newsletter input[type = "email"] {
     border : 0;
-    padding: 6px 8px;
+    padding: 3px 4px;
     width: 65%;
 }
 
 #footer .footer-top .footer-newsletter input[type= "submit"] {
-    background: #f4511e;
+    background: #e21212;
     border: 0;
     width: 35%;
-    padding: 6px 0;
+    padding: 3px 0;
     text-align: center;
     color: #fff;
     transition: 0.3s;
@@ -53,7 +57,7 @@
 
 #footer .copyright {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 #footer .credits {
@@ -67,7 +71,7 @@
 }
 
 #img {
-    border-bottom: #f4511c solid 3px;
+    border-bottom: #e21212 solid 3px;
     padding-bottom: 5px;
     margin-left: 60px;
     width: 100px;
@@ -78,3 +82,21 @@
     padding-top: 10px;
 }
 
+.fab {
+    color: #e21212;
+}
+
+.fab:hover {
+    color: #a30b0b;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
+}
+
+h1, h2, h3, h4, blockquote, q, .maia-nav ul {
+    font-family: 'open sans',arial,sans-serif;
+}
