@@ -1,16 +1,86 @@
+*{box-sizing: border-box;}
 html, body{
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+/* Main styles */
+
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 5;
+  -webkit-animation: stroke 7s infinite linear;
+  animation: stroke 7s infinite linear;
+  font-size: 110px;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #f2385a;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+  stroke: #969696;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #e9f1df;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #ec5d5d;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #f59898;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
 .parallax { 
     /* The image used */
-    background-image: url("../media/img/back.jpg");
+    background-image: url(../media/img/back.jpg);
   
     /* Set a specific height */
 
     height: 1300px; 
-
 
   
     /* Create the parallax scrolling effect */
@@ -18,6 +88,26 @@ html, body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.content{
+    position: relative;
+    display:block;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: lighter;
 }
 
 nav {
@@ -60,15 +150,16 @@ nav .navbar-nav li a{
 
 .nav-item {
     color: white;
+    padding-left: 25px;
 }
 
 .nav-link {
-    font-size: 15px;
+    font-size: 19px;
 }
 
 nav.scrolled {
     height: 40px;
-    transition: all ease .2s;
+    transition: all ease .5s;
     background: white !important;  
 
     -webkit-box-shadow: 0 1px 8px -6px black;
@@ -77,15 +168,20 @@ nav.scrolled {
 }
 
 .abc.ncol {
-    color: rgba(121, 49, 49, 0.671) !important;
+    color: rgba(121, 49, 49, 0.514) !important;
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
     margin-right: 10px;
+    font-size: 15px;
 }
 
 .abc.ncol:last-child {
     margin-right: 0px;
+}
+
+.abc.ncol:hover {
+    color: firebrick;
 }
 
 .abc.ncol:after {
@@ -100,10 +196,10 @@ nav.scrolled {
 
 .abc.ncol:hover:after{
     width: 100%;
-    background: firebrick;
-    color: firebrick;
+    background: firebrick !important;
 }
 
 #text {
     font-size: 25px;
 }
+
