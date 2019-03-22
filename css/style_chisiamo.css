@@ -20,3 +20,8 @@ p
       font-size: 65%;
     }
   }
+@media screen and (min-width: 800px) {
+    div.testo {
+        font-size: 100%;
+    }
+}
