@@ -27,94 +27,171 @@ header{
 
 nav {
     background: white !important;
- }
+}
  
- nav .navbar-nav  li {
-     display: inline-block;
-     position: relative;
-     padding-bottom: 3px;
-     margin-right: 10px;
- }
+nav .navbar-nav  li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
  
- nav .navbar-nav li:last-child {
-     margin-right: 0px;
- }
+nav .navbar-nav li:last-child {
+    margin-right: 0px;
+}
  
- nav .navbar-nav li:after {
-     content: '';
-     display: block;
-     margin: auto;
-     height: 3px;
-     width: 0px;
-     background: transparent;
-     transition: width .5s ease, background-color .3s ease;  
- }
+nav .navbar-nav li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .3s ease;  
+}
  
- nav .navbar-nav li:hover:after{
-     width: 100%;
-     background: white;
- }
+nav .navbar-nav li:hover:after{
+    width: 100%;
+    background: white;
+}
  
- nav .navbar-nav li a{
-     color: #e21212 !important;
- }
+nav .navbar-nav li a{
+    color: #e21212 !important;
+}
  
- .ml-auto {
-     padding: 10px;
- }
+.ml-auto {
+    padding: 10px;
+}
  
- .nav-item {
-     color: #e21212;
-     padding-left: 25px;
- }
+.nav-item {
+    color: #e21212;
+    padding-left: 25px;
+}
  
- .nav-link {
-     font-size: 19px;
- }
+.nav-link {
+    font-size: 19px;
+}
  
- nav.scrolled {
-     height: 40px;
-     transition: all ease .5s;
-     background: #e21212 !important;  
+nav.scrolled {
+    height: 40px;
+    transition: all ease .5s;
+    background: #e21212 !important;  
  
-     -webkit-box-shadow: 0 1px 8px -6px black;
-     -moz-box-shadow: 0 1px 8px -6px black;
-     box-shadow: 0 1px 8px -6px black;
- }
+    -webkit-box-shadow: 0 1px 8px -6px black;
+    -moz-box-shadow: 0 1px 8px -6px black;
+    box-shadow: 0 1px 8px -6px black;
+}
  
 .ncol {
-     color: rgba(121, 49, 49, 0.514) !important;
-     display: inline-block;
-     position: relative;
-     padding-bottom: 5px;
-     margin-right: 10px;
-     font-size: 15px;
- }
+    color: rgba(121, 49, 49, 0.514) !important;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
  
- .ncol:last-child {
-     margin-right: 0px;
- }
+.ncol:last-child {
+    margin-right: 0px;
+}
  
- .ncol:hover {
-     color: #e21212;
- }
+.ncol:hover {
+    color: #e21212;
+}
  
- .ncol:after {
-         content: '';
-         display: block;
-         margin: auto;
-         height: 3px;
-         width: 0px;
-         background: transparent;
-         transition: width .5s ease, background-color .3s ease;  
- }
+.ncol:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .3s ease;  
+}
  
- .ncol:hover:after{
-     width: 100%;
-     background: #e21212 !important;
- }
+.ncol:hover:after{
+    width: 100%;
+    background: #e21212 !important;
+}
  
- #text {
-     font-size: 25px;
- }
+#text {
+    font-size: 25px;
+}
  
+#footer {
+    background: #eee;
+    padding: 0 0 30px 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+#footer .footer-top {
+    background: #eee;
+    padding: 30px 0px 15px 0px;
+}
+
+#footer .footer-top .footer-info{
+    margin-bottom: 15px;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #e21212;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    color : #a30b0b;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 15px;
+}
+
+#footer .footer-top .footer-contact {
+    line-height: 15px;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.footer-contact {
+    font-size: 35px; 
+}
+
+#imgFooter {
+    border-bottom: #e21212 solid 3px;
+    padding-bottom: 5px;
+    margin-left: 60px;
+    width: 100px;
+   
+}
+
+#testoFooter{
+    padding-top: 10px;
+}
+
+.fab {
+    color: #e21212;
+}
+
+.fab:hover {
+    color: #a30b0b;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
+}
+
+h1, h2, h3, h4, blockquote, q, .maia-nav ul {
+    font-family: 'open sans',arial,sans-serif;
+}
