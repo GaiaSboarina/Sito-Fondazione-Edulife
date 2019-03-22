@@ -1,3 +1,27 @@
-p {
-    padding-top: 5%;
+h1
+{
+    color: firebrick;
+    text-align: center;
+}
+b
+{
+    color: #f2385a;
+}
+img
+{
+    margin-top: 10%;
+} 
+p
+{
+    padding-top: 15%;
+}
+@media screen and (min-width: 601px) {
+    div.testo {
+      font-size: 65%;
+    }
+  }
+@media screen and (min-width: 800px) {
+    div.testo {
+        font-size: 100%;
+    }
 }
