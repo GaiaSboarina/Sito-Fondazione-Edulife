@@ -16,8 +16,8 @@ body{
 
 .container .box {
     position: relative;
-    width: calc(350px - 30px);
-    height: calc(250px - 30px);
+    width: calc(250px - 30px);
+    height: calc(150px - 30px);
     background: #000;
     float: left;
     margin: 15px;
@@ -39,9 +39,9 @@ body{
 
 .container .box:hover .icon{
     top: 20px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -56,13 +56,13 @@ body{
 }
 
 .container .box:hover .icon .fa{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .container .box .content
 {
     position: absolute;
-    top: 100%;
+    top:100%;
     height: calc(100% - 100px);
     text-align: center;
     padding: 20px;
@@ -72,8 +72,9 @@ body{
 }
 
 .container .box:hover .content{
-    top:100px;
+    top: 55px;
     opacity: 1;
+    
 }
 
 .container .box .content h3{
@@ -178,4 +179,19 @@ body{
     background: #a30b0b;
 }
 
+#liberta:hover{
+    left: 35px;
+}
 
+h6{
+    color:#fff;
+}
+
+@media screen and (max-width:719px){
+    .container .box{
+    position: relative;
+    width: calc(750px - 30px);
+    height: calc(450px - 30px);
+    margin-left: 20%;
+    }
+}
