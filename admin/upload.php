@@ -42,7 +42,7 @@
             </nav>
     </header>    
 
-    <form action="../php/up_progetti.php" method="POST">
+    <form action="../php/up_progetti.php" method="POST" enctype="multipart/form-data">
         <div class="container">
             <div class="form-group">
                 <label for="titolo">Titolo</label>
@@ -55,8 +55,7 @@
             </div>
 
             <div class="form-group">
-                <label for="file">Inserisci immagine</label>
-                <input type="file" class="form-control-file" id="file" name="file">
+                <input type="file" name="fileToUpload" id="fileToUpload">
             </div>
             <div class="form-group">
                 <label for="tipo">Progetto - Evento - News</label>

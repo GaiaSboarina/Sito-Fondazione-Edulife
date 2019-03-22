@@ -1,6 +1,6 @@
 <?php
 
-    function connection($table, $titolo, $text, $file){
+    function connection($table, $titolo, $text){
 
         // Parametri per la connessione al database
         $servername = "localhost";
@@ -58,13 +58,14 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 $id = $row["id"];
+                echo $id;
             }
         } else {
             echo "0 results";
         }
        
         $id = (int)$id;
-
+        $file = $_FILES["fileToUpload"]["name"];
         //inserimento dell'immagine nella tabella img
         $sql = "INSERT INTO img (nome, id_".$table.")
         VALUES ('$file', '$id')";
@@ -78,22 +79,46 @@
         // Chiusura della connessione
         $conn->close();
 
+        $target_dir = "../media/img/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "File is an image - " . $check["mime"] . ".";
+                $uploadOk = 1;
+            } else {
+                echo "File is not an image.";
+                $uploadOk = 0;
+            }
+        }
+
     }
+    /*
+    session_start();
 
-    //Controllo dei dati passati
-    if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['file']) && isset($_POST['tipo'])){
+    if ( isset( $_SESSION['user_id'] ) ) {*/
+       //Controllo dei dati passati
+       echo "sono in up";
+        if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['tipo'])){
+            echo "sono nell'if";
+            //Parametri passati
+            $titolo = $_POST['titolo'];
+            $text = $_POST['text'];
+            $tipo = $_POST['tipo'];
+            
+            $table = $tipo;
 
-        //Parametri passati
-        $titolo = $_POST['titolo'];
-        $text = $_POST['text'];
-        $file = $_POST['file'];
-        $tipo = $_POST['tipo'];
+            //Richiamo della funzione connection
+            connection($table, $titolo, $text);
         
-        $table = $tipo;
+        } /*else {
+        // Redirect them to the login page
+            header("Location: http://www.yourdomain.com/login.php");
+        }
 
-        //Richiamo della funzione connection
-        connection($table, $titolo, $text, $file);
-
-    }
+    }*/
 
 ?>
