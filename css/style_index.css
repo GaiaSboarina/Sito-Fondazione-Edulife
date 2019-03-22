@@ -89,10 +89,10 @@ svg {
 }
 
 .content{
-    position: relative;
-    display:block;
+    position: fixed;
+    display: block;
     color: #FFFFFF;
-    top: 50%;
+    top: 65%;
     left: 50%;
     text-align:center;
     transform: translate(-50%, -50%);

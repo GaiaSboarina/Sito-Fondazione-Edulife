@@ -1,3 +1,9 @@
+var lunghezzaScroll = 0;
+
+$(document).ready(function(){
+    lunghezzaScroll = $('body').innerHeight();
+});
+
 $(window).scroll(function() {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 1200);
 });
@@ -13,18 +19,18 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function(){
-  
+
+    if($(window).scrollTop() <= lunghezzaScroll) {
+        console.log($(window).scrollTop() + ' - ' + lunghezzaScroll + ' - ' + $('header .content').css('top'));
         parallax();
-    
+    }
   });
   
   function parallax(){
     var scrolled = $(window).scrollTop();
     
     $('.bg').css('top',-(scrolled*0.1)+'px');
-    $('header .content').css('top',50+(scrolled*0.1)+'%');
+    $('header .content').css('top',65+(scrolled*0.1)+'%');
     $('header .content').css('opacity',1-(scrolled*0.01)/10);
-    $('header .content').css('opacity',1-(scrolled*0.01)/10);
-     
-    
+    $('header .content').css('opacity',1-(scrolled*0.01)/10);    
   };
