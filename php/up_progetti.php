@@ -1,18 +1,21 @@
 <?php
 
     function connection($table, $titolo, $text, $file){
+
+        // Parametri per la connessione al database
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "edulife";
 
-        // Create connection
+        // Creazione della connessione
         $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
+        // Controllo della connessione
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         } 
 
+        //Controllo della tabella in cui inserire i dati con relativo inserimento
         if ($table == "news"){
             $data = date('Y-m-d H:i:s');
 
@@ -24,7 +27,19 @@
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-        }else {
+        }
+        else if ($table == "evento"){
+            $data = date('Y-m-d H:i:s');
+
+            $sql = "INSERT INTO $table (titolo, contenuto, data)
+            VALUES ('$titolo', '$text', '$data')";
+    
+            if ($conn->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        }else if ($table == "progetto"){
             $sql = "INSERT INTO $table (titolo, contenuto)
             VALUES ('$titolo', '$text')";
     
@@ -36,9 +51,7 @@
     
         }
 
-        
-       
-
+        //Recupero dell'id del nuovo progetto/news/evento
         $query = "SELECT * FROM $table";
         $result = $conn->query($query);
         if ($result->num_rows > 0) {
@@ -52,6 +65,7 @@
        
         $id = (int)$id;
 
+        //inserimento dell'immagine nella tabella img
         $sql = "INSERT INTO img (nome, id_".$table.")
         VALUES ('$file', '$id')";
 
@@ -61,13 +75,15 @@
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
 
+        // Chiusura della connessione
         $conn->close();
 
-        return $connection;
     }
 
+    //Controllo dei dati passati
     if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['file']) && isset($_POST['tipo'])){
 
+        //Parametri passati
         $titolo = $_POST['titolo'];
         $text = $_POST['text'];
         $file = $_POST['file'];
@@ -75,16 +91,9 @@
         
         $table = $tipo;
 
-        echo $table;
-
+        //Richiamo della funzione connection
         connection($table, $titolo, $text, $file);
 
-        
-
-
-        
-        
-
-        }
+    }
 
 ?>
