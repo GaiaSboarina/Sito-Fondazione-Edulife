@@ -6,7 +6,6 @@ html, body{
 
 body {
     
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -80,7 +79,7 @@ svg {
   
     /* Set a specific height */
 
-    height: 1300px; 
+    height: 1200px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
