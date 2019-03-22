@@ -82,7 +82,6 @@ svg {
 
     height: 1300px; 
 
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -112,6 +111,10 @@ h3 {
 
 nav {
    background: transparent !important;
+}
+
+nav .transparentoff{
+  background: white !important;
 }
 
 nav .navbar-nav  li {
@@ -158,7 +161,7 @@ nav .navbar-nav li a{
 }
 
 nav.scrolled {
-    height: 40px;
+    height: auto;
     transition: all ease .5s;
     background: white !important;  
 
