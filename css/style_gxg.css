@@ -1,8 +1,12 @@
 p, h1 {
-    padding-top: 5%;
+    padding-top: 1%;
 }
-video
+h2
 {
-    height: 5%;
-    width: 5%:
+    color: #a30b0b;
+}
+h1
+{
+    text-align: center;
+    color: red;
 }
