@@ -30,31 +30,6 @@
     line-height: 15px;
 }
 
-#footer .footer-top .footer-newsletter {
-    margin-bottom: 15px;
-}
-
-#footer .footer-top .footer-newsletter input[type = "email"] {
-    border : 0;
-    padding: 3px 4px;
-    width: 65%;
-}
-
-#footer .footer-top .footer-newsletter input[type= "submit"] {
-    background: #e21212;
-    border: 0;
-    width: 35%;
-    padding: 3px 0;
-    text-align: center;
-    color: #fff;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#footer .footer-top .footer-newsletter input[type="submit"]:hover {
-    background: #13a456;
-}
-
 #footer .copyright {
     text-align: center;
     padding-top: 15px;

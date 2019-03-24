@@ -11,18 +11,33 @@ h3 {
     text-align: center;
 }
 
-#email {
-    width: 220px;
-    margin-left: 450px;
-}
 
-#spaziatura {
-    height: 50px;
-}
-
-header{
+header {
     height: 90px;
 }
+
+h1, h2, h3, h4, blockquote, q, .maia-nav ul {
+    font-family: 'open sans',arial,sans-serif;
+}
+
+b {
+    color: #a30b0b;
+}
+
+.imgChiSiamo {
+    margin-top: 10%;
+    width: 500px;
+    height: 300px;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
+}
+
+/* inizio style per navbar */
 
 nav {
     background: white !important;
@@ -113,6 +128,14 @@ nav.scrolled {
     background: #e21212 !important;
 }
  
+.dropdown-menu {
+    min-width: 8rem !important;
+}
+
+/* fine style per navbar */
+
+/* inizio style per footer */
+
 #text {
     font-size: 25px;
 }
@@ -182,45 +205,21 @@ nav.scrolled {
     color: #a30b0b;
 }
 
-h1, h2, h3, h4, blockquote, q, .maia-nav ul {
-    font-family: 'open sans',arial,sans-serif;
+.footer-info {
+    text-align: center;
 }
 
-b {
-    color: #a30b0b;
+#imgFooter {
+    padding-left: 10px;
 }
 
-.imgChiSiamo {
-    margin-top: 10%;
-    width: 500px;
-    height: 300px;
-}
-
-.dropdown-menu {
-    min-width: 8rem !important;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
-}
-
-@media (min-width: 0px) and (max-width:719px){
+@media (min-width: 0px) and (max-width:719px) {
     .footer-info{
         display: none;
         visibility: hidden;
     }
 }
 
-.footer-info{
-    text-align: center;
-}
-
-#imgFooter{
-    padding-left: 10px;
-}
 
 @media (min-width: 720px) and (max-width:1024px) {
     #imgFooter{
@@ -228,3 +227,5 @@ b {
         margin-left: 120px;
     }
 }
+
+/* fine style per footer */
