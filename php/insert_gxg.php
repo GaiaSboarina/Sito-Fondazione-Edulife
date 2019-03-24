@@ -6,7 +6,7 @@
         $rsGxg = mysqli_query($connection, "SELECT * FROM gxg");
         $news = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);
-        for($i=0; $i < count($gxg); $i++){
+        for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
             echo "
                 <div class='container'>
                     <h1 class='my-4'>".$gxg[$i]['titolo']."
