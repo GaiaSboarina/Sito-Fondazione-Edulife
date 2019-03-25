@@ -41,6 +41,7 @@ b {
 
 nav {
     background: white !important;
+    border-bottom:1px solid #dbdbdb;
 }
  
 nav .navbar-nav  li {
@@ -130,6 +131,11 @@ nav.scrolled {
  
 .dropdown-menu {
     min-width: 8rem !important;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
 }
 
 /* fine style per navbar */

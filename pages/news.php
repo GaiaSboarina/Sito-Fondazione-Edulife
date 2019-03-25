@@ -20,6 +20,11 @@
   <body>
     <header>
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../media/img/effe.png" alt="" class="logo">
+                </a>
+            </div>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
