@@ -5,11 +5,11 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function() {
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 1200);
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 1100);
 });
 
 $(window).scroll(function() {
-    if($(this).scrollTop() > 1200) {
+    if($(this).scrollTop() > 1100) {
         $('.abc').addClass('ncol');
         $('.nav').addClass('transparentoff');
     } else {
