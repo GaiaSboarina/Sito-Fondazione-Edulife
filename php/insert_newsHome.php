@@ -4,7 +4,7 @@
         if (strlen($testo) > $limiteCaratteri) {
             $nuovo_testo = substr($testo, 0, $limiteCaratteri);
             $nuovo_testo = trim($nuovo_testo);
-            return $nuovo_testo . "...";
+            return $nuovo_testo . "[..]";
         } else {
         return $testo;
         }

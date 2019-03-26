@@ -21,7 +21,7 @@ $(window).scroll(function() {
 $(window).scroll(function(){
 
     if($(window).scrollTop() <= lunghezzaScroll) {
-        console.log($(window).scrollTop() + ' - ' + lunghezzaScroll + ' - ' + $('header .content').css('top'));
+        $(window).scrollTop() + ' - ' + lunghezzaScroll + ' - ' + $('header .content').css('top');
         parallax();
     }
   });
