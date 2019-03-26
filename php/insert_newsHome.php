@@ -6,24 +6,27 @@
         $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 2");
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
         mysqli_close($connection);
-        for($i=0; $i < count($newsHome); $i++){
+        for($i = 0; $i < count($newsHome); $i++) {
             echo "
-                <div class='container'>
-                    <div class='row'>
-                        <div class='col-xs-6'>
-                            <h1>".$newsHome[$i]['titolo']."
-                            </h1>
-                            <p>".$newsHome[$i]['contenuto']."
-                        </div>
-                        <div class='col-xs-6'>
-                            <h1>".$newsHome[$i]['titolo']."
-                            </h1>
-                            <p>".$newsHome[$i]['contenuto']."
-                        </div>
-                    </div>
-                </div>
-            ";
-            var_dump($newsHome);
+                    <div class='container'>
+                        <div class='row'>
+                            <div class='col-xs-6'>
+                                <h1>" . $newsHome[$i]['titolo'] . "
+                                </h1>
+                                <p>" . $newsHome[$i]['contenuto'] . "</p>
+                            </div>";
+            $i++;
+            echo "
+                    <div class='col-xs-6'>";
+                        if(array_key_exists($i, $newsHome)) {
+                            echo "<h1>" . $newsHome[$i]['titolo'] . "
+                                </h1>
+                                <p>" . $newsHome[$i]['contenuto'] . "</p>";
+            }                   echo "
+                                    </div>
+                                </div>
+                            </div>
+                        ";
         }
     }
 ?>
