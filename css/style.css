@@ -29,12 +29,20 @@ b {
     height: 300px;
 }
 
+#divider {
+    border-right: 1px solid #ddd;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
 }
+
+#dots {display: none;}
 
 /* inizio style per navbar */
 
