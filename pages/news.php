@@ -94,9 +94,9 @@
                 </div>
               </div>
             </div>
+            <p class="copyright text-muted">Copyright &copy;Edulife 2019</p>
           </div>
         </div>
-          <p class="copyright text-muted">Copyright &copy;Edulife 2019</p>
     </footer>
   </body>
 </html>
