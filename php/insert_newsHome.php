@@ -6,7 +6,7 @@
         $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 2");
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
         mysqli_close($connection);
-        for($i=0; $i < count($newsHome); $i += 2){
+        for($i=0; $i < count($newsHome); $i++){
             echo "
                 <div class='container'>
                     <div class='row'>
