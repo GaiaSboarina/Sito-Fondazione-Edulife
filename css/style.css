@@ -235,7 +235,7 @@ nav .navbar-nav li a {
 }
 
 
-@media (min-width: 720px) and (max-width:1024px) {
+@media (min-width: 720px) and (max-width:1023px) {
     #imgFooter{
         padding-left: 10px;
         margin-left: 120px;
@@ -270,13 +270,31 @@ nav .navbar-nav li a {
 
 /* inizio media query per statubar da smartphone */
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
 
     .navbar-expand-md>.container, .navbar-expand-md>.container-fluid {
         padding-right: 0;
         padding-left: 0;
         width: 80%;
     }
+
 }
 
 /* fine media query per statubar da smartphone */
+
+/* inizio media query per footer da tablet */
+
+@media (min-width: 768px) {
+
+    .footer-contact {
+        padding-top: 10%;
+    }
+
+    .footer-links {
+        padding-top: 2%;
+    }
+
+}
+
+/* fine media query per footer da tablet */
+
