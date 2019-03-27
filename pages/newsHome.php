@@ -17,6 +17,11 @@
     <title>News Home</title>
 </head>
 <body>
-    <?= getAllNewsHome() ?> 
+    <div class="container">
+        <div class="row">
+            <?= getAllNewsHome() ?> 
+        </div>
+    </div>
+    
 </body>
 </html>

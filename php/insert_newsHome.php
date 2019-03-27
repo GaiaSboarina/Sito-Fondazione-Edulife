@@ -29,30 +29,13 @@
 
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
-                    <div class='container'>
-                        <div class='row'>
-                            <div class='col-xs-6'>
-                                <h3>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
-                                </h3>
-                                <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                                </p>
-                            </div>
-                            <div class='col-xs-6' id='divider'></div>
-                        ";
-                $i++;
-            echo "
-                    <div class='col-xs-6'>";
-                        if(array_key_exists($i, $newsHome)) {
-                            echo "<h3>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
-                                </h3>
-                                <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                                </p>";
-                                }                   
-                                echo "
-                            </div>
-                        </div>
-                    </div>
-                ";
+                <div class='col-sm-6'>
+                    <h3>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
+                    </h3>
+                    <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
+                    </p>
+                </div>
+            ";
         }
     }
 ?>
