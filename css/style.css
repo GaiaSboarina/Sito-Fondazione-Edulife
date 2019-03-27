@@ -42,8 +42,6 @@ b {
     src: local('Open Sans'), local('OpenSans'), url('../script/woff.woff') format('woff');
 }
 
-#dots {display: none;}
-
 /* inizio style per navbar */
 
 nav {

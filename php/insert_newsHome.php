@@ -1,13 +1,19 @@
 <?php
 
     function shorter($testo, $limiteCaratteri) {
-        if (strlen($testo) > $limiteCaratteri) {
-            $nuovo_testo = substr($testo, 0, $limiteCaratteri);
-            $nuovo_testo = trim($nuovo_testo);
-            return $nuovo_testo . "[..]";
-        } else {
-        return $testo;
+        $parole = explode(" ", $testo);
+
+        $testoFinale = "";
+        $index = 0;
+
+        while(strlen($testoFinale) <= $limiteCaratteri) {
+            $testoFinale = $testoFinale . " " . $parole[$index];
+            $index++;
         }
+
+        $testoFinale = $testoFinale . " [...]";
+
+        return $testoFinale;
     }
 
     function getAllNewsHome(){
