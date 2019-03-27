@@ -2,8 +2,27 @@
 html, body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
 }
 
+
+.glider-contain {
+  width: 90%;
+}
+
+.glider-slide {
+  height: 370px;
+  margin: 2px; 
+  max-height: 560px;
+}
+
+.glider-slide img {
+  width: 80%;
+}
+
+.glider-prev,.glider-next { 
+  top: 39% !important; 
+}
 
 
 /* Main styles */
