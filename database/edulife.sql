@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mar 22, 2019 alle 10:19
+-- Creato il: Mar 27, 2019 alle 12:03
 -- Versione del server: 10.1.34-MariaDB
 -- Versione PHP: 7.2.8
 
@@ -21,6 +21,17 @@ SET time_zone = "+00:00";
 --
 -- Database: `edulife`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `admin`
+--
+
+CREATE TABLE `admin` (
+  `username` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -79,6 +90,12 @@ CREATE TABLE `progetto` (
 --
 
 --
+-- Indici per le tabelle `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`username`);
+
+--
 -- Indici per le tabelle `evento`
 --
 ALTER TABLE `evento`
@@ -125,7 +142,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT per la tabella `progetto`
 --
 ALTER TABLE `progetto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Limiti per le tabelle scaricate
