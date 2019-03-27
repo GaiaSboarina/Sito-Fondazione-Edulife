@@ -15,20 +15,20 @@
             die("Connection failed: " . $conn->connect_error);
         } 
 
+        $errore = false;
         //Controllo della tabella in cui inserire i dati con relativo inserimento
-        if ($table == "news"){
+        if ($table == "News"){
             $data = date('Y-m-d H:i:s');
-
             $sql = "INSERT INTO $table (data, titolo, contenuto)
             VALUES ('$data', '$titolo', '$text')";
     
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
+                $errore = true;
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-        }
-        else if ($table == "evento"){
+        }elseif ($table == "Evento"){
             $data = date('Y-m-d H:i:s');
 
             $sql = "INSERT INTO $table (titolo, contenuto, data)
@@ -36,23 +36,28 @@
     
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
+                $errore = true;
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-        }else if ($table == "progetto"){
+        }elseif ($table == "Progetto"){
             $sql = "INSERT INTO $table (titolo, contenuto)
             VALUES ('$titolo', '$text')";
     
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
+                $errore = true;
             } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
     
+        }else{
+            echo $table;
         }
 
         //Recupero dell'id del nuovo progetto/news/evento
-        $query = "SELECT * FROM $table";
+        if ($errore == true) {
+            $query = "SELECT * FROM $table";
         $result = $conn->query($query);
         if ($result->num_rows > 0) {
             // output data of each row
@@ -94,16 +99,18 @@
                 $uploadOk = 0;
             }
         }
+        }
+        
 
     }
-    /*
+    
     session_start();
 
-    if ( isset( $_SESSION['user_id'] ) ) {*/
+    if ( isset( $_SESSION['user_id'] ) ) {
        //Controllo dei dati passati
-       echo "sono in up";
+       
         if(isset($_POST['titolo']) && isset($_POST['text']) && isset($_POST['tipo'])){
-            echo "sono nell'if";
+          
             //Parametri passati
             $titolo = $_POST['titolo'];
             $text = $_POST['text'];
@@ -114,11 +121,11 @@
             //Richiamo della funzione connection
             connection($table, $titolo, $text);
         
-        } /*else {
+        } 
+
+    }else {
         // Redirect them to the login page
             header("Location: http://www.yourdomain.com/login.php");
         }
-
-    }*/
 
 ?>
