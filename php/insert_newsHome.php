@@ -1,5 +1,4 @@
 <?php
-
     function shorter($testo, $limiteCaratteri) {
         $parole = explode(" ", $testo);
 
@@ -24,8 +23,8 @@
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
         mysqli_close($connection);
 
-        $limiteCaratteriTitolo = 15;
-        $limiteCaratteriContenuto = 50;
+        $limiteCaratteriTitolo = 30;
+        $limiteCaratteriContenuto = 255;
 
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
