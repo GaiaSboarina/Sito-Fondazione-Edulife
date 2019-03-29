@@ -62,6 +62,21 @@ body{
     color: #e21212;
 }
 
+.container .box .icon .far{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.container .box:hover .icon .far{
+    font-size: 30px;
+    color: #e21212;
+}
+
 .container .box .content
 {
     position: absolute;
@@ -203,6 +218,14 @@ h6{
     }
 
     .container .box:hover .icon .fa{
+        font-size: 150px;
+    }
+
+    .container .box .icon .far{
+        font-size: 230px;
+    }
+
+    .container .box:hover .icon .far{
         font-size: 150px;
     }
 
