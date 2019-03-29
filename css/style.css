@@ -145,11 +145,13 @@ nav .navbar-nav li a {
     background: #eee;
     color: #000000;
     font-size: 14px;
+    width: 100%;
 }
 
 #footer .footer-top {
     background: #eee;
     padding: 10px 0px 10px 0px;
+    
 }
 
 #footer .footer-top .footer-info {
@@ -162,6 +164,7 @@ nav .navbar-nav li a {
 
 #footer .footer-top .footer-contact {
     margin-bottom: 15px;
+    margin-top: -90px;
 }
 
 #footer .footer-top .footer-contact {
@@ -186,12 +189,13 @@ nav .navbar-nav li a {
 #imgFooter {
     border-bottom: #e21212 solid 3px;
     padding-bottom: 5px;
-    margin-left: 60px;
+    margin-left: 45px;
     width: 100px;
 }
 
 #testoFooter {
     padding-top: 10px;
+    margin-left: -60px;
 }
 
 .fab {
@@ -237,6 +241,10 @@ nav .navbar-nav li a {
         display: none;
         visibility: hidden;
     }
+
+    #footer .footer-top .footer-contact {
+        margin-top: 0px;
+    }
 }
 
 
@@ -244,6 +252,10 @@ nav .navbar-nav li a {
     #imgFooter{
         padding-left: 10px;
         margin-left: 120px;
+    }
+
+    #footer .footer-top .footer-contact {
+        margin-top: 0px;
     }
 }
 
@@ -289,7 +301,7 @@ nav .navbar-nav li a {
 
 /* inizio media query per footer da tablet */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     .footer-contact {
         padding-top: 10%;
@@ -303,3 +315,16 @@ nav .navbar-nav li a {
 
 /* fine media query per footer da tablet */
 
+/* inizio media query per footer da ipad pro */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+#footer .footer-top {
+    width: 1366px;   
+ }
+
+ #imgFooter {
+     margin-left: 25px;
+ }
+ 
+}
