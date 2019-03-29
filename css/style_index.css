@@ -196,6 +196,7 @@ nav.scrolled {
     padding-bottom: 5px;
     margin-right: 10px;
     font-size: 15px;
+    transition: all ease .5s;
 }
 
 .abc.ncol:last-child {
@@ -206,17 +207,17 @@ nav.scrolled {
     color: firebrick;
 }
 
-.abc.ncol:after {
+.abc.ncol::after {
         content: '';
         display: block;
         margin: auto;
         height: 3px;
         width: 0px;
         background: transparent;
-        transition: width .2s ease, background-color .2s ease;  
+        transition: width .7s ease;  
 }
 
-.abc.ncol:hover:after{
+.abc.ncol:hover::after{
     width: 100%;
     background: firebrick !important;
 }
@@ -224,4 +225,3 @@ nav.scrolled {
 #text {
     font-size: 25px;
 }
-
