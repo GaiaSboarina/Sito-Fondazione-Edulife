@@ -1,37 +1,24 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
--- https://www.phpmyadmin.net/
+-- version 4.1.7
+-- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Creato il: Mar 27, 2019 alle 12:03
--- Versione del server: 10.1.34-MariaDB
--- Versione PHP: 7.2.8
+-- Host: localhost
+-- Generation Time: Mar 29, 2019 alle 17:32
+-- Versione del server: 5.6.33-log
+-- PHP Version: 5.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Database: `edulife`
+-- Database: `my_fondazioneedulife`
 --
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `admin`
---
-
-CREATE TABLE `admin` (
-  `username` varchar(250) NOT NULL,
-  `password` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -39,12 +26,36 @@ CREATE TABLE `admin` (
 -- Struttura della tabella `evento`
 --
 
-CREATE TABLE `evento` (
+CREATE Database if not exists `edulife`;
+
+use `edulife`;
+
+CREATE TABLE IF NOT EXISTS `evento` (
   `id` int(11) NOT NULL,
-  `titolo` mediumtext NOT NULL,
+  `titolo` varchar(250) NOT NULL,
   `contenuto` mediumtext NOT NULL,
-  `data` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `data_evento` date NOT NULL,
+  `data` date NOT NULL,
+  `id_img` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_img` (`id_img`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `gxg`
+--
+
+CREATE TABLE IF NOT EXISTS `gxg` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(250) NOT NULL,
+  `titolo` varchar(250) NOT NULL,
+  `contenuto` mediumtext NOT NULL,
+  `img_name` varchar(250) NOT NULL,
+  `data` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -52,13 +63,11 @@ CREATE TABLE `evento` (
 -- Struttura della tabella `img`
 --
 
-CREATE TABLE `img` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `img` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(250) NOT NULL,
-  `id_progetto` int(11) DEFAULT NULL,
-  `id_evento` int(11) DEFAULT NULL,
-  `id_news` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -66,12 +75,15 @@ CREATE TABLE `img` (
 -- Struttura della tabella `news`
 --
 
-CREATE TABLE `news` (
+CREATE TABLE IF NOT EXISTS `news` (
   `id` int(11) NOT NULL,
+  `titolo` varchar(250) NOT NULL,
+  `contenuto` mediumtext NOT NULL,
   `data` date NOT NULL,
-  `titolo` mediumtext NOT NULL,
-  `contenuto` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_img` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_img` (`id_img`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -79,83 +91,33 @@ CREATE TABLE `news` (
 -- Struttura della tabella `progetto`
 --
 
-CREATE TABLE `progetto` (
+CREATE TABLE IF NOT EXISTS `progetto` (
   `id` int(11) NOT NULL,
-  `titolo` mediumtext NOT NULL,
-  `contenuto` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `titolo` varchar(250) NOT NULL,
+  `contenuto` mediumtext NOT NULL,
+  `id_img` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_img` (`id_img`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
 
 --
--- Indici per le tabelle scaricate
+-- Struttura della tabella `user`
 --
 
---
--- Indici per le tabelle `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`username`);
+CREATE TABLE IF NOT EXISTS `user` (
+  `username` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Indici per le tabelle `evento`
---
-ALTER TABLE `evento`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indici per le tabelle `img`
---
-ALTER TABLE `img`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `id_progetto` (`id_progetto`),
-  ADD KEY `id_evento` (`id_evento`),
-  ADD KEY `id_news` (`id_news`);
-
---
--- Indici per le tabelle `news`
---
-ALTER TABLE `news`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indici per le tabelle `progetto`
---
-ALTER TABLE `progetto`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT per le tabelle scaricate
+-- Dump dei dati per la tabella `user`
 --
 
---
--- AUTO_INCREMENT per la tabella `evento`
---
-ALTER TABLE `evento`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT per la tabella `news`
---
-ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT per la tabella `progetto`
---
-ALTER TABLE `progetto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Limiti per le tabelle scaricate
---
-
---
--- Limiti per la tabella `img`
---
-ALTER TABLE `img`
-  ADD CONSTRAINT `img_ibfk_1` FOREIGN KEY (`id_progetto`) REFERENCES `progetto` (`id`),
-  ADD CONSTRAINT `img_ibfk_2` FOREIGN KEY (`id_evento`) REFERENCES `evento` (`id`),
-  ADD CONSTRAINT `img_ibfk_3` FOREIGN KEY (`id_news`) REFERENCES `news` (`id`);
-COMMIT;
+INSERT INTO `user` (`username`, `password`) VALUES
+('admin', '35fd1b68a7fa7ba07c9fde405fcc802c');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
