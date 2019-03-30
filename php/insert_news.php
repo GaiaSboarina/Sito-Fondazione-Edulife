@@ -13,10 +13,9 @@
                     </h1>
                     <div class='row'>
                         <div class='col-md-8'>
-                            <img class='img-fluid' src='http://placehold.it/500x300' alt=''>
+                            <img class='img-fluid' src=".$news[$i]['id_img']." alt=''>
                         </div>
                         <div class='col-md-4'>
-                            <h3 class='my-3'>Descrizione progetto</h3>
                             <p>".$news[$i]['contenuto']."</p>
                         </div>
                     </div>
