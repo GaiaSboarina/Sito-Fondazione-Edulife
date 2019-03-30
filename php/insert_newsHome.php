@@ -29,8 +29,8 @@
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
                 <div class='col-sm-6'>
-                    <h3>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
-                    </h3>
+                    <h2>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
+                    </h2>
                     <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
                     </p>
                 </div>

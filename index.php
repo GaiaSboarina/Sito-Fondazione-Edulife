@@ -23,26 +23,23 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between align-items-left w-100" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link abc" href="#">Home <span class="sr-only">Home</span></a>
+                <li class="nav-item active">
+                        <a class="nav-link ncol" href="/index.html">Home <span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="//codeply.com">News</a>
+                        <a class="nav-link ncol" href="pages/news.php">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="//codeply.com">Progetti</a>
+                        <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="//codeply.com">Donazioni</a>
+                        <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link abc" href="//codeply.com" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contattaci
-                        </a>
-                        <div class="nav-item dropdown-menu" href="//codeply.com" aria-labelledby="navbarDropdown">
-                            <a class="nav-link dropdown-item abc" href="//codeply.com">Chi siamo</a>
-                            <a class="nav-link dropdown-item abc" href="//codeply.com">Contatti</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
                     </li>
                 </ul>
                 </div>
@@ -68,6 +65,7 @@
             </div>
         </header>
         <div class="container">
+            <br>
             <br>
             <div class="glider-contain">
                     <div class="glider">
@@ -95,12 +93,21 @@
                     <div id="dots"></div>
                     
                     <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
             </div>
                     <div class="container">
                     <div class="row">
                         <?= getAllNewsHome() ?> 
                     </div>
                     </div>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
                     <div class="container">
                     <div class="row">        
                     <div class="col-md-6 col-xs-6 text-right" style="border: none;">
@@ -120,6 +127,11 @@
                     </div>         
            
         </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
         <footer id = "footer">  
             <div class = "footer-top">
                 <div class = "container">
