@@ -14,35 +14,40 @@
         <title>Fondazione Edulife Onlus</title>
     </head>
     <body style="background-color: rgb(236, 236, 236)">
-        <header class="parallax">
+    <header class="parallax">
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../media/img/effe.png" alt="" class="logo">
+                </a>
+            </div>
+            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between align-items-left w-100" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link abc" href="/index.html">Home <span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/news.php">News</a>
+                        <a class="nav-link abc" href="../pages/news.php">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/progetti.php">Progetti</a>
+                        <a class="nav-link abc" href="../pages/progetti.php">Progetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/gxg.php">GXG</a>
+                        <a class="nav-link abc" href="../pages/gxg.php">GXG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/donazione.html">Donazioni</a>
+                        <a class="nav-link abc" href="../pages/donazione.html">Donazioni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/chisiamo.html">Chi siamo</a>
+                        <a class="nav-link abc" href="../pages/chisiamo.html">Chi siamo</a>
                     </li>
                 </ul>
             </div>
         </nav>
-                
+
         <svg>
             <!-- Symbol-->
             <symbol id="s-text">
