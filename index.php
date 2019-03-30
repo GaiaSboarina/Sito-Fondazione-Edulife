@@ -20,7 +20,7 @@
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="../media/img/effe.png" alt="" class="logo">
+                    <img src="media/img/effe.png" alt="" class="logo">
                 </a>
             </div>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
@@ -29,7 +29,7 @@
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link abc" href="/index.html">Home <span class="sr-only">Home</span></a>
+                        <a class="nav-link abc" href="/index.php">Home <span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link abc" href="../pages/news.php">News</a>
