@@ -2,46 +2,49 @@
 
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="css/style_index.css">
-    <link rel="stylesheet" href="css/glider.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/style_gxg.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-    <title>Fondazione Edulife Onlus</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="css/glider.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/style_gxg.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <title>Fondazione Edulife Onlus</title>
+    </head>
+
     <body style="background-color: rgb(236, 236, 236)">
+
         <header class="parallax">
             <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between align-items-left w-100" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                        <a class="nav-link ncol" href="/index.html">Home <span class="sr-only">Home</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/news.php">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link ncol" href="/index.html">Home <span class="sr-only">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/news.php">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             
@@ -64,56 +67,61 @@
                 <h3>Giovani per Giovani</h3>
             </div>
         </header>
+
         <div class="container">
             <br>
             <br>
             <div class="glider-contain">
-                    <div class="glider">
-                        <div><img alt="Test" src="media/img/eofw.webp"></div>
-                        <div><img alt="Test" src="media/img/cdp.webp"></div>
-                        <div><img alt="Test" src="media/img/ldr.webp"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
-                        <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
-                    </div>
-                    
-                    <button class="glider-prev">&laquo;</button>
-                    <button class="glider-next">&raquo;</button>
-                    
-                    <div id="dots"></div>
-                    
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                    <br>
+                <div class="glider">
+                    <div><img alt="Test" src="media/img/eofw.webp"></div>
+                    <div><img alt="Test" src="media/img/cdp.webp"></div>
+                    <div><img alt="Test" src="media/img/ldr.webp"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
+                    <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
+                </div>
+                
+                <button class="glider-prev">&laquo;</button>
+                <button class="glider-next">&raquo;</button>
+                
+                <div id="dots"></div>
+                
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
             </div>
-                    <div class="container">
-                    <div class="row">
-                        <?= getAllNewsHome() ?> 
-                    </div>
-                    </div>
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                    <br>
-                    <div class="container">
-                    <div class="row">        
+            <div class="container">
+                <div class="row">
+                    <?= getAllNewsHome() ?> 
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="container">
+
+                <div class="row">  
+
                     <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                         <img src="../media/img/gxg.jpg">
                     </div>
+
                     <div class="col-md-6 col-xs-6">
+
                         <h2>Giovani x Giovani</h2>
                         <p>                    
                         GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
@@ -123,15 +131,17 @@
                         Tutti noi abbiamo una storia da raccontare.
                         </p>
                     </div>
-                    </div>
-                    </div>         
+                </div>
+            </div>         
            
         </div>
+
         <br>
         <br>
         <hr>
         <br>
         <br>
+
         <footer id = "footer">  
             <div class = "footer-top">
                 <div class = "container">
@@ -144,17 +154,17 @@
                         </div>
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Contatti</h4>
-                                <p>Fondazione Edulife
-                                <br>
-                                Lungadige Galtarossa, 21
-                                <br>
-                                37133 Verona
-                                <br>
-                                Tel. +39 045 9696300
-                                <br>
-                                Fax +39 045 9696301
-                                <br>
-                                info@edulife.it</p>
+                            <p>Fondazione Edulife
+                            <br>
+                            Lungadige Galtarossa, 21
+                            <br>
+                            37133 Verona
+                            <br>
+                            Tel. +39 045 9696300
+                            <br>
+                            Fax +39 045 9696301
+                            <br>
+                            info@edulife.it</p>
                         </div>
                         <div class="col-lg-3 col-md-6 footer-contact middle">
                             <h4>I nostri social</h4>
@@ -181,5 +191,6 @@
         <script src="js/script.js"></script>
         <script src="js/glider_index.js"></script>
         <script src="js/glider.js"></script>
+        
     </body>
 </html>
