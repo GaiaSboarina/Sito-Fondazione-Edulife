@@ -382,6 +382,22 @@ nav.scrolled {
 
 @media (max-width: 767px) {
 
+  nav {
+    background: white !important;
+  }
+
+  .navbar-toggle.collapsed {
+    background-color: white !important;
+  }
+
+  .abc.ncol {
+    font-size: 15;
+  }
+
+  nav .navbar-nav li a {
+    color: #e21212 !important;
+  }
+
   .navbar-expand-md>.container, .navbar-expand-md>.container-fluid {
       padding-right: 0;
       padding-left: 0;
@@ -435,3 +451,4 @@ nav.scrolled {
 
 
 /* fine media query per footer da ipad pro */
+
