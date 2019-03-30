@@ -29,7 +29,7 @@
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
                 <div class='col-sm-6'>
-                    <h2>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
+                    <h2 style='color: #e21212'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
                     </h2>
                     <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
                     </p>

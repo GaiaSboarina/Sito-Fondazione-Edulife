@@ -1,5 +1,5 @@
 <?php include "php/insert_newsHome.php" ?>
-<?php include "php/insert_gxg.php" ?>
+<?php include "php/insert_imgGlider.php" ?>
 
 
 <!DOCTYPE html>
@@ -66,7 +66,7 @@
         </svg>
 
         <div class="content">
-            <h2>Giovani per Giovani</h2>
+            <h2>Il portale di Edulife creato dai Giovani per i Giovani</h2>
         </div>
         </header>
 
@@ -75,22 +75,7 @@
                 <br>
             <div class="glider-contain">
             <div class="glider">
-            <div><img alt="Test" src="media/img/<?getAllImgGlider()?>"></div>
-            <div><img alt="Test" src="media/img/cdp.webp"></div>
-            <div><img alt="Test" src="media/img/ldr.webp"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=5"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=6"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=7"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=8"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=9"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=10"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=11"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=12"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=13"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=14"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=15"></div>
-            <div><img alt="Test" src="http://placehold.it/300x300?text=16"></div>
+            <?=getAllImgGlider()?>
             
             </div>
                     

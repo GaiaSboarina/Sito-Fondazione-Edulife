@@ -8,7 +8,9 @@ function getAllImgGlider(){
     $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
     mysqli_close($connection);
     for($i=0; $i < count($gxg); $i++){
-        return $gxg[$i]["img_name"];
+        echo "
+        <div><img src='media/img/".$gxg[$i]['img_name']."'></div>
+        ";
     }
 }
 

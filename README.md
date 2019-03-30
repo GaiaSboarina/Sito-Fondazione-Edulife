@@ -4,4 +4,4 @@ Repository per la rifondazione del sito Edulife.
 
 # Programmatori:
 
-Gaia, Matteo, Samuele, Francesco e Federico
+Gaia, Matteo, Samuele, Francesco, Federico, Davide e Michele
