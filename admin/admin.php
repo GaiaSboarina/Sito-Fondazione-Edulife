@@ -20,7 +20,7 @@ if ( ! empty( $_POST ) ) {
         $db_name = "edulife";
         // Getting submitted user data from database
         $con = new mysqli($db_host, $db_user, $db_pass, $db_name);
-        $stmt = $con->prepare("SELECT * FROM admin WHERE username = ?");
+        $stmt = $con->prepare("SELECT * FROM user WHERE username = ?");
         $stmt->bind_param('s', $_POST['username']);
         $stmt->execute();
         $result = $stmt->get_result();

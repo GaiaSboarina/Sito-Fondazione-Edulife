@@ -43,34 +43,56 @@
     </header>    
 
     <form action="../php/up_progetti.php" method="POST" enctype="multipart/form-data">
+
+
+        
+
         <div class="container">
+
             <div class="form-group">
+                <label for="tipo">Progetto - Evento - News</label>
+                <select class="form-control" id="tipo" name="tipo">
+                    <option></option>
+                    <option value="Progetto">Progetto</option>
+                    <option value="Evento">Evento</option>
+                    <option value="News">News</option>
+                    <option value="Video">Video</option>
+                </select>
+            </div>
+
+            <div id="showLink" class="form-group myDiv">
+                <label for="link">Titolo</label>
+                <input type="text" class="form-control" id="link" placeholder="Link" name="link">
+            </div>
+
+            <div id="showTitle" class="form-group myDiv">
                 <label for="titolo">Titolo</label>
                 <input type="text" class="form-control" id="titolo" placeholder="Titolo" name="titolo">
             </div>
         
-            <div class="form-group">
+            <div id="showContent" class="form-group myDiv">
                 <label for="text">Contenuto</label>
                 <textarea class="form-control" id="text" rows="3" name="text"></textarea>
             </div>
 
-            <div class="form-group">
+            <div id="showImg" class="form-group myDiv">
                 <input type="file" name="fileToUpload" id="fileToUpload">
             </div>
-            <div class="form-group">
-                <label for="tipo">Progetto - Evento - News</label>
-                <select class="form-control" id="tipo" name="tipo">
-                    <option>Progetto</option>
-                    <option>Evento</option>
-                    <option>News</option>
-                </select>
+
+            <div id="showDate" class="form-group myDiv">
+                <label for="example-date-input" class="col-2 col-form-label">Date</label>
+                <div class="col-10">
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="data_evento">
+                </div>
             </div>
+    
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
 
         
     </form>
 
+   
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 29, 2019 alle 17:32
+-- Generation Time: Mar 30, 2019 alle 12:25
 -- Versione del server: 5.6.33-log
 -- PHP Version: 5.3.10
 
@@ -19,16 +19,13 @@ SET time_zone = "+00:00";
 --
 -- Database: `my_fondazioneedulife`
 --
-
+CREATE DATABASE IF NOT EXISTS `edulife`;
+USE `edulife`;
 -- --------------------------------------------------------
 
 --
 -- Struttura della tabella `evento`
 --
-
-CREATE Database if not exists `edulife`;
-
-use `edulife`;
 
 CREATE TABLE IF NOT EXISTS `evento` (
   `id` int(11) NOT NULL,
@@ -118,6 +115,23 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`username`, `password`) VALUES
 ('admin', '35fd1b68a7fa7ba07c9fde405fcc802c');
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `video`
+--
+
+CREATE TABLE IF NOT EXISTS `video` (
+  `id` int(11) NOT NULL,
+  `link` varchar(250) NOT NULL,
+  `titolo` varchar(250) NOT NULL,
+  `contenuto` mediumtext NOT NULL,
+  `data` date NOT NULL,
+  `id_img` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_img` (`id_img`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

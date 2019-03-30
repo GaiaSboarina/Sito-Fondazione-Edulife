@@ -34,3 +34,34 @@ $(window).scroll(function(){
     $('header .content').css('opacity',1-(scrolled*0.01)/10);
     $('header .content').css('opacity',1-(scrolled*0.01)/10);    
   };
+
+
+$(document).ready(function(){
+    $('#tipo').on('change', function(){
+        var demovalue = $(this).val(); 
+        if (demovalue == "Progetto" || demovalue == "News") {
+            $("#showTitle").show();
+            $("#showContent").show();
+            $("#showImg").show();
+            $("#showDate").hide();
+            $("#showLink").hide();
+        } else if(demovalue == "Evento"){
+            $("#showLink").hide();
+            $("#showTitle").show();
+            $("#showContent").show();
+            $("#showImg").show();
+            $("#showDate").show();
+        } else if(demovalue == "Video"){
+            $("#showLink").show();
+            $("#showTitle").show();
+            $("#showContent").show();
+            $("#showImg").show();
+            $("#showDate").hide();
+        }else{
+            $("div.myDiv").hide();
+        }
+
+        
+        
+    });
+});

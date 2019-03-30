@@ -216,8 +216,6 @@ nav .navbar-nav li a {
 
 .btn {
     display: inline-block;
-    width: 50px;
-    height: 50px;
     background: #f1f1f1;
     border-radius: 30%;
     box-shadow: 0 5px 15px -5px #00000070;
@@ -342,3 +340,12 @@ nav .navbar-nav li a {
 
 
 /* fine media query per footer da ipad pro */
+
+/* Inizio stile per pagina upload.php */
+
+.myDiv{
+    display:none;
+}  
+
+
+/* Fine stile per pagina upload.php */
