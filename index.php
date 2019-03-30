@@ -1,4 +1,6 @@
 <?php include "php/insert_newsHome.php" ?>
+<?php include "php/insert_gxg.php" ?>
+
 
 <!DOCTYPE html>
 <html lang="it">
@@ -73,7 +75,7 @@
                 <br>
             <div class="glider-contain">
             <div class="glider">
-            <div><img alt="Test" src="media/img/eofw.webp"></div>
+            <div><img alt="Test" src="media/img/<?getAllImgGlider()?>"></div>
             <div><img alt="Test" src="media/img/cdp.webp"></div>
             <div><img alt="Test" src="media/img/ldr.webp"></div>
             <div><img alt="Test" src="http://placehold.it/300x300?text=4"></div>
