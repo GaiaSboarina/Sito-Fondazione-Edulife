@@ -9,6 +9,7 @@
 
         // Creazione della connessione
         $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn->query("SET NAMES 'utf8'");
         // Controllo della connessione
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -48,6 +49,20 @@
     function news(){
         $conn = connection();
         $query = "SELECT * FROM news";
+        $result = $conn->query($query);
+        $array = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
+        return $array;
+    }
+
+    function gxg(){
+        $conn = connection();
+        $query = "SELECT * FROM gxg";
         $result = $conn->query($query);
         $array = array();
         if ($result->num_rows > 0) {

@@ -1,16 +1,6 @@
 <?php
 
-    function connection($table){
-
-        if ($table == "Evento" || $table == "Progetto" || $table == "News") {
-            $titolo = $_POST['titolo'];
-            $text = $_POST['text'];
-        } elseif ($table == "video") {
-            $link = $_POST['link'];
-            $titolo = $_POST['titolo'];
-            $text = $_POST['text'];
-
-        }
+    function connection($table, $titolo, $text){
 
         // Parametri per la connessione al database
         $servername = "localhost";
@@ -20,6 +10,7 @@
 
         // Creazione della connessione
         $conn = new mysqli($servername, $username, $password, $dbname);
+        
         // Controllo della connessione
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
@@ -87,7 +78,10 @@
                 }
         
             }elseif ($table == "Video"){
+                $link = $_POST['link'];
+                $table = "gxg";
                 $data = date('Y-m-d H:i:s');
+                echo "<br>$link, $titolo, $text, $data <br>";
                 $sql = "INSERT INTO $table (link, titolo, contenuto, data, id_img)
                 VALUES ('$link', '$titolo', '$text', '$data', '$id')";
         
@@ -163,9 +157,10 @@
                 }
             }
             
-
+            $titolo = $_POST['titolo'];
+            $text = $_POST['text'];
             //Richiamo della funzione connection
-            connection($table);
+            connection($table, $titolo, $text);
         
         } 
 

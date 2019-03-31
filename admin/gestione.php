@@ -5,7 +5,7 @@ include("select.php");
     $array_progetti=progetti();
     $array_eventi=eventi();
     $array_news=news();
-    
+    $array_gxg=gxg();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +45,7 @@ include("select.php");
         </header>   
 
         <div class="container">
+            <h1>Progetti</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -76,7 +77,7 @@ include("select.php");
             </table>
 
             <br>
-
+            <h1>Eventi</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -109,7 +110,7 @@ include("select.php");
             </table>
 
             <br>
-
+            <h1>News</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -139,6 +140,39 @@ include("select.php");
                     } ?>
                 </tbody>
             </table>
+
+            <br>
+            <h1>Video</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Link</th>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Contenuto</th>
+                    <th scope="col">Img</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <?php 
+                    for ($i=0; $i < count($array_gxg); $i++) { 
+                        echo "<tr>";
+                        foreach ($array_gxg[$i] as $key => $value) {
+                            echo "<td>$value</td>";
+                        }
+                        $id = $array_gxg[$i]['id'];
+                        echo '
+                        <form action="select.php" method="post">
+                            <input type="hidden" name="table" value="news">
+                            <input type="hidden" name="id" value="'.$id.'">
+                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
+                        </form>';
+                        echo "</tr>";
+                    } ?>
+                </tbody>
+            </table>
+
 
         </div>
 
