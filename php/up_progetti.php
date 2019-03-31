@@ -88,7 +88,7 @@
         
             }elseif ($table == "Video"){
                 $data = date('Y-m-d H:i:s');
-                $sql = "INSERT INTO $table (link, titolo, contenuto, data, id_img)
+                $sql = "INSERT INTO gxg (link, titolo, contenuto, data, id_img)
                 VALUES ('$link', '$titolo', '$text', '$data', '$id')";
         
                 if ($conn->query($sql) === TRUE) {
