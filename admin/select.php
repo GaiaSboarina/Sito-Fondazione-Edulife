@@ -40,8 +40,7 @@
             while($row = $result->fetch_assoc()) {
                 array_push($array, $row);
             }
-            // output data of each row
-
+            
         } 
         return $array;
     }
@@ -55,7 +54,6 @@
             while($row = $result->fetch_assoc()) {
                 array_push($array, $row);
             }
-            // output data of each row
 
         } 
         return $array;
@@ -63,7 +61,7 @@
 
     function delete($table, $id){
         $conn = connection();
-
+        echo "$table , $id";
         $sql = "DELETE FROM $table WHERE id=$id";
 
         if ($conn->query($sql) === TRUE) {

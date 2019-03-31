@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,19 +24,13 @@
                 <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link ncol" href="#">Home <span class="sr-only">Home</span></a>
+                            <a class="nav-link ncol" href="../index.php">Home <span class="sr-only">Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ncol" href="//codeply.com">News e Eventi</a>
+                            <a class="nav-link ncol" href="upload.php">Inserisci</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link ncol" href="//codeply.com">Progetti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="#">Chi siamo</a> 
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link ncol" href="#">Contatti</a> 
+                                <a class="nav-link ncol" href="choose.php">Gestione</a>
                         </li>
                     </ul>
                 </div>
@@ -43,9 +38,6 @@
     </header>    
 
     <form action="../php/up_progetti.php" method="POST" enctype="multipart/form-data">
-
-
-        
 
         <div class="container">
 
