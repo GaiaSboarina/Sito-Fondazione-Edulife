@@ -99,11 +99,13 @@ nav .navbar-nav li a {
 
 #containerNostriValori
 {
-    position:relative;
+    position: relative;
     width: 1200px;
     height: 300px;
-    margin: auto;
-    padding-top: 5%;    
+    margin-left: 17%;
+    margin-right: -17%;
+    padding-top: 5%;   
+     
     
 }
 
@@ -345,3 +347,11 @@ h6{
 
     
 }
+
+
+
+
+
+
+
+
