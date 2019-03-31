@@ -211,7 +211,7 @@ nav.scrolled {
 }
 
 .abc.ncol:hover {
-    color: firebrick;
+    color: #e21212 !important;
 }
 
 .abc.ncol::after {
@@ -226,7 +226,7 @@ nav.scrolled {
 
 .abc.ncol:hover::after{
     width: 100%;
-    background: firebrick !important;
+    background: #e21212 !important;
 }
 
 #text {
