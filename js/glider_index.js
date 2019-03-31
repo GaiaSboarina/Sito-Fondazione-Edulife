@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
             {
                 breakpoint: 800,
                 settings: {
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                     slidesToShow: 5,
                     itemWidth: 300,
                     slidesToShow: 'auto',

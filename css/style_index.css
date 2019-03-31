@@ -5,24 +5,6 @@ html, body{
     width: 100%;
 }
 
-.glider-contain {
-  width: 90%;
-}
-
-.glider-slide {
-  height: 370px;
-  margin: 2px; 
-  max-height: 560px;
-}
-
-.glider-slide img {
-  width: 80%;
-}
-
-.glider-prev,.glider-next { 
-  top: 39% !important; 
-}
-
 /* Main styles */
 
 .text {
@@ -84,6 +66,8 @@ svg {
   height: 100%;
 }
 
+/* inizio style per parallax */
+
 .parallax { 
     /* The image used */
     background-image: url(../media/img/template.jpg);
@@ -118,6 +102,32 @@ h3 {
     font-size: 1em;
     font-weight: lighter;
 }
+
+/* fine style per parallax */
+
+/* inizio style per glider */
+
+.glider-contain {
+  width: 90%;
+}
+
+.glider-slide {
+  height: 370px;
+  margin: 2px; 
+  max-height: 560px;
+}
+
+.glider-slide img {
+  width: 80%;
+}
+
+.glider-prev,.glider-next { 
+  top: 39% !important; 
+}
+
+/* fine style per glider */
+
+/* inizio style per navbar */
 
 nav {
    background: linear-gradient(rgb(136, 136, 136), transparent) !important;
@@ -227,6 +237,8 @@ nav.scrolled {
   width: 35%;
   height: 35%;
 }
+
+/* fine style per navbar */
 
 /* inizio style per footer */
 
