@@ -23,84 +23,90 @@
         // Controllo della connessione
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
-        } 
-
-        //inserimento dell'immagine nella tabella img
-        $file = $_FILES["fileToUpload"]["name"];
-        
-        $sql = "INSERT INTO img (nome)
-        VALUES ('$file')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
-
-        //Recupero dell'id del nuovo progetto/news/evento
-        $query = "SELECT * FROM img WHERE nome = $file";
-        $result = $conn->query($query);
-        if ($result->num_rows > 0) {
-            // output data of each row
-            $row = $result->fetch_assoc();
-            $id = $row["id"];
+            //inserimento dell'immagine nella tabella img
+            $file = $_FILES["fileToUpload"]["name"];
             
-        } else {
-            $id = 1;
+            $sql = "INSERT INTO img (nome)
+            VALUES ('$file')";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "New record created successfully <br>";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            //Recupero dell'id della nuova img
+            
+            $query = "SELECT * FROM img";          
+            $result = $conn->query($query);
+            echo var_dump($result); 
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    $id = $row["id"];
+                    $id = (int)$id;
+                }
+                    
+            }else {
+                echo "errore";
+            }
+        
+            
+
+            //Controllo della tabella in cui inserire i dati con relativo inserimento
+            if ($table == "News"){
+                $data = date('Y-m-d H:i:s');
+                $sql = "INSERT INTO $table (titolo, contenuto, data, id_img)
+                VALUES ('$titolo', '$text', '$data', '$id')";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+            }elseif ($table == "Evento"){
+                $data = date('Y-m-d H:i:s');
+                $data_evento = $_POST['data_evento'];
+
+                $sql = "INSERT INTO $table (titolo, contenuto, data_evento, data, id_img)
+                VALUES ('$titolo', '$text', '$data_evento', '$data', '$id')";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+            }elseif ($table == "Progetto"){
+                $sql = "INSERT INTO $table (titolo, contenuto, id_img)
+                VALUES ('$titolo', '$text', '$id')";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+        
+            }elseif ($table == "Video"){
+                $data = date('Y-m-d H:i:s');
+                $sql = "INSERT INTO $table (link, titolo, contenuto, data, id_img)
+                VALUES ('$link', '$titolo', '$text', '$data', '$id')";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+        
+            }else{
+                echo $table;
+            }
+
+            // Chiusura della connessione
+            $conn->close();
+            header("Location: ../admin/choose.php");
         }
-       
-        $id = (int)$id;
 
-        //Controllo della tabella in cui inserire i dati con relativo inserimento
-        if ($table == "News"){
-            $data = date('Y-m-d H:i:s');
-            $sql = "INSERT INTO $table (titolo, contenuto, data, id_img)
-            VALUES ('$titolo', '$text', '$data', '$id')";
-    
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-        }elseif ($table == "Evento"){
-            $data = date('Y-m-d H:i:s');
-            $data_evento = $_POST['data_evento'];
-
-            $sql = "INSERT INTO $table (titolo, contenuto, data_evento, data, id_img)
-            VALUES ('$titolo', '$text', '$data_evento', '$data', '$id')";
-    
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-        }elseif ($table == "Progetto"){
-            $sql = "INSERT INTO $table (titolo, contenuto, id_img)
-            VALUES ('$titolo', '$text', '$id')";
-    
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-    
-        }elseif ($table == "Video"){
-            $data = date('Y-m-d H:i:s');
-            $sql = "INSERT INTO $table (link, titolo, contenuto, data, id_img)
-            VALUES ('$link', '$titolo', '$text', '$data', '$id')";
-    
-            if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-    
-        }else{
-            echo $table;
-        }
-
-        // Chiusura della connessione
-        $conn->close();
+        
 
     }
     
@@ -165,7 +171,7 @@
 
     }else {
         // Redirect them to the login page
-            header("Location: http://www.yourdomain.com/login.php");
+            header("Location: ../admin/index.php");
         }
 
 ?>

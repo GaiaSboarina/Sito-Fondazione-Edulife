@@ -65,3 +65,13 @@ $(document).ready(function(){
         
     });
 });
+
+function validate(e) {
+    var r = confirm("Do you want to submit the form?");
+    if (r == true){
+        e.returnValue = true; 
+    } else{
+        e.returnValue = false; 
+    }
+    
+}

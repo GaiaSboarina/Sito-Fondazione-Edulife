@@ -28,8 +28,10 @@ if ( ! empty( $_POST ) ) {
             		
     	// Verify user password and set $_SESSION
     	if ( verify( $_POST['password'], $user->password, $con ) ) {
-            $_SESSION['user_id'] = $user->ID;
-            header("Location: upload.php");
+         
+            $_SESSION['user_id'] = $user->username;
+            
+            header("Location: choose.php");
     	}else {
             echo "password non verificata";
         }

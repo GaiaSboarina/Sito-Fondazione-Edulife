@@ -42,6 +42,9 @@
                         <a class="nav-link ncol" href="../pages/gxg.php">GXG</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link ncol" href="../pages/inostrivalori.html">I nostri valori</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link ncol" href="../pages/donazione.html">Donazioni</a>
                     </li>
                     <li class="nav-item">

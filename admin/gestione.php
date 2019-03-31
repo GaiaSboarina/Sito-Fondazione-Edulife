@@ -1,7 +1,11 @@
-<?php include("select.php"); 
+<?php 
+
+
+include("select.php"); 
     $array_progetti=progetti();
     $array_eventi=eventi();
     $array_news=news();
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,20 +31,14 @@
                     <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link ncol" href="#">Home <span class="sr-only">Home</span></a>
+                                <a class="nav-link ncol" href="../index.php">Home <span class="sr-only">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ncol" href="//codeply.com">News e Eventi</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link ncol" href="//codeply.com">Progetti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ncol" href="#">Chi siamo</a> 
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link ncol" href="#">Contatti</a> 
-                            </li>
+                            <a class="nav-link ncol" href="upload.php">Inserisci</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link ncol" href="choose.php">Gestione</a>
+                        </li>
                         </ul>
                     </div>
                 </nav>
@@ -69,7 +67,7 @@
                         <form action="select.php" method="post">
                             <input type="hidden" name="table" value="progetto">
                             <input type="hidden" name="id" value="'.$id.'">
-                            <td><button class="btn btn-danger" type="submit">Elimina</button></td>
+                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
                         </form>';
   
                         echo "</tr>";
@@ -98,12 +96,12 @@
                         foreach ($array_eventi[$i] as $key => $value) {
                             echo "<td>$value</td>";
                         }
-                        $id = $array_progetti[$i]['id'];
+                        $id = $array_eventi[$i]['id'];
                         echo '
                         <form action="select.php" method="post">
                             <input type="hidden" name="table" value="evento">
                             <input type="hidden" name="id" value="'.$id.'">
-                            <td><button class="btn btn-danger" type="submit">Elimina</button></td>
+                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
                         </form>';
                         echo "</tr>";
                     } ?>
@@ -130,12 +128,12 @@
                         foreach ($array_news[$i] as $key => $value) {
                             echo "<td>$value</td>";
                         }
-                        $id = $array_progetti[$i]['id'];
+                        $id = $array_news[$i]['id'];
                         echo '
                         <form action="select.php" method="post">
                             <input type="hidden" name="table" value="news">
                             <input type="hidden" name="id" value="'.$id.'">
-                            <td><button class="btn btn-danger" type="submit">Elimina</button></td>
+                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
                         </form>';
                         echo "</tr>";
                     } ?>
@@ -143,5 +141,7 @@
             </table>
 
         </div>
+
+    
     </body>
 </html>
