@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mar 30, 2019 alle 14:22
+-- Creato il: Mar 31, 2019 alle 22:15
 -- Versione del server: 10.1.38-MariaDB
 -- Versione PHP: 7.3.3
 
@@ -31,11 +31,11 @@ SET time_zone = "+00:00";
 CREATE TABLE `evento` (
   `id` int(11) NOT NULL,
   `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
+  `contenuto` longtext NOT NULL,
   `data_evento` date NOT NULL,
   `data` date NOT NULL,
   `id_img` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -47,17 +47,17 @@ CREATE TABLE `gxg` (
   `id` int(11) NOT NULL,
   `link` varchar(250) NOT NULL,
   `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
+  `contenuto` longtext NOT NULL,
   `img_name` varchar(250) NOT NULL,
   `data` date NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `gxg`
 --
 
 INSERT INTO `gxg` (`id`, `link`, `titolo`, `contenuto`, `img_name`, `data`) VALUES
-(1, 'IhEP3_mIqV8', 'GxG Andrea Mirandola', 'Prova GxG', '', '2019-03-30');
+(1, 'IhEP3_mIqV8', 'GxG Andrea Mirandola', 'Prova GxG', 'eofw.webp', '2019-03-30');
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ INSERT INTO `gxg` (`id`, `link`, `titolo`, `contenuto`, `img_name`, `data`) VALU
 CREATE TABLE `img` (
   `id` int(11) NOT NULL,
   `nome` varchar(250) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -79,10 +79,10 @@ CREATE TABLE `img` (
 CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
+  `contenuto` longtext NOT NULL,
   `data` date NOT NULL,
   `id_img` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `news`
@@ -101,9 +101,9 @@ INSERT INTO `news` (`id`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
 CREATE TABLE `progetto` (
   `id` int(11) NOT NULL,
   `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
+  `contenuto` longtext NOT NULL,
   `id_img` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `progetto`
@@ -122,7 +122,7 @@ INSERT INTO `progetto` (`id`, `titolo`, `contenuto`, `id_img`) VALUES
 CREATE TABLE `user` (
   `username` varchar(250) NOT NULL,
   `password` varchar(250) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dump dei dati per la tabella `user`
@@ -141,10 +141,10 @@ CREATE TABLE `video` (
   `id` int(11) NOT NULL,
   `link` varchar(250) NOT NULL,
   `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
+  `contenuto` longtext NOT NULL,
   `data` date NOT NULL,
   `id_img` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Indici per le tabelle scaricate

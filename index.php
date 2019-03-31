@@ -20,7 +20,7 @@
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="media/img/effe.png" alt="" class="logo">
+                    <img src="media/img/logo-h100.png" alt="" class="logo">
                 </a>
             </div>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
@@ -105,7 +105,7 @@
             <div class="container">
             <div class="row">  
                 <div class="col-md-6 col-xs-6 text-right" style="border: none;">
-                    <img src="../media/img/gxg.jpg">
+                    <img src="media/img/gxg.png">
                 </div>
                 <div class="col-md-6 col-xs-6">
                     <h2>Giovani x Giovani</h2>
