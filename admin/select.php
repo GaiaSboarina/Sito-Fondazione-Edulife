@@ -59,6 +59,20 @@
         return $array;
     }
 
+    function gxg(){
+        $conn = connection();
+        $query = "SELECT * FROM gxg";
+        $result = $conn->query($query);
+        $array = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
+        return $array;
+    }
+
     function delete($table, $id){
         $conn = connection();
         echo "$table , $id";
