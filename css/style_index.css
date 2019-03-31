@@ -5,6 +5,11 @@ html, body{
     width: 100%;
 }
 
+#LogoEdulife {
+  padding-top: 23%;
+  padding-left: 20%;
+}
+
 /* Main styles */
 
 .text {
@@ -463,4 +468,3 @@ nav.scrolled {
 
 
 /* fine media query per footer da ipad pro */
-

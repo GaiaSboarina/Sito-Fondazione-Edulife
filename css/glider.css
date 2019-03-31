@@ -80,9 +80,11 @@
   color: #666;
   cursor: default;
 }
+
 .glider-slide {
   min-width: 150px;
 }
+
 .glider-hide {
   opacity: 0;
 }
@@ -114,6 +116,7 @@
 .glider-dot.active {
   background: #a89cc8;
 }
+
 @media(max-width: 36em){
   .glider::-webkit-scrollbar {
     opacity: 1;

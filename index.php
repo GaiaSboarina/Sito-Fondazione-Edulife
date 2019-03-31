@@ -20,7 +20,7 @@
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="media/img/logo-h100.png" alt="" class="logo">
+                    <img src="media/img/effe.png" alt="" class="logo">
                 </a>
             </div>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
@@ -53,24 +53,10 @@
             </div>
         </nav>
 
-        <svg>
-            <!-- Symbol-->
-            <symbol id="s-text">
-                <text id="effect" text-anchor="middle" x="50%" y="40%" dy=".55em">
-                    GxG
-                </text>
-            </symbol>
-            <!-- Duplicate symbols-->
-            <use class="text" xlink:href="#s-text"></use>
-            <use class="text" xlink:href="#s-text"></use>
-            <use class="text" xlink:href="#s-text"></use>
-            <use class="text" xlink:href="#s-text"></use>
-            <use class="text" xlink:href="#s-text"></use>
-        </svg>
-
-        <div class="content">
-            <h2>Il portale di Edulife creato dai Giovani per i Giovani</h2>
+        <div class="container" id="LogoEdulife">
+            <img src="media/img/logo-h100.png" alt="">
         </div>
+
         </header>
 
             <div class="container">
