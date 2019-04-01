@@ -55,7 +55,12 @@
             </div>
         </nav>
     </header>
-<?= getAllGxg() ?> 
+<?php if (isset($_GET['link'])) {
+  getGxg($_GET['link']);
+} else{
+  getAllGxg();
+}
+ ?> 
     <footer id = "footer">  
       <div class = "footer-top">
         <div class = "container">

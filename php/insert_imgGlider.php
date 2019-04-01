@@ -15,12 +15,12 @@ function getAllImgGlider(){
     } 
     //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
  
-    $query = "SELECT i.id, i.nome FROM img i, gxg g WHERE g.id_img = i.id ORDER BY id DESC LIMIT 10";
+    $query = "SELECT i.id, i.nome, g.link FROM img i, gxg g WHERE g.id_img = i.id ORDER BY id DESC LIMIT 10";
     $result = $conn->query($query);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo "
-        <div><img src='media/img/".$row['nome']."'></div>
+            <div><a href='../Sito-Fondazione-Edulife/pages/gxg.php?link=".$row['link']."'><img border='0' src='media/img/".$row['nome']."'></a></div>
         ";
         }
     
