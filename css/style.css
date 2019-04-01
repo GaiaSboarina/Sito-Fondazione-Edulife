@@ -47,6 +47,7 @@ b {
 nav {
     background: white !important;
     border-bottom:1px solid #dbdbdb;
+    white-space: nowrap !important;
 }
  
 nav .navbar-nav  li {

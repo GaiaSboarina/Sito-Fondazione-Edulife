@@ -75,7 +75,7 @@ svg {
 
 .parallax { 
     /* The image used */
-    background-image: url(../media/img/immagineIndex.jpg);
+    background-image: url(../media/img/temp_mid3.jpg);
   
     /* Set a specific height */
 
@@ -136,6 +136,7 @@ h3 {
 
 nav {
    background: linear-gradient(rgb(136, 136, 136), transparent) !important;
+   white-space: nowrap;
 }
 
 nav .transparentoff{
@@ -178,17 +179,13 @@ nav .navbar-nav li a{
 
 }
 
-.ml-auto {
-    padding: 10px;
-}
-
 .nav-item {
     color: white;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .nav-link {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 nav.scrolled {
