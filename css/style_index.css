@@ -10,6 +10,20 @@ html, body{
   padding-left: 20%;
 }
 
+#titoloGlider {
+  color: #e21212;
+  text-align: center;
+}
+
+#titoloGxg {
+  color: #e21212;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
 /* Main styles */
 
 .text {
@@ -128,6 +142,7 @@ h3 {
 
 .glider-prev,.glider-next { 
   top: 39% !important; 
+  padding-top: 7% !important;
 }
 
 /* fine style per glider */

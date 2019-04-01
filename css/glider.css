@@ -1,10 +1,10 @@
 .glider-contain {
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
 }
 .glider {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -50,7 +50,7 @@
   position: absolute;
   outline: none;
   background: none;
-  padding: 0;
+  padding-top: 7%;
   z-index: 2;
   font-size: 40px;
   text-decoration: none;

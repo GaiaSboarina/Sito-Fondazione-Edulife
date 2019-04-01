@@ -58,16 +58,16 @@
             <div class="container">
                 <br>
                 <br>
-            <div class="glider-contain">
-            <div class="glider">
-            <?=getAllImgGlider()?>
-            
-            </div>
-                    
-            <button class="glider-prev">&laquo;</button>
-            <button class="glider-next">&raquo;</button>
-                    
-            <div id="dots"></div>
+                <div class="glider-contain">
+                    <h2 id="titoloGlider"> Ultimi video GxG </h2>
+                    <hr>
+                    <div class="glider">
+                        <?=getAllImgGlider()?>
+                    </div>     
+                    <button class="glider-prev">&laquo;</button>
+                    <button class="glider-next">&raquo;</button>
+                </div>        
+                <div id="dots"></div>
                 <br>
                 <br>
                 <hr>
@@ -90,7 +90,7 @@
                     <img src="media/img/gxg.png">
                 </div>
                 <div class="col-md-6 col-xs-6">
-                    <h2>Giovani x Giovani</h2>
+                    <h2 id="titoloGxg">Giovani x Giovani</h2>
                     <p>                    
                         GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
                         Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
