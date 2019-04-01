@@ -19,6 +19,7 @@ h1, h2, h3, h4, blockquote, q, .maia-nav ul {
 nav {
     background: white !important;
     border-bottom:1px solid #dbdbdb;
+    white-space: nowrap !important;
 }
  
 nav .navbar-nav  li {
@@ -112,8 +113,8 @@ nav .navbar-nav li a {
 #containerNostriValori  {
     position: relative;
     width: 1000px;
-    margin-left: 25%;
-    padding-top: 5%;    
+    padding-top: 7%;
+    padding-bottom: 1%;    
 }
 
 #containerNostriValori .box {
@@ -354,8 +355,6 @@ h6{
     color: #000000;
     font-size: 14px;
     width: 100%;
-    position: fixed;
-    bottom: 0px;
 }
 
 #footer .footer-top {

@@ -53,10 +53,6 @@
             </div>
         </nav>
 
-        <div class="container" id="LogoEdulife">
-            <img src="media/img/logo-h100.png" alt="">
-        </div>
-
         </header>
 
             <div class="container">
