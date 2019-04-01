@@ -119,21 +119,3 @@ INSERT INTO `user` (`username`, `password`) VALUES
 
 -- --------------------------------------------------------
 
---
--- Struttura della tabella `video`
---
-
-CREATE TABLE IF NOT EXISTS `video` (
-  `id` int(11) NOT NULL,
-  `link` varchar(250) NOT NULL,
-  `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
-  `data` date NOT NULL,
-  `id_img` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_img` (`id_img`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
