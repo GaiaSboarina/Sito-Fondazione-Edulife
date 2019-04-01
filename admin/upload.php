@@ -42,7 +42,7 @@
         <div class="container">
 
             <div class="form-group">
-                <label for="tipo">Progetto - Evento - News</label>
+                <label for="tipo">Progetto - Evento - News - Video</label>
                 <select class="form-control" id="tipo" name="tipo">
                     <option></option>
                     <option value="Progetto">Progetto</option>
@@ -53,7 +53,7 @@
             </div>
 
             <div id="showLink" class="form-group myDiv">
-                <label for="link">Titolo</label>
+                <label for="link">Link</label>
                 <input type="text" class="form-control" id="link" placeholder="Link" name="link">
             </div>
 
