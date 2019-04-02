@@ -85,45 +85,6 @@ svg {
   height: 100%;
 }
 
-/* inizio style per parallax */
-
-.parallax { 
-    /* The image used */
-    background-image: url(../media/img/temp_mid3.jpg);
-  
-    /* Set a specific height */
-
-    height: 1200px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.content{
-    position: fixed;
-    display: block;
-    color: #FFFFFF;
-    top: 65%;
-    left: 50%;
-    text-align:center;
-    transform: translate(-50%, -50%);
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: normal;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: lighter;
-}
-
-/* fine style per parallax */
-
 /* inizio style per glider */
 
 .glider-contain {
@@ -150,104 +111,88 @@ h3 {
 /* inizio style per navbar */
 
 nav {
-   background: linear-gradient(rgb(136, 136, 136), transparent) !important;
-   white-space: nowrap;
-}
-
-nav .transparentoff{
   background: white !important;
+  border-bottom:1px solid #dbdbdb;
+  white-space: nowrap !important;
 }
 
 nav .navbar-nav  li {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 3px;
-    margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  margin-right: 10px;
 }
 
 nav .navbar-nav li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 nav .navbar-nav li:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .3s ease;  
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .3s ease;  
 }
 
-nav .navbar-nav li:hover:after{
-    width: 100%;
-    background: white;
+nav .navbar-nav li:hover:after {
+  width: 100%;
+  background: white;
 }
 
-nav .navbar-nav li a{
-    color: rgba(255, 255, 255, 0.8) !important;
+nav .navbar-nav li a {
+  color: #e21212 !important;
 }
 
-.nav-item .dropdown-menu a {
-  color: black !important;
-  font-family: 'open sans',arial,sans-serif !important;
-
+.ml-auto {
+  padding: 10px;
 }
 
 .nav-item {
-    color: white;
-    padding-left: 20px;
+  color: #e21212;
+  padding-left: 25px;
 }
 
 .nav-link {
+  font-size: 19px;
+}
+
+.ncol {
+  color: #a30b0b !important;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  margin-right: 10px;
   font-size: 15px;
 }
 
-nav.scrolled {
-    height: auto;
-    transition: all ease .5s;
-    background: white !important;  
-
-    -webkit-box-shadow: 0 1px 8px -6px black;
-    -moz-box-shadow: 0 1px 8px -6px black;
-    box-shadow: 0 1px 8px -6px black;
+.ncol:last-child {
+  margin-right: 0px;
 }
 
-.abc.ncol {
-    color: rgba(121, 49, 49, 0.514) !important;
-    display: inline-block;
-    position: relative;
-    padding-bottom: 5px;
-    margin-right: 10px;
-    font-size: 15px;
-    transition: all ease .5s;
+.ncol:hover {
+  color: #e21212;
 }
 
-.abc.ncol:last-child {
-    margin-right: 0px;
+.ncol:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .3s ease;  
 }
 
-.abc.ncol:hover {
-    color: #e21212 !important;
+.ncol:hover:after {
+  width: 100%;
+  background: #e21212 !important;
 }
 
-.abc.ncol::after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0px;
-        background: transparent;
-        transition: width .7s ease;  
-}
-
-.abc.ncol:hover::after{
-    width: 100%;
-    background: #e21212 !important;
-}
-
-#text {
-    font-size: 25px;
+.dropdown-menu {
+  min-width: 8rem !important;
 }
 
 .logo {
