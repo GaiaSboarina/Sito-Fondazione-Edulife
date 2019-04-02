@@ -85,45 +85,6 @@ svg {
   height: 100%;
 }
 
-/* inizio style per parallax */
-
-.parallax { 
-    /* The image used */
-    background-image: url(../media/img/temp_mid3.jpg);
-  
-    /* Set a specific height */
-
-    height: 1200px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.content{
-    position: fixed;
-    display: block;
-    color: #FFFFFF;
-    top: 65%;
-    left: 50%;
-    text-align:center;
-    transform: translate(-50%, -50%);
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: normal;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: lighter;
-}
-
-/* fine style per parallax */
-
 /* inizio style per glider */
 
 .glider-contain {
@@ -150,8 +111,9 @@ h3 {
 /* inizio style per navbar */
 
 nav {
-   background: linear-gradient(rgb(136, 136, 136), transparent) !important;
-   white-space: nowrap;
+  background: white !important;
+  border-bottom:1px solid #dbdbdb;
+  white-space: nowrap !important;
 }
 
 nav .transparentoff{
@@ -184,8 +146,8 @@ nav .navbar-nav li:hover:after{
     background: white;
 }
 
-nav .navbar-nav li a{
-    color: rgba(255, 255, 255, 0.8) !important;
+nav .navbar-nav li a {
+  color: #e21212 !important;
 }
 
 .nav-item .dropdown-menu a {

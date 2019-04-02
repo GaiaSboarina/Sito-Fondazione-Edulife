@@ -15,8 +15,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
     </head>
-    <body style="background-color: rgb(236, 236, 236)">
-    <header class="parallax">
+    <body>
+    <header>
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
@@ -29,30 +29,31 @@
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link abc" href="index.php">Home <span class="sr-only">Home</span></a>
+                        <a class="nav-link ncol" href="index.php">Home <span class="sr-only">Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/news.php">News</a>
+                        <a class="nav-link ncol" href="pages/news.php">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/progetti.php">Progetti</a>
+                        <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/gxg.php">GXG</a>
+                        <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/inostrivalori.html">I nostri valori</a>
+                        <a class="nav-link ncol" href="pages/inostrivalori.html">I nostri valori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/donazione.html">Donazioni</a>
+                        <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link abc" href="pages/chisiamo.html">Chi siamo</a>
+                        <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
+        <br>
+        <br>
         </header>
 
             <div class="container">
