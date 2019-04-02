@@ -14,6 +14,17 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
+        <style type="text/css">
+	.panel {
+		height: 100%;
+        width: 100%;
+        background-color: white;
+	}
+	.panel.green {
+		margin-bottom: 400px
+	}
+</style>
+
     </head>
     <body>
     <header>
@@ -56,7 +67,8 @@
         <br>
         </header>
 
-            <div class="container">
+        
+        <div class="container">
                 <br>
                 <br>
                 <div class="glider-contain">
@@ -75,17 +87,12 @@
                 <br>
                 <br>
             </div>
-            <div class="container">
+        <div class="container">
                 <div class="row">
                     <?= getAllNewsHome() ?> 
                 </div>
             </div>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-            <div class="container">
+        <div class="container">
             <div class="row">  
                 <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                     <img src="media/img/gxg.png">
@@ -102,12 +109,8 @@
             </div>         
             
             </div>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-            <footer id = "footer">  
+
+        <footer id = "footer">  
                 <div class = "footer-top">
                 <div class = "container">
                 <div class="row">
@@ -149,6 +152,11 @@
                 </div>
                 </div>
             </footer>
+     
+            
+           
+               
+            
         
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
@@ -156,6 +164,6 @@
         <script src="js/script.js"></script>
         <script src="js/glider_index.js"></script>
         <script src="js/glider.js"></script>
-        
+    
     </body>
 </html>
