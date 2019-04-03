@@ -14,17 +14,25 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
-        <style type="text/css">
-	.panel {
-		height: 100%;
-        width: 100%;
-        background-color: white;
-	}
-	.panel.green {
-		margin-bottom: 400px
-	}
-</style>
 
+
+        <script type="text/javascript" src="scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
+        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+
+        <style type="text/css">
+            #pinContainer {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .panel {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        </style>
     </head>
     <body>
     <header>
@@ -67,48 +75,66 @@
         <br>
         </header>
 
-        
-        <div class="container">
-                <br>
-                <br>
-                <div class="glider-contain">
-                    <h2 id="titoloGlider"> Ultimi video GxG </h2>
+        <div id="pinContainer">
+            <section class="panel home">
+                <img src="media/img/temp_mid3.jpg" alt="">
+            </section>
+
+            <section class="panel slider">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="glider-contain">
+                        <h2 id="titoloGlider"> Ultimi video GxG </h2>
+                        <hr>
+                        <div class="glider">
+                            <?=getAllImgGlider()?>
+                        </div>     
+                        <button class="glider-prev">&laquo;</button>
+                        <button class="glider-next">&raquo;</button>
+                    </div>        
+                    <div id="dots"></div>
+                    <br>
+                    <br>
                     <hr>
-                    <div class="glider">
-                        <?=getAllImgGlider()?>
-                    </div>     
-                    <button class="glider-prev">&laquo;</button>
-                    <button class="glider-next">&raquo;</button>
-                </div>        
-                <div id="dots"></div>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-            </div>
-        <div class="container">
-                <div class="row">
-                    <?= getAllNewsHome() ?> 
+                    <br>
+                    <br>
                 </div>
-            </div>
-        <div class="container">
-            <div class="row">  
-                <div class="col-md-6 col-xs-6 text-right" style="border: none;">
-                    <img src="media/img/gxg.png">
-                </div>
-                <div class="col-md-6 col-xs-6">
-                    <h2 id="titoloGxg">Giovani x Giovani</h2>
-                    <p>                    
-                        GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
-                        Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
-                        Tutti noi abbiamo una storia da raccontare.
-                    </p>
-                </div>
-            </div>
-            </div>         
+            </section>
             
-            </div>
+            <section class="panel news">
+                <div class="container">
+                    <div class="row">
+                        <?= getAllNewsHome() ?> 
+                    </div>
+                </div>
+            </section>
+            
+            <section class="panel gxg">
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-md-6 col-xs-6 text-right" style="border: none;">
+                            <img src="media/img/gxg.png">
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h2 id="titoloGxg">Giovani x Giovani</h2>
+                            <p>                    
+                                GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
+                                Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
+                                Tutti noi abbiamo una storia da raccontare.
+                            </p>
+                        </div>
+                    </div>
+                    </div>         
+                
+                </div>
+            </section>
+        
+        </div>
+        
+        
+        
+        
 
         <footer id = "footer">  
                 <div class = "footer-top">
@@ -164,6 +190,29 @@
         <script src="js/script.js"></script>
         <script src="js/glider_index.js"></script>
         <script src="js/glider.js"></script>
-    
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/assets/js/tracking.js"></script>
+                                
+        <script>
+            $(function () { // wait for document ready
+                // init
+                var controller = new ScrollMagic.Controller();
+
+                // define movement of panels
+                var wipeAnimation = new TimelineMax()
+                    .fromTo("section.panel.slider", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+                    .fromTo("section.panel.news",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                    .fromTo("section.panel.gxg",    1, {y:  "-100%"}, {y: "0%", ease: Linear.easeNone})  // in from top
+                // create scene to pin and link animation
+                new ScrollMagic.Scene({
+                        triggerElement: "#pinContainer",
+                        triggerHook: "onLeave",
+                        duration: "300%"
+                    })
+                    .setPin("#pinContainer")
+                    .setTween(wipeAnimation)
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+            });
+        </script>
     </body>
 </html>
