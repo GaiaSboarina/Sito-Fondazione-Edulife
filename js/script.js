@@ -37,3 +37,49 @@ function validate(e) {
     }
     
 }
+
+// js per centrare i div in home
+
+var clientHeight = document.getElementById('center').clientHeight;
+var clientWidth = document.getElementById('center').clientWidth;
+var h = $(window).height();
+var w = $(window).width();
+h = (h / 2) - (clientHeight / 2);
+h = h.toString() + "px";
+w = (w / 2) - (clientWidth / 2);
+w = w.toString() + "px";
+document.getElementById('center').style.top = h;
+document.getElementById('center').style.left = w;
+
+var clientHeight = document.getElementById('center-slider').clientHeight;
+var clientWidth = document.getElementById('center-slider').clientWidth;
+var h = $(window).height();
+var w = $(window).width();
+h = (h / 2) - (clientHeight / 2);
+h = h.toString() + "px";
+w = (w / 2) - (clientWidth / 2);
+w = w.toString() + "px";
+document.getElementById('center-slider').style.top = h;
+document.getElementById('center-slider').style.left = w;
+
+var clientHeight = document.getElementById('center-news').clientHeight;
+var clientWidth = document.getElementById('center-news').clientWidth;
+var h = $(window).height();
+var w = $(window).width();
+h = (h / 2) - (clientHeight / 2);
+h = h.toString() + "px";
+w = (w / 2) - (clientWidth / 2);
+w = w.toString() + "px";
+document.getElementById('center-news').style.top = h;
+document.getElementById('center-news').style.left = w;
+
+var clientHeight = document.getElementById('center-gxg').clientHeight;
+var clientWidth = document.getElementById('center-gxg').clientWidth;
+var h = $(window).height();
+var w = $(window).width();
+h = (h / 2) - (clientHeight / 2);
+h = h.toString() + "px";
+w = (w / 2) - (clientWidth / 2);
+w = w.toString() + "px";
+document.getElementById('center-gxg').style.top = h;
+document.getElementById('center-gxg').style.left = w;

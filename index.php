@@ -35,53 +35,53 @@
         </style>
     </head>
     <body>
-    <header>
-        <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
-            <div class="container">
-                <a class="navbar-brand" href="index.php">
-                    <img src="media/img/effe.png" alt="" class="logo">
-                </a>
-            </div>
-            <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link ncol" href="index.php">Home <span class="sr-only">Home</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/news.php">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/inostrivalori.html">I nostri valori</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <br>
-        <br>
+        <header>
+            <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
+                <div class="container">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="media/img/effe.png" alt="" class="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link ncol" href="index.php">Home <span class="sr-only">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/news.php">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/inostrivalori.html">I nostri valori</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <br>
+            <br>
         </header>
 
         <div id="pinContainer">
-            <section class="panel home">
+            <section class="panel home" id="center">
                 <img src="media/img/temp_mid3.jpg" alt="">
             </section>
 
             <section class="panel slider">
-                <div class="container">
+                <div class="container" id="center-slider">
                     <br>
                     <br>
                     <div class="glider-contain">
@@ -93,7 +93,6 @@
                         <button class="glider-prev">&laquo;</button>
                         <button class="glider-next">&raquo;</button>
                     </div>        
-                    <div id="dots"></div>
                     <br>
                     <br>
                     <hr>
@@ -103,7 +102,7 @@
             </section>
             
             <section class="panel news">
-                <div class="container">
+                <div class="container" id="center-news">
                     <div class="row">
                         <?= getAllNewsHome() ?> 
                     </div>
@@ -111,7 +110,7 @@
             </section>
             
             <section class="panel gxg">
-                <div class="container">
+                <div class="container" id="center-gxg">
                     <div class="row">  
                         <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                             <img src="media/img/gxg.png">
@@ -194,6 +193,7 @@
                                 
         <script>
             $(function () { // wait for document ready
+                
                 // init
                 var controller = new ScrollMagic.Controller();
 

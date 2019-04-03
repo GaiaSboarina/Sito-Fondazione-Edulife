@@ -90,6 +90,14 @@ svg {
 
 .glider-contain {
   width: 90%;
+  height: 500px;
+}
+
+@media ( max-height: 812px ) {
+  .glider-contain {
+    width: 90%;
+    height: 300px;
+  }
 }
 
 .glider-slide {
@@ -101,11 +109,11 @@ svg {
 .glider-slide img {
   width: 80%;
 }
-
+/*
 .glider-prev,.glider-next { 
   top: 39% !important; 
   padding-top: 7% !important;
-}
+}*/
 
 /* fine style per glider */
 
@@ -441,7 +449,29 @@ nav .navbar-nav li a {
 }
 
 .gxg {
-	background-color: #ffffff;
+  background-color: #ffffff;
+  
+}
+#center{
+  position: absolute;
+  
+}
+#center-slider{
+  position: absolute;
+  
+}
+#center-news{
+  position: absolute;
+  
+}
+#center-gxg{
+  position: absolute;
+  
+}
+
+header{
+  position: absolute;
+  z-index: 5;
 }
 
 /* Fine style parallax*/
