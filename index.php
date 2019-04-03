@@ -14,17 +14,29 @@
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
-        <style type="text/css">
-	.panel {
-		height: 100%;
-        width: 100%;
-        background-color: white;
-	}
-	.panel.green {
-		margin-bottom: 400px
-	}
-</style>
 
+        <link rel="stylesheet" href="janpaepke-ScrollMagic-3b8397d/assets/css/style.css" type="text/css">
+        <link rel="stylesheet" href="janpaepke-ScrollMagic-3b8397d/assets/css/examples.css" type="text/css">
+
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/assets/js/examples.js"></script>
+
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/assets/js/lib/greensock/TweenMax.min.js"></script>
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+
+        <style type="text/css">
+            #pinContainer {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .panel {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        </style>
     </head>
     <body>
     <header>
@@ -67,48 +79,62 @@
         <br>
         </header>
 
+        <div id="pinContainer">
+						<section class="panel blue">
+                            <div class="container">
+                                <br>
+                                <br>
+                                <div class="glider-contain">
+                                    <h2 id="titoloGlider"> Ultimi video GxG </h2>
+                                    <hr>
+                                    <div class="glider">
+                                        <?=getAllImgGlider()?>
+                                    </div>     
+                                    <button class="glider-prev">&laquo;</button>
+                                    <button class="glider-next">&raquo;</button>
+                                </div>        
+                                <div id="dots"></div>
+                                <br>
+                                <br>
+                                <hr>
+                                <br>
+                                <br>
+                            </div>
+                        </section>
+                        
+						<section class="panel turqoise">
+                            <div class="container">
+                                <div class="row">
+                                    <?= getAllNewsHome() ?> 
+                                </div>
+                            </div>
+                        </section>
+                        
+						<section class="panel green">
+                            <div class="container">
+                                <div class="row">  
+                                    <div class="col-md-6 col-xs-6 text-right" style="border: none;">
+                                        <img src="media/img/gxg.png">
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <h2 id="titoloGxg">Giovani x Giovani</h2>
+                                        <p>                    
+                                            GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
+                                            Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
+                                            Tutti noi abbiamo una storia da raccontare.
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>         
+                            
+                            </div>
+						</section>
+					
+					</div>
         
-        <div class="container">
-                <br>
-                <br>
-                <div class="glider-contain">
-                    <h2 id="titoloGlider"> Ultimi video GxG </h2>
-                    <hr>
-                    <div class="glider">
-                        <?=getAllImgGlider()?>
-                    </div>     
-                    <button class="glider-prev">&laquo;</button>
-                    <button class="glider-next">&raquo;</button>
-                </div>        
-                <div id="dots"></div>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-            </div>
-        <div class="container">
-                <div class="row">
-                    <?= getAllNewsHome() ?> 
-                </div>
-            </div>
-        <div class="container">
-            <div class="row">  
-                <div class="col-md-6 col-xs-6 text-right" style="border: none;">
-                    <img src="media/img/gxg.png">
-                </div>
-                <div class="col-md-6 col-xs-6">
-                    <h2 id="titoloGxg">Giovani x Giovani</h2>
-                    <p>                    
-                        GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
-                        Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
-                        Tutti noi abbiamo una storia da raccontare.
-                    </p>
-                </div>
-            </div>
-            </div>         
-            
-            </div>
+        
+        
+        
 
         <footer id = "footer">  
                 <div class = "footer-top">
@@ -164,6 +190,29 @@
         <script src="js/script.js"></script>
         <script src="js/glider_index.js"></script>
         <script src="js/glider.js"></script>
-    
+        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/assets/js/tracking.js"></script>
+                                
+        <script>
+            $(function () { // wait for document ready
+                // init
+                var controller = new ScrollMagic.Controller();
+
+                // define movement of panels
+                var wipeAnimation = new TimelineMax()
+                    .fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+                    .fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+
+                // create scene to pin and link animation
+                new ScrollMagic.Scene({
+                        triggerElement: "#pinContainer",
+                        triggerHook: "onLeave",
+                        duration: "300%"
+                    })
+                    .setPin("#pinContainer")
+                    .setTween(wipeAnimation)
+                    .addIndicators() // add indicators (requires plugin)
+                    .addTo(controller);
+            });
+        </script>
     </body>
 </html>
