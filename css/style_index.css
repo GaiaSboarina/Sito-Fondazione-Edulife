@@ -3,6 +3,7 @@ html, body{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    height: 100%
 }
 
 #LogoEdulife {
@@ -425,3 +426,22 @@ nav .navbar-nav li a {
 
 
 /* fine media query per footer da ipad pro */
+
+/* Inizio style parallax*/
+
+.home {
+	
+}
+.slider {
+	background-color: #ffffff;
+}
+
+.news {
+	background-color: #e21212;
+}
+
+.gxg {
+	background-color: #ffffff;
+}
+
+/* Fine style parallax*/
