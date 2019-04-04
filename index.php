@@ -82,8 +82,6 @@
 
             <section class="panel slider">
                 <div class="container" id="center-slider">
-                    <br>
-                    <br>
                     <div class="glider-contain">
                         <h2 id="titoloGlider"> Ultimi video GxG </h2>
                         <hr>
@@ -199,14 +197,14 @@
 
                 // define movement of panels
                 var wipeAnimation = new TimelineMax()
-                    .fromTo("section.panel.slider", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-                    .fromTo("section.panel.news",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-                    .fromTo("section.panel.gxg",    1, {y:  "-100%"}, {y: "0%", ease: Linear.easeNone})  // in from top
+                    .fromTo("section.panel.slider", 1, {x: "-300%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+                    .fromTo("section.panel.news",    1, {x:  "300%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                    .fromTo("section.panel.gxg",    1, {y:  "-300%"}, {y: "0%", ease: Linear.easeNone})  // in from top
                 // create scene to pin and link animation
                 new ScrollMagic.Scene({
                         triggerElement: "#pinContainer",
                         triggerHook: "onLeave",
-                        duration: "300%"
+                        duration: "750%"
                     })
                     .setPin("#pinContainer")
                     .setTween(wipeAnimation)

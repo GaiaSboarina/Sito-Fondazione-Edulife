@@ -387,6 +387,11 @@ nav .navbar-nav li a {
       width: 80%;
   }
 
+  header{
+    position: absolute;
+    z-index: 5;
+  }
+
 }
 
 /* fine media query per statubar da smartphone */
@@ -432,14 +437,10 @@ nav .navbar-nav li a {
       }
 }
 
-
 /* fine media query per footer da ipad pro */
 
 /* Inizio style parallax*/
 
-.home {
-	
-}
 .slider {
 	background-color: #ffffff;
 }
