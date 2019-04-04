@@ -74,19 +74,18 @@
                         </div>     
                         <button class="glider-prev">&laquo;</button>
                         <button class="glider-next">&raquo;</button>
-                    </div>        
-               
+                    </div>
+                    <hr>
                 </div>
    
-            
-            
                 <div data-aos="fade-left" data-aos-duration="2000" class="container" id="center-news">
                     <div class="row">
                         <?= getAllNewsHome() ?> 
                     </div>
+                    <hr>
                 </div>
       
-                   <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
+                <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
                     <div class="row">  
                         <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                             <img src="media/img/gxg.png">
@@ -100,16 +99,8 @@
                             </p>
                         </div>
                     </div>
-                    </div>         
-                
                 </div>
-   
-        
-    
-        
-        
-        
-        
+                <br>
 
         <footer id = "footer">  
                 <div class = "footer-top">

@@ -1,4 +1,16 @@
 <?php
+
+function shorter($testo, $limiteCaratteri) {
+    if (strlen($testo) > $limiteCaratteri) {
+        $nuovo_testo = substr($testo, 0, $limiteCaratteri);
+        $nuovo_testo = trim($nuovo_testo);
+        return $nuovo_testo . "...";
+    } else {
+    return $testo;
+    }
+}
+
+/*
     function shorter($testo, $limiteCaratteri) {
         $parole = explode(" ", $testo);
 
@@ -14,12 +26,13 @@
 
         return $testoFinale;
     }
+*/
 
     function getAllNewsHome(){
         $connection = mysqli_connect("localhost", "root", "", "edulife");
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $connection->query("SET NAMES 'utf8'");
-        $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 2");
+        $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 4");
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
         mysqli_close($connection);
 
