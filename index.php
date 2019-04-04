@@ -100,7 +100,123 @@
                         </div>
                     </div>
                 </div>
-                <br>
+
+                <div data-aos="fade-left" data-aos-duration="2000" class="container" id="containerNostriValori">
+                    <div class="row">
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="far fa-hand-spock" aria-hidden="true"></i>
+                            </div>
+                            <div class="content" >
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Libertà di scelta, nella ricerca della propria vocazione e del proprio progetto di vita. La persona opera affinchè la libertà rappresenti il principio su cui si fonda la propria azione.">
+                                <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLIBERTÁ</h3>
+                            </span>
+                        </div>
+
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Esercizio della sincerità. La persona si rapporta con questo, rifiutando qualsiasi tipo di falsità o interpretazione interessata.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbspSINCERITÁ</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-anchor" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Fiducia reciproca. La persona coglie ogni sfida come opportunità per creare un ambiente di collaborazione e crescita professionale.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIDUCIA</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="far fa-handshake" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Rispetto della collettività. La persona ha cura dell'esperienza e del know-how che viene a lei offerta.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRISPETTO</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-fire" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Valore del coraggio. La persona unisce al senso di responsabilità, il gusto di affrontare situazioni difficili, a volte temerarie, nell'interesse della collettività.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbspCORAGGIO</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-tint" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Onestà. La persona la promuove, ricercando in ogni occasione il rispetto dei doveri e dei diritti verso i propri colleghi, partner e clienti." id="prova">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspONESTÀ</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-gavel" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Giustizia. La persona la opera rifiutando lo spreco di risorse, egoismi personali e prevaricazioni di ogni genere.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbspGIUSTIZIA</h3>
+                                </span>
+                            </div>
+                        
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Umiltà. La persona promuove l'ascolto, il confronto e la capacità di porsi come presenza significativa.">
+                                    <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUMILTÀ</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="far fa-hand-peace" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Generosità. La persona la riconosce come primo passo per la costruzione di valore.">
+                                    <h3>&nbsp&nbsp&nbspGENEROSITÀ</h3>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class = "icon">
+                                <i class="far fa-gem" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Bellezza. La persona la ricerca, la sviluppa e la promuove nei rapporti umani e nella creazione di nuove soluzioni.">
+                                    <h6>RICERCA DELLA BELLEZZA</h6>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
 
         <footer id = "footer">  
                 <div class = "footer-top">
