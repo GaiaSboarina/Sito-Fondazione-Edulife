@@ -20,6 +20,8 @@
         
     </head>
     <body>
+
+
         <!-- inizio nav bar !-->
         <header>
             <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
@@ -57,8 +59,8 @@
             <br>
             <br>
         </header>
-
        <!-- fine nav bar -->
+
 
        <!-- inizio libreria -->
             <div id="center-home">
@@ -86,6 +88,7 @@
                 </div>
         <!-- fine libreria -->
 
+
         <!-- inizio gxg in home -->
                 <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
                     <div class="row">  
@@ -104,8 +107,8 @@
                 </div>
         <!-- fine gxg in home -->
 
-        <!-- inizio i nostri valori -->
 
+        <!-- inizio i nostri valori -->
                 <div data-aos="fade-left" data-aos-duration="2000" class="container" id="containerNostriValori">
                     <div class="row">
                         <div class="box">
@@ -224,6 +227,7 @@
                 </div>
         <!-- fine i nostri valori -->
 
+
         <!-- inizio footer -->
         <footer id = "footer">  
                 <div class = "footer-top">
@@ -267,7 +271,6 @@
                 </div>
                 </div>
             </footer>
-
             <!-- fine footer -->
      
         <script src="js/jquery-3.3.1.slim.min.js"></script>
