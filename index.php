@@ -20,6 +20,7 @@
         
     </head>
     <body>
+        <!-- inizio nav bar !-->
         <header>
             <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
                 <div class="container">
@@ -57,7 +58,9 @@
             <br>
         </header>
 
-       
+       <!-- fine nav bar -->
+
+       <!-- inizio libreria -->
             <div id="center-home">
                 <img src="media/img/temp_mid3.jpg" alt="">
             </div>
@@ -81,7 +84,9 @@
                     </div>
                     <hr>
                 </div>
-      
+        <!-- fine libreria -->
+
+        <!-- inizio gxg in home -->
                 <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
                     <div class="row">  
                         <div class="col-md-6 col-xs-6 text-right" style="border: none;">
@@ -97,6 +102,9 @@
                         </div>
                     </div>
                 </div>
+        <!-- fine gxg in home -->
+
+        <!-- inizio i nostri valori -->
 
                 <div data-aos="fade-left" data-aos-duration="2000" class="container" id="containerNostriValori">
                     <div class="row">
@@ -214,7 +222,9 @@
                     </div>
                     <hr>
                 </div>
+        <!-- fine i nostri valori -->
 
+        <!-- inizio footer -->
         <footer id = "footer">  
                 <div class = "footer-top">
                 <div class = "container">
@@ -257,12 +267,9 @@
                 </div>
                 </div>
             </footer>
+
+            <!-- fine footer -->
      
-            
-           
-               
-            
-        
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
