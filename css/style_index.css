@@ -25,6 +25,10 @@ html, body{
   text-align: center;
 }
 
+h4 {
+  padding-top: 5%;
+}
+
 /* Main styles */
 
 .text {
@@ -240,7 +244,7 @@ nav .navbar-nav li a {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 15px;
-  margin-top: -90px;
+  margin-top: -115px;
 }
 
 #footer .footer-top .footer-contact {
@@ -442,12 +446,7 @@ nav .navbar-nav li a {
 #center-slider{
   min-height: 700px;
 }
-#center-news{
-  
-}
-#center-gxg{
-  
-}
+
 #center-home img{
   height: 100%;
   width: 100%;

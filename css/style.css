@@ -7,6 +7,11 @@ h3 {
     color: #a30b0b;
 }
 
+h4 {
+    padding-top: 5%;
+}
+  
+
 .container {
     text-align: center;
 }
@@ -15,7 +20,7 @@ header {
     height: 90px;
 }
 
-h1, h2, h3, h4, blockquote, q, .maia-nav ul {
+h1, h2, h3, blockquote, q, .maia-nav ul {
     font-family: 'open sans',arial,sans-serif;
 }
 
@@ -165,7 +170,7 @@ nav .navbar-nav li a {
 
 #footer .footer-top .footer-contact {
     margin-bottom: 15px;
-    margin-top: -90px;
+    margin-top: -115px;
 }
 
 #footer .footer-top .footer-contact {

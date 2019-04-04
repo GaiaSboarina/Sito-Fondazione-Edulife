@@ -77,9 +77,8 @@
                         <button class="glider-prev">&laquo;</button>
                         <button class="glider-next">&raquo;</button>
                     </div>
-                    <hr>
                 </div>
-   
+                <hr>
                 <div data-aos="fade-left" data-aos-duration="2000" class="container" id="center-news">
                     <div class="row">
                         <?= getAllNewsHome() ?> 
@@ -109,6 +108,7 @@
 
 
         <!-- inizio i nostri valori -->
+            <hr>
                 <div data-aos="fade-left" data-aos-duration="2000" class="container" id="containerNostriValori">
                     <div class="row">
                         <div class="box">
@@ -223,7 +223,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                 </div>
         <!-- fine i nostri valori -->
 

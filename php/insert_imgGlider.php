@@ -20,7 +20,7 @@ function getAllImgGlider(){
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo "
-            <div><a href='../pages/gxg.php?link=".$row['link']."'><img border='0' src='media/img/".$row['nome']."'></a></div>
+            <a href='../pages/gxg.php?link=".$row['link']."'><div><img border='0' src='media/img/".$row['nome']."'></div></a>
         ";
         }
     
