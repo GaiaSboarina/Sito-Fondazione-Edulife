@@ -439,40 +439,16 @@ nav .navbar-nav li a {
 
 /* fine media query per footer da ipad pro */
 
-/* Inizio style parallax*/
-
-.slider {
-	background-color: #ffffff;
-}
-
-.news {
-	background-color: #e21212;
-}
-
-.gxg {
-  background-color: #ffffff;
-  
-}
-#center{
-  position: absolute;
-  
-}
 #center-slider{
-  position: absolute;
-  
+  min-height: 700px;
 }
 #center-news{
-  position: absolute;
   
 }
 #center-gxg{
-  position: absolute;
   
 }
-
-header{
-  position: absolute;
-  z-index: 5;
+#center-home img{
+  height: 100%;
+  width: 100%;
 }
-
-/* Fine style parallax*/

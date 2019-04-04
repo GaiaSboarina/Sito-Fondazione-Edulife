@@ -83,3 +83,4 @@ w = (w / 2) - (clientWidth / 2);
 w = w.toString() + "px";
 document.getElementById('center-gxg').style.top = h;
 document.getElementById('center-gxg').style.left = w;
+

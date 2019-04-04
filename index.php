@@ -15,24 +15,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
 
-
-        <script type="text/javascript" src="scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
-        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-
-
-        <style type="text/css">
-            #pinContainer {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-            .panel {
-                height: 100%;
-                width: 100%;
-                position: absolute;
-            }
-        </style>
+        <link rel="stylesheet" href="aos-master/dist/aos.css">
+        <script src="aos-master/dist/aos.js"></script>
+        
     </head>
     <body>
         <header>
@@ -75,13 +60,12 @@
             <br>
         </header>
 
-        <div id="pinContainer">
-            <section class="panel home" id="center">
+       
+            <div id="center-home">
                 <img src="media/img/temp_mid3.jpg" alt="">
-            </section>
+            </div>
 
-            <section class="panel slider">
-                <div class="container" id="center-slider">
+                <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-slider">
                     <div class="glider-contain">
                         <h2 id="titoloGlider"> Ultimi video GxG </h2>
                         <hr>
@@ -91,24 +75,18 @@
                         <button class="glider-prev">&laquo;</button>
                         <button class="glider-next">&raquo;</button>
                     </div>        
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                    <br>
+               
                 </div>
-            </section>
+   
             
-            <section class="panel news">
-                <div class="container" id="center-news">
+            
+                <div data-aos="fade-left" data-aos-duration="2000" class="container" id="center-news">
                     <div class="row">
                         <?= getAllNewsHome() ?> 
                     </div>
                 </div>
-            </section>
-            
-            <section class="panel gxg">
-                <div class="container" id="center-gxg">
+      
+                   <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
                     <div class="row">  
                         <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                             <img src="media/img/gxg.png">
@@ -125,9 +103,9 @@
                     </div>         
                 
                 </div>
-            </section>
+   
         
-        </div>
+    
         
         
         
@@ -187,30 +165,9 @@
         <script src="js/script.js"></script>
         <script src="js/glider_index.js"></script>
         <script src="js/glider.js"></script>
-        <script type="text/javascript" src="janpaepke-ScrollMagic-3b8397d/assets/js/tracking.js"></script>
-                                
         <script>
-            $(function () { // wait for document ready
-                
-                // init
-                var controller = new ScrollMagic.Controller();
-
-                // define movement of panels
-                var wipeAnimation = new TimelineMax()
-                    .fromTo("section.panel.slider", 1, {x: "-300%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-                    .fromTo("section.panel.news",    1, {x:  "300%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-                    .fromTo("section.panel.gxg",    1, {y:  "-300%"}, {y: "0%", ease: Linear.easeNone})  // in from top
-                // create scene to pin and link animation
-                new ScrollMagic.Scene({
-                        triggerElement: "#pinContainer",
-                        triggerHook: "onLeave",
-                        duration: "750%"
-                    })
-                    .setPin("#pinContainer")
-                    .setTween(wipeAnimation)
-                    .addIndicators() // add indicators (requires plugin)
-                    .addTo(controller);
-            });
-        </script>
+            AOS.init();
+        </script>           
+        
     </body>
 </html>
