@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Apr 04, 2019 alle 11:20
--- Versione del server: 10.1.37-MariaDB
--- Versione PHP: 7.3.0
+-- Creato il: Apr 04, 2019 alle 23:46
+-- Versione del server: 10.1.38-MariaDB
+-- Versione PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -58,8 +58,7 @@ CREATE TABLE `gxg` (
 
 INSERT INTO `gxg` (`id`, `link`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
 (1, 'IhEP3_mIqV8', 'GxG Mirandola', 'Prova GxG Mirandola', '2019-04-01', 1),
-(2, '5--lgXlHI98', 'Intervista Mirandola', 'Prova intervista mirandola', '2019-04-01', 3),
-(3, '4LVi9ihO43M', 'shh', 'dghogh Ã²h fÃ²ohfÃ²o', '2019-04-01', 4);
+(2, '5--lgXlHI98', 'Intervista Mirandola', 'Prova intervista mirandola', '2019-04-01', 4);
 
 -- --------------------------------------------------------
 
@@ -78,9 +77,12 @@ CREATE TABLE `img` (
 
 INSERT INTO `img` (`id`, `nome`) VALUES
 (1, 'imggxg.jpg'),
-(2, 'ldr.webp'),
-(3, 'ldr.webp'),
-(4, 'imggxg.jpg');
+(2, 'americalatina.jpg'),
+(4, 'ldr.webp'),
+(5, 'architecture-blank-space-blue-sky-921294.jpg'),
+(9, 'planyourfuture.jpg'),
+(13, 'gototalent.jpg'),
+(14, 'yachay.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,8 +103,8 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
-(1, 'Progetto Yachay - La Città della Conoscenza\r\n', 'La Fondazione Edulife collabora con il governo ecuadoriano nella progettazione di Yachay, la Citta della Conoscenza, che sarà una delle Università più moderne dell\'America Latina e del mondo.\r\n\r\nUn ecosistema di innovazione tecnologica; una vera e propria città, che avrà come obiettivo quello di generare felicità e soddisfazione tra tutti gli abitanti, e di costruire un collegamento tra le tradizioni del paese, le nuove metodologie didattiche e le tecnologie più avanzate.\r\n\r\nUn progetto molto ambizioso e strettamente legato al territorio, che funzionerà da ponte tra Università e mondo del lavoro.', '2019-03-30', 0),
-(2, 'Presentazione della ricerca sul progetto IUS: \"Un processo di costruzione partecipata del profilo docente in una rete di Istituzioni di Educazione Superiore in America Latina\"\r\n', 'A Roma dal 10 al 14 luglio p.v. Si terrà l\'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa.\r\n\r\nDurante l\'incontro porterà un suo contributo istituzionale anche il Rettor Maggiore p. Pasqual Chavez, la massima autorità della Congregazione Salesiana.\r\n\r\nDurante l’Assemblea sarà presentata dal Comitato Scientifico della Fondazione Edulife la ricerca sul progetto IUS, “Gestione Integrata delle Risorse Umane”, che ha visto coinvolta una rete di 17 università (sudamericane ed europee), che hanno lavorato assieme attraverso una comunità di pratica, sviluppando i profili del docente universitario, del direttivo e dell\'amministrativo.\r\n\r\nAlla conferenza sarà presente anche il prof. Ernesto González, Consigliere Accademico dell\'Istituto Internazionale della UNESCO per l\'Educazione Superiore in America Latina e nei Caraibi (IESALC).', '2019-03-30', 0);
+(5, 'Presentazione della ricerca sul progetto IUS: \"Un processo di costruzione partecipata del profilo docente in una rete di Istituzioni di Educazione Superiore in America Latina\"\r\n', 'A Roma dal 10 al 14 luglio p.v. Si terrà l\'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa.\r\n\r\nDurante l\'incontro porterà un suo contributo istituzionale anche il Rettor Maggiore p. Pasqual Chavez, la massima autorità della Congregazione Salesiana.\r\n\r\nDurante l’Assemblea sarà presentata dal Comitato Scientifico della Fondazione Edulife la ricerca sul progetto IUS, “Gestione Integrata delle Risorse Umane”, che ha visto coinvolta una rete di 17 università (sudamericane ed europee), che hanno lavorato assieme attraverso una comunità di pratica, sviluppando i profili del docente universitario, del direttivo e dell\'amministrativo.\r\n\r\nAlla conferenza sarà presente anche il prof. Ernesto González, Consigliere Accademico dell\'Istituto Internazionale della UNESCO per l\'Educazione Superiore in America Latina e nei Caraibi (IESALC)', '2019-04-04', 2),
+(6, 'Progetto Yachay - La Città della Conoscenza', 'La Fondazione Edulife collabora con il governo ecuadoriano nella progettazione di Yachay, la Citta della Conoscenza, che sarà una delle Università più moderne dell\'America Latina e del mondo.\r\n\r\nUn ecosistema di innovazione tecnologica; una vera e propria città, che avrà come obiettivo quello di generare felicità e soddisfazione tra tutti gli abitanti, e di costruire un collegamento tra le tradizioni del paese, le nuove metodologie didattiche e le tecnologie più avanzate.\r\n\r\nUn progetto molto ambizioso e strettamente legato al territorio, che funzionerà da ponte tra Università e mondo del lavoro.', '2019-04-04', 14);
 
 -- --------------------------------------------------------
 
@@ -122,8 +124,8 @@ CREATE TABLE `progetto` (
 --
 
 INSERT INTO `progetto` (`id`, `titolo`, `contenuto`, `id_img`) VALUES
-(1, 'PLAN YOUR FUTURE\r\n', 'Tramite questa piattaforma web, viene creata la possibilità di aprire un dialogo diretto ed immediato tra i professionisti che già operano nel mondo del lavoro e i giovani, un elemento essenziale per creare un processo di orientamento scolastico e lavorativo.\r\nI partner che hanno reso possibile la creazione di questo portale sono:\r\nFondazione Edulife;\r\nAssociazione Prospera;\r\nCOSP Verona;\r\nFondazione Cariverona;\r\nIl patrocinio.\r\nPer maggiori informazioni: www.planyourfuture.eu', 0),
-(2, 'Go To Talent', 'È un progetto che ha l’obiettivo di promuovere l’internazionalizzazione dei giovani talenti, attraverso partnership con Università e Istituzioni pubbliche e private, considerate come aggregatori naturali per aiutare i giovani nel proprio sviluppo umano, professionale e all’orientamento del lavoro. \r\nIl progetto prevede:\r\nL’accoglienza e orientamento dei giovani nell’incontro con le diverse culture a partire dalla cultura Cinese per offrire stimoli forti ed intensi verso una riflessività individuale capace di aprire le proprie prospettive ed aspettative;\r\nL’accompagnamento dei giovani attraverso tirocini formativi e stage professionali nelle imprese che commercializzano e producono nei mercati esteri;\r\nLa promozione dei giovani al lavoro nelle imprese a vocazione internazionale nelle imprese a vocazione internazionale.\r\nLa Fondazione Edulife Onlus si avvale del centro servizi Edulife spa, che opera nel campo della formazione a distanza e dell’innovazione didattico-metodologica, nell’utilizzo delle ICT nonché nella formazione degli insegnanti e formatori.\r\n', 0);
+(1, 'PLAN YOUR FUTURE', 'Tramite questa piattaforma web, viene creata la possibilità di aprire un dialogo diretto ed immediato tra i professionisti che già operano nel mondo del lavoro e i giovani, un elemento essenziale per creare un processo di orientamento scolastico e lavorativo.\r\nI partner che hanno reso possibile la creazione di questo portale sono:\r\nFondazione Edulife;\r\nAssociazione Prospera;\r\nCOSP Verona;\r\nFondazione Cariverona;\r\nIl patrocinio.\r\nPer maggiori informazioni: www.planyourfuture.eu', 9),
+(3, 'Go To Talent', 'È un progetto che ha l’obiettivo di promuovere l’internazionalizzazione dei giovani talenti, attraverso partnership con Università e Istituzioni pubbliche e private, considerate come aggregatori naturali per aiutare i giovani nel proprio sviluppo umano, professionale e all’orientamento del lavoro. \r\nIl progetto prevede:\r\nL’accoglienza e orientamento dei giovani nell’incontro con le diverse culture a partire dalla cultura Cinese per offrire stimoli forti ed intensi verso una riflessività individuale capace di aprire le proprie prospettive ed aspettative;\r\nL’accompagnamento dei giovani attraverso tirocini formativi e stage professionali nelle imprese che commercializzano e producono nei mercati esteri;\r\nLa promozione dei giovani al lavoro nelle imprese a vocazione internazionale nelle imprese a vocazione internazionale.\r\nLa Fondazione Edulife Onlus si avvale del centro servizi Edulife spa, che opera nel campo della formazione a distanza e dell’innovazione didattico-metodologica, nell’utilizzo delle ICT nonché nella formazione degli insegnanti e formatori.', 13);
 
 -- --------------------------------------------------------
 
@@ -223,7 +225,19 @@ ALTER TABLE `gxg`
 -- AUTO_INCREMENT per la tabella `img`
 --
 ALTER TABLE `img`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT per la tabella `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT per la tabella `progetto`
+--
+ALTER TABLE `progetto`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
