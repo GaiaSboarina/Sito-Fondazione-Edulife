@@ -68,18 +68,8 @@
     <div class='container'>
       
 
-        <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-slider">
-            <div class="glider-contain">
-                <h2 id="titoloGlider"> Ultimi video GxG </h2>
-                <hr>
-                <div class="glider">
-                    <?=getAllImgGlider()?>
-                </div>     
-                <button class="glider-prev">&laquo;</button>
-                <button class="glider-next">&raquo;</button>
-            </div>
-        </div>
-        <hr>
+     
+    
         <div data-aos="fade-left" data-aos-duration="2000" class="container" id="center-news">
             <div class="row">
                 <?= getAllNewsHome() ?> 
