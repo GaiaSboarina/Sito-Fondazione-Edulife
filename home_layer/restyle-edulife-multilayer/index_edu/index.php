@@ -1,5 +1,5 @@
-<?php include "php/insert_newsHome.php" ?>
-<?php include "php/insert_imgGlider.php" ?>
+<?php include "../../../php/insert_newsHome.php" ?>
+<?php include "../../../php/insert_imgGlider.php" ?>
 
 
 <!DOCTYPE html>
@@ -8,72 +8,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="stylesheet" href="css/style_index.css">
-        <link rel="stylesheet" href="css/glider.css">
-        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="../../../css/glider.css">
+        <link rel="stylesheet" href="../../../pages_demo/main.css">
+        <link rel="stylesheet" href="../../../css/font.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <title>Fondazione Edulife Onlus</title>
 
-
-        <script type="text/javascript" src="scrollmagic/js/lib/greensock/TweenMax.min.js"></script>
-        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-        <script type="text/javascript" src="scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-
-
-        <style type="text/css">
-            #pinContainer {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-            .panel {
-                height: 100%;
-                width: 100%;
-                position: absolute;
-            }
-        </style>
+      
     </head>
     <body>
-        <header>
-            <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
-                <div class="container">
-                    <a class="navbar-brand" href="index.php">
-                        <img src="media/img/effe.png" alt="" class="logo">
-                    </a>
-                </div>
-                <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link ncol" href="index.php">Home <span class="sr-only">Home</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/news.php">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/progetti.php">Progetti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/gxg.php">GXG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/inostrivalori.html">I nostri valori</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/donazione.html">Donazioni</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ncol" href="pages/chisiamo.html">Chi siamo</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <br>
-            <br>
-        </header>
+    <header class="navbar justify-content-left">
+     
+     <a class="align-middle float-left" href="index.php">
+         <img src="../../../media/img/effe.png" alt="" class="logo">
+     </a>
+
+     <span class="align-middle float-right fas fa-ellipsis-h" style="font-size:40px;cursor:pointer;color:white;" onclick="openNav()"></span>
+
+     
+
+     <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="overlay-content">
+             <a href="#">About</a>
+             <a href="#">Services</a>
+             <a href="#">Clients</a>
+             <a href="#">Contact</a>
+         </div>
+     </div>
+             
+ </header>
 
         <div id='hero'>
             <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
@@ -84,66 +50,6 @@
             <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
         </div>
         <div id='hero-mobile'></div>
-
-        <div id="pinContainer">
-            <section class="panel home" id="center">
-                <img src="media/img/temp_mid3.jpg" alt="">
-            </section>
-
-            <section class="panel slider">
-                <div class="container" id="center-slider">
-                    <br>
-                    <br>
-                    <div class="glider-contain">
-                        <h2 id="titoloGlider"> Ultimi video GxG </h2>
-                        <hr>
-                        <div class="glider">
-                            <?=getAllImgGlider()?>
-                        </div>     
-                        <button class="glider-prev">&laquo;</button>
-                        <button class="glider-next">&raquo;</button>
-                    </div>        
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                    <br>
-                </div>
-            </section>
-            
-            <section class="panel news">
-                <div class="container" id="center-news">
-                    <div class="row">
-                        <?= getAllNewsHome() ?> 
-                    </div>
-                </div>
-            </section>
-            
-            <section class="panel gxg">
-                <div class="container" id="center-gxg">
-                    <div class="row">  
-                        <div class="col-md-6 col-xs-6 text-right" style="border: none;">
-                            <img src="media/img/gxg.png">
-                        </div>
-                        <div class="col-md-6 col-xs-6">
-                            <h2 id="titoloGxg">Giovani x Giovani</h2>
-                            <p>                    
-                                GxG è il portale di Fondazione Edulife che permette di condividere le storie e le passioni delle persone che compongono questa realtà.
-                                Storie di giovani per giovani, storie di vita vissuta, storie che tutti avremmo potuto vivere.
-                                Tutti noi abbiamo una storia da raccontare.
-                            </p>
-                        </div>
-                    </div>
-                    </div>         
-                
-                </div>
-            </section>
-        
-        </div>
-        
-        
-        
-        
 
         <footer id = "footer">  
                 <div class = "footer-top">
@@ -224,6 +130,15 @@
                     .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
             });
+        </script>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
         </script>
     </body>
 </html>

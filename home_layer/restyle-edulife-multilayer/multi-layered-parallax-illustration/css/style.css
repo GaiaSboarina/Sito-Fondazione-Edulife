@@ -1,17 +1,8 @@
-body {
-  padding: 0;
-  margin: 0;
+body {  
   background-color: #130d0a;
   font-family: 'Playfair Display', serif;
   color: #fff;
   width: 100%;
-}
-
-.hamburgher {
-  display: inline-block;
-  cursor: pointer;
-  float: right;
-  padding: 40px;
 }
 
 .bar1, .bar2, .bar3 {

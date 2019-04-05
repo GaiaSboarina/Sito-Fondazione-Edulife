@@ -20,8 +20,6 @@
         
     </head>
     <body>
-
-
         <!-- inizio nav bar !-->
         <header>
             <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
