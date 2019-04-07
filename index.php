@@ -34,7 +34,7 @@
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
-
+      
       <div class="wrapper">
             <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
             <div class="nav">
@@ -56,6 +56,7 @@
                         </li>
                   </ul>
             </div>
+            
             <div class="social-media">
                   <ul>
                         <li>
@@ -80,6 +81,7 @@
                         </li>
                   </ul>
             </div>
+            <div class="parallax"></div>
             <div class="header">
                   <h1>Ultimo video caricato:</h1>
                         <?= getGxgHome() ?>
@@ -92,6 +94,7 @@
                   </div>
             </div>
       </div>
+      <div class="parallax"></div>
 
       <script type="text/javascript">
 
