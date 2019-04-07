@@ -76,14 +76,14 @@
         $connection = mysqli_connect("localhost", "root", "", "edulife");
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $connection->query("SET NAMES 'utf8'");
-        $rsGxg = mysqli_query($connection, "SELECT * FROM gxg ORDER BY id DESC LIMIT 1");
+        $rsGxg = mysqli_query($connection, "SELECT g.link, i.nome FROM gxg g, img i WHERE g.id_img = i.id ORDER BY g.id DESC LIMIT 1");
         $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);
         for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
             echo "
-                    <iframe width='420' height='315'
-                        src='https://www.youtube.com/embed/".$gxg[$i]['link']."'>
-                    </iframe>
+                <a href='https://www.youtube.com/watch?v=".$gxg[$i]['link']."'>
+                    <img src='media/img/".$gxg[$i]['nome']."'>
+                </a>
                 ";
             }
         }

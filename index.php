@@ -84,7 +84,7 @@
             <div class="parallax"></div>
             <div class="header">
                   <h1>Ultimo video caricato:</h1>
-                        <?= getGxgHome() ?>
+                  <?= getGxgHome() ?>
             </div>
             <div class="bottom-bar">
                   <div class="container">
