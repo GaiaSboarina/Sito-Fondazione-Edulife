@@ -34,15 +34,6 @@
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
-      
-      <div id='hero'>
-    
-      <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-      <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
-      <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-      <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
-      <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
-      
 
       <div class="wrapper">
             <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
@@ -101,7 +92,6 @@
                   </div>
             </div>
       </div>
-<div>
 
       <script type="text/javascript">
 
