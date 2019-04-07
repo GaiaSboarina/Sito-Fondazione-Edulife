@@ -10,7 +10,7 @@
       <title>Fondazione Edulife</title>
 
       <!-- font -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/main.css">
@@ -24,6 +24,7 @@
 
       <!-- jquery -->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="js/script.js"></script>
 
       <!-- greensock -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -34,28 +35,39 @@
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
-      
+
       <div class="wrapper">
             <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
-            <div class="nav">
-                  <ul>
-                        <li>
-                              <a href="pages/news.php">News</a>
-                        </li>
-                        <li>
-                              <a href="pages/progetti.php">Progetti</a>
-                        </li>
-                        <li>
-                              <a href="pages/gxg.php">GxG</a>
-                        </li>
-                        <li>
-                              <a href="pages/donazione.html">5x1000</a>
-                        </li>
-                        <li>
-                              <a href="pages/chisiamo.html">Chi siamo</a>
-                        </li>
-                  </ul>
+            
+            <div id="nav-toggle">
+                  <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </div>
             </div>
+
+            <div id="gloval-nav">
+                  <nav>
+                        <ul>
+                              <li>
+                                    <a href="pages/news.php">News</a>
+                              </li>
+                              <li>
+                                    <a href="pages/progetti.php">Progetti</a>
+                              </li>
+                              <li>
+                                    <a href="pages/gxg.php">GxG</a>
+                              </li>
+                              <li>
+                                    <a href="pages/donazione.html">5x1000</a>
+                              </li>
+                              <li>
+                                    <a href="pages/chisiamo.html">Chi siamo</a>
+                              </li>
+                        </ul>
+                  </nav>
+            </div><!-- /#gloval-nav -->
             
             <div class="social-media">
                   <ul>
