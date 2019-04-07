@@ -50,7 +50,7 @@ body {
 }
    
 .nav ul li:hover {
-      color: #e21212;
+      color: #fff;
 }
    
 .nav ul li:after {
@@ -65,7 +65,7 @@ body {
    
 .nav ul li:hover:after {
       width: 100%;
-      background: #e21212 !important;
+      background: #fff !important;
 }
 
 .nav ul li a {
