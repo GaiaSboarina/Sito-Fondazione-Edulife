@@ -32,11 +32,17 @@ body {
       position: fixed;
       z-index: 2;
       background-image: linear-gradient(to bottom, rgba(138, 138, 138, 0.11), rgba(0, 0, 0, 0.171));
-      line-height: 40px;
+      position: absolute;
       right: 0;
+      margin: 10px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
 }
 
 .nav ul li {
+      padding-top: 20px;
       list-style: none;
       display: inline-block;
       color: #fff;
@@ -48,7 +54,7 @@ body {
 }
    
 .nav ul li:hover {
-      color: #e21212;
+      color: #fff;
 }
    
 .nav ul li:after {
@@ -63,7 +69,7 @@ body {
    
 .nav ul li:hover:after {
       width: 100%;
-      background: #e21212 !important;
+      background: #fff !important;
 }
 
 .nav ul li a {
