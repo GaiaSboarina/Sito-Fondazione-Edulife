@@ -6,6 +6,7 @@
   body {
     background: #007bff;
     background: linear-gradient(to right, #ffffff, rgb(251, 251, 251));
+    width: 100%;
   }
   
   .card-signin {
@@ -107,4 +108,8 @@
   .btn-primary:hover{
     background-color: #c2131c;
     border-color: #c2131c;
+  }
+
+  header{
+    height: 80px;
   }
