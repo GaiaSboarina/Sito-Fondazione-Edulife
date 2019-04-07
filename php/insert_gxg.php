@@ -71,4 +71,20 @@
         }
         mysqli_close($conn);
     }
+
+    function getGxgHome(){
+        $connection = mysqli_connect("localhost", "root", "", "edulife");
+        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
+        $connection->query("SET NAMES 'utf8'");
+        $rsGxg = mysqli_query($connection, "SELECT * FROM gxg ORDER BY id DESC LIMIT 1");
+        $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
+        mysqli_close($connection);
+        for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
+            echo "
+                    <iframe width='420' height='315'
+                        src='https://www.youtube.com/embed/".$gxg[$i]['link']."'>
+                    </iframe>
+                ";
+            }
+        }
 ?>

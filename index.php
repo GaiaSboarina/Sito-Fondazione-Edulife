@@ -1,3 +1,6 @@
+<?php include "php/insert_newsHome.php" ?>
+<?php include "php/insert_gxg.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,15 +24,26 @@
 
       <!-- greensock -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 </head>
 <body>
 
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
+      
+      <div id='hero'>
+    
+      <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+      
+      <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
+      <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+      <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
+      <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
+
 
       <div class="wrapper">
-            <div class="logo"><img src="media/img/logo-h100.png"></div>
+            <div class="logo">Fondazione Edulife</div>
             <div class="nav">
                   <ul>
                         <li>
@@ -73,28 +87,17 @@
             </div>
             <div class="header">
                   <h1>Ultimo video caricato:</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni excepturi, maxime, quasi harum dolorum facilis iusto in odio placeat expedita maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis?</p>
-                  <button>Clicca per vederlo</button>
+                        <?= getGxgHome() ?>
             </div>
             <div class="bottom-bar">
                   <div class="container">
                         <div class="row">
-                              <div class="col-lg-4">
-                                    <h6>News 1</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
-                              </div>
-                              <div class="col-lg-4">
-                                    <h6>News 2</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
-                              </div>
-                              <div class="col-lg-4">
-                                    <h6>News 3</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p>
-                              </div>
+                              <?= getAllNewsHome() ?>
                         </div>
                   </div>
             </div>
       </div>
+<div>
 
       <script type="text/javascript">
 
