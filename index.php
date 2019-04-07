@@ -9,6 +9,9 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Fondazione Edulife</title>
 
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/main.css">
 
@@ -27,7 +30,7 @@
 
 </head>
 <body>
-
+      
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
@@ -35,15 +38,14 @@
       <div id='hero'>
     
       <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-      
       <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
       <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
       <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
       <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
-
+      
 
       <div class="wrapper">
-            <div class="logo">Fondazione Edulife</div>
+            <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
             <div class="nav">
                   <ul>
                         <li>
@@ -80,10 +82,12 @@
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                               </a>
                         </li>
+                        <li>
+                              <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              </a>
+                        </li>
                   </ul>
-            </div>
-            <div class="side-strip">
-                  <span>UN SITO PENSATO DAI GIOVANI PER I GIOVANI</span>
             </div>
             <div class="header">
                   <h1>Ultimo video caricato:</h1>

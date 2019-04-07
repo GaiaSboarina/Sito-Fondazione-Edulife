@@ -1,5 +1,5 @@
-<?php include "php/insert_newsHome.php" ?>
-<?php include "php/insert_imgGlider.php" ?>
+<?php include "../php/insert_newsHome.php" ?>
+<?php include "../php/insert_imgGlider.php" ?>
 
 <!DOCTYPE html>
 <html lang="en" class="animated fadeIn">
@@ -19,9 +19,9 @@
         <link rel="stylesheet" href="home_layer/restyle-edulife-multilayer/multi-layered-parallax-illustration/css/style.css">
         <link rel="stylesheet" href="home_layer/restyle-edulife-multilayer/multi-layered-parallax-illustration/css/bootstrap.min.css">
         <link rel="stylesheet" href="pages_demo/main.css">
-        <link rel="stylesheet" href="css/style_index.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/glider.css">
+        <link rel="stylesheet" href="../css/old/style_index.css">
+        <link rel="stylesheet" href="../css/old/style.css">
+        <link rel="stylesheet" href="../css/old/glider.css">
 
         <link rel="stylesheet" href="aos-master/dist/aos.css">
         <script src="aos-master/dist/aos.js"></script>
@@ -83,7 +83,7 @@
         <div data-aos="fade-right" data-aos-duration="2000" class="container" id="center-gxg">
             <div class="row">  
                 <div class="col-md-6 col-xs-6 text-right" style="border: none;">
-                    <img src="media/img/gxg.png">
+                    <img src="../media/img/gxg.png">
                 </div>
                 <div class="col-md-6 col-xs-6">
                     <h2 id="titoloGxg">Giovani x Giovani</h2>
@@ -269,8 +269,8 @@
 
       <script  src="home_layer/restyle-edulife-multilayer/multi-layered-parallax-illustration/js/index.js"></script>
       <script src="home_layer/restyle-edulife-multilayer/multi-layered-parallax-illustration/js/jquery-3.3.1.slim.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
       <script src="home_layer/restyle-edulife-multilayer/multi-layered-parallax-illustration/js/script.js"></script>
       <script>
         function openNav() {
