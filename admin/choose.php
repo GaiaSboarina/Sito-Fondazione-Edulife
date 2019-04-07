@@ -29,7 +29,7 @@
                             <a class="nav-link ncol" href="upload.php">Inserisci</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link ncol" href="choose.php">Gestione</a>
+                                <a class="nav-link ncol" href="gestione.php">Gestione</a>
                         </li>
                         
                         </li>
