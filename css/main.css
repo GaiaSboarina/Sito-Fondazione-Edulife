@@ -7,8 +7,9 @@ html, body {
 }
 
 body {
-      background: url(../media/img/unsplash01.jpg) no-repeat 50% 50%;
-      background-size: cover;
+      /*background: url(../media/img/unsplash01.jpg) no-repeat 50% 50%;
+      background-size: cover;*/
+      height: 1000%;
 }
 
 .logo {
@@ -212,3 +213,16 @@ body {
       background-image: url("../media/img/ilu_overlay.png");
 }
 
+.parallax {
+      /* The image used */
+      background-image: url('../media/img/unsplash01.jpg');
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
