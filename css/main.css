@@ -123,9 +123,11 @@ body {
 
 .row {
       padding: 2.6em 2.6em 2em 2.6em;
-      background: #000;
+      background-image: linear-gradient(to bottom, rgba(138, 138, 138, 0.11), rgba(0, 0, 0, 0.171));
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
 }
 
 .bottom-bar h6 {
