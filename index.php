@@ -61,22 +61,22 @@
                   <ul>
                         <li>
                               <a href="https://www.facebook.com/FondazioneEdulife">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" style="color:#e21212" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" style="color:#e21212" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://twitter.com/EdulifeOnlus">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" style="color:#e21212" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <i class="fa fa-map-marker" style="color:#e21212" aria-hidden="true"></i>
                               </a>
                         </li>
                   </ul>
