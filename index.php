@@ -103,7 +103,7 @@
             
             <div class="container">
                   <div class="header col-sm-12">
-                        <h1>Ultimo video caricato:</h1>
+                        <h1 style="color: #E6DA31;">Ultimo video caricato:</h1>
                         <div class="esagonale">
                         <?= getGxgHome() ?>
                         </div>

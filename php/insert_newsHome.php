@@ -42,7 +42,7 @@ function shorter($testo, $limiteCaratteri) {
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
                 <div class='col-sm-12 col-md-4'>
-                    <h6 style='color: #fff'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
+                    <h6 style='color: #E6DA31'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
                     </h6>
                     <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
                     </p>
