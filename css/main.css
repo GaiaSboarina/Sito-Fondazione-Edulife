@@ -8,7 +8,11 @@ html, body {
 
 body {
       height: 100%;
-      background-image: url('../media/img/bg.jpg');
+      background-image: url("../media/img/bg.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
 }
 
 
@@ -262,17 +266,3 @@ h1 {
       font-weight: bolder;
       letter-spacing: 12px;
 }
-
-.parallax {
-      /* The image used */
-      background-image: url('../media/img/bg.jpg');
-    
-      /* Full height */
-      height: 100%; 
-    
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
