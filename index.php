@@ -12,12 +12,13 @@
       <!-- font -->
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-      <!-- stylesheet -->
-      <link rel="stylesheet" href="css/main.css">
-
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="css/main.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -95,11 +96,10 @@
                         </li>
                   </ul>
             </div>
-            <div class="parallax"></div>
-
-            <div class="wrapper">
             
-                  <div class="header">
+
+            <div class="container">
+                  <div class="header col-sm-12">
                         <h1>Ultimo video caricato:</h1>
                         <?= getGxgHome() ?>
                   </div>
@@ -112,7 +112,6 @@
                   </div>
             </div>
 
-            <div class="parallax"></div>
 
       <script type="text/javascript">
 
@@ -179,18 +178,19 @@
       })
 
       TweenMax.from(".header p", 2, {
-            delay: 3.4,
+            delay: 3.2,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
       })
 
-      TweenMax.from(".header button", 2, {
-            delay: 3.6,
+      TweenMax.from(".header img", 2, {
+            delay: 3.4,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
       })
       </script>
+
 </body>
 </html>
