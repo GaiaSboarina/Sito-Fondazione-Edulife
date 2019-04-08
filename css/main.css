@@ -315,7 +315,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 5s steps(50) 0.5s 1 normal both,
-      cursorblink 0.5s infinite;
+      cursorblink 2s infinite;
 }
 
 @keyframes typewriter {
@@ -330,7 +330,7 @@ h1 {
 
 @keyframes cursorblink {
   from {
-    border-right: 1px solid #dedede;
+    border-right: 1px solid #E6DA31;
   }
   
   to {
