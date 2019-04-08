@@ -82,7 +82,7 @@
         for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
             echo "
                 <a href='https://www.youtube.com/watch?v=".$gxg[$i]['link']."'>
-                    <img src='media/img/".$gxg[$i]['nome']."'>
+                    <img class='' src='media/img/".$gxg[$i]['nome']."'>
                 </a>
                 ";
             }

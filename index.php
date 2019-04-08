@@ -40,7 +40,7 @@
       
 
       
-            <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
+            <div class="logo"><img src="media/img/effe_gialla.png" id="imgLogo"></div>
             
             <div id="nav-toggle">
                   <div>
@@ -76,22 +76,22 @@
                   <ul>
                         <li>
                               <a href="https://www.facebook.com/FondazioneEdulife">
-                                    <i class="fa fa-facebook" style="color:#e21212" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="#">
-                                    <i class="fa fa-instagram" style="color:#e21212" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://twitter.com/EdulifeOnlus">
-                                    <i class="fa fa-twitter" style="color:#e21212" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254">
-                                    <i class="fa fa-map-marker" style="color:#e21212" aria-hidden="true"></i>
+                                    <i class="fa fa-map-marker" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                   </ul>
@@ -101,9 +101,12 @@
             <div class="container">
                   <div class="header col-sm-12">
                         <h1>Ultimo video caricato:</h1>
+                        <div class="esagonale">
                         <?= getGxgHome() ?>
+                        </div>
+                        
                   </div>
-                  <div class="bottom-bar">
+                  <div class="container bottom-bar">
                         <div class="container">
                               <div class="row">
                                     <?= getAllNewsHome() ?>
@@ -184,7 +187,7 @@
             ease: Expo.easeInOut
       })
 
-      TweenMax.from(".header img", 2, {
+      TweenMax.from(".esagonale", 2, {
             delay: 3.4,
             opacity: 0,
             y: 20,
