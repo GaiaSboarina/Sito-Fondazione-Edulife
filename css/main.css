@@ -314,7 +314,7 @@ h1 {
   border-right: 1px solid #E6DA31;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 8s steps(50) 0.5s 1 normal both,
+  animation: typewriter 5s steps(50) 0.5s 1 normal both,
       cursorblink 0.5s infinite;
 }
 
@@ -337,3 +337,11 @@ h1 {
     border-right: 1px solid #666;
   }
 }
+
+/* inizio scrollbar */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* fine scrollbar */

@@ -99,9 +99,9 @@
                         </li>
                   </ul>
             </div>
-
-            <div class="scritta">
-                  GxG, una piattaforma fatta dai giovani per i giovani
+      
+            <div class="scritta" class="container">
+                  <p>GxG, una piattaforma fatta dai giovani per i giovani</p>
             </div>
 
             <div class="container">
@@ -112,7 +112,7 @@
                         </div>
                         
                   </div>
-                  <div class="container bottom-bar" id="newsHome">>
+                  <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
                                     <?= getAllNewsHome() ?>
