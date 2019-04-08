@@ -36,7 +36,9 @@
             <h1>Caricamento...</h1>
       </div>
 
-      <div class="wrapper">
+      
+
+      
             <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
             
             <div id="nav-toggle">
@@ -94,19 +96,23 @@
                   </ul>
             </div>
             <div class="parallax"></div>
-            <div class="header">
-                  <h1>Ultimo video caricato:</h1>
-                  <?= getGxgHome() ?>
-            </div>
-            <div class="bottom-bar">
-                  <div class="container">
-                        <div class="row">
-                              <?= getAllNewsHome() ?>
+
+            <div class="wrapper">
+            
+                  <div class="header">
+                        <h1>Ultimo video caricato:</h1>
+                        <?= getGxgHome() ?>
+                  </div>
+                  <div class="bottom-bar">
+                        <div class="container">
+                              <div class="row">
+                                    <?= getAllNewsHome() ?>
+                              </div>
                         </div>
                   </div>
             </div>
-      </div>
-      <div class="parallax"></div>
+
+            <div class="parallax"></div>
 
       <script type="text/javascript">
 
