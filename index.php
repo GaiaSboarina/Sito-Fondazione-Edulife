@@ -99,17 +99,20 @@
                         </li>
                   </ul>
             </div>
-            
-            
+
+            <div class="scritta">
+                  GxG, una piattaforma fatta dai giovani per i giovani
+            </div>
+
             <div class="container">
-                  <div class="header col-sm-12">
+                  <div class="header col-sm-12" id="anteprimaGXG">
                         <h1 style="color: #E6DA31;">Ultimo video caricato:</h1>
                         <div class="esagonale">
                         <?= getGxgHome() ?>
                         </div>
                         
                   </div>
-                  <div class="container bottom-bar">
+                  <div class="container bottom-bar" id="newsHome">>
                         <div class="container">
                               <div class="row">
                                     <?= getAllNewsHome() ?>

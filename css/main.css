@@ -294,5 +294,46 @@ h1 {
       left: 0;
       right: 0;
       z-index: -1;
-    }
+}
 
+#anteprimaGXG {
+      padding-top: 20%;
+}
+
+#newsHome {
+      padding-top: 14%;
+}
+
+.scritta {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #E6DA31;
+  font-size: 32px;
+  border-right: 1px solid #E6DA31;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 8s steps(50) 0.5s 1 normal both,
+      cursorblink 0.5s infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 23em;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+  
+  to {
+    border-right: 1px solid #666;
+  }
+}
