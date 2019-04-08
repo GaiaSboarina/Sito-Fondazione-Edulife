@@ -30,6 +30,9 @@
       <!-- greensock -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
+      <!-- particles.js -->
+      <script src="js/particles.min.js"></script>
+
 </head>
 <body>
       
@@ -114,7 +117,7 @@
                         </div>
                   </div>
             </div>
-
+            <canvas class="background"></canvas>
 
       <script type="text/javascript">
 
@@ -194,6 +197,11 @@
             ease: Expo.easeInOut
       })
       </script>
-
+      <script>
+            var particles = Particles.init({
+                  selector: '.background',
+                  color: 'yellow'
+            });
+      </script>
 </body>
 </html>
