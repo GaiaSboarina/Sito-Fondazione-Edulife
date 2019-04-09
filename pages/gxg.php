@@ -38,8 +38,7 @@
 <body class="index2">
       
       <div class="overlay">
-            <div class="container-loader">
-            <div class="circle"></div>
+      
       </div>
       
             <div class="logo"><img src="../media/img/effe_gialla.png" id="imgLogo"></div>
