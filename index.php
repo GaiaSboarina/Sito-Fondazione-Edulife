@@ -115,6 +115,15 @@
                         </div>
                         
                   </div>
+
+            <div class="container">
+                  <div class="header col-sm-12">
+                  <div><img src="media/img/arrow.png" class="arrow"></div>
+                  <div class="shadow"></div>
+                  </div>
+                        
+                  </div>
+
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
