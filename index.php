@@ -20,6 +20,7 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/loader.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +40,9 @@
 <body>
       
       <div class="overlay">
-            <h1>Caricamento...</h1>
+            <div class="container-loader">
+            <div class="circle"></div>
+      </div>
       </div>
 
             <a href="index.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
@@ -119,7 +122,7 @@
                   </div>
                         
                   </div>
-                  <h1 class="scritte_home">Le ultime news:</h1>
+                  <h1 class="scritte_home">Le ultime news</h1>
 
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
@@ -129,12 +132,28 @@
                         </div>
                   </div>
 
-                  <h1 class="scritte_home">I nostri progetti:</h1>
+                  <h1 class="scritte_home">I nostri progetti</h1>
 
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
                                     <?= getAllProgettiHome() ?>
+                              </div>
+                        </div>
+                  </div>
+
+                  <h1 class="scritte_home">Chi siamo</h1>
+
+                  <div class="container bottom-bar" id="newsHome">
+                        <div class="container">
+                              <div class="row">
+                                    <p>
+                                          <b>Fondazione Edulife Onlus</b> nasce nell’ambito di una rete mondiale dedicata alla educazione dei giovani ed ha come finalità aiutare i giovani nella scoperta del proprio progetto di vita e promuovere gli adulti nel loro ruolo educativo.
+
+                                          L’attività della <b>Fondazione</b> si sviluppa in tre ambiti: - <strong>Centro di ricerca per la innovazione didattica sviluppata con persone, enti, imprese ed istituzioni;</strong> - <strong>“Pensatoio” per la ideazione di progetti a favore della crescita umana e professionale dei giovani;</strong> - <strong>fondi per sostenere progetti educativi sempre destinati ai giovani.</strong>
+                                          
+                                          La <b>Fondazione</b> opera in stretta relazione con una rete di organizzazioni educative presenti in 131 Paesi, con oltre 4.000 opere educative e circa 2.000.000 di giovani destinatari.
+                                    </p>
                               </div>
                         </div>
                   </div>

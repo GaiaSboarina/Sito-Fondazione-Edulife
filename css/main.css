@@ -49,8 +49,6 @@ a:hover{
 }
 
 
-
-
 /* hamburger menu */
 
 h1 {
@@ -271,16 +269,6 @@ h1 {
       height: 100%;
       background: #fff;
       top: 0%;
-}
-
-.overlay h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      font-weight: bolder;
-      letter-spacing: 12px;
 }
 
 .esagonale {
