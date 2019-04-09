@@ -362,7 +362,7 @@ h1 {
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
-      animation: typewriterDonazioni 3s steps(50) 0.5s 1 normal both,
+      animation: typewriterDonazioni 2s steps(50) 0.5s 1 normal both,
       cursorblink 2s infinite;
       animation-delay: 2s;
 }
