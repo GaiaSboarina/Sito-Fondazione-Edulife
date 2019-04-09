@@ -1,8 +1,18 @@
 <?php
+
     function getAllGxg(){
-        $connection = mysqli_connect("localhost", "root", "", "edulife");
-        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "edulife";
+
+        $connection = new mysqli($servername, $username, $password, $dbname);
         $connection->query("SET NAMES 'utf8'");
+    
+        // Controllo della connessione
+        if ($connection->connect_error) {
+            die("Connection failed: " . $connection->connect_error);
+        }
         $rsGxg = mysqli_query($connection, "SELECT * FROM gxg");
         $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);
@@ -36,10 +46,12 @@
 
         // Creazione della connessione
         $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn->query("SET NAMES 'utf8'");
+    
         // Controllo della connessione
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
-        } 
+        }
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $query = "SELECT * FROM gxg";
         $result = $conn->query($query);
@@ -73,9 +85,18 @@
     }
 
     function getGxgHome(){
-        $connection = mysqli_connect("localhost", "root", "", "edulife");
-        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "edulife";
+
+        $connection = new mysqli($servername, $username, $password, $dbname);
         $connection->query("SET NAMES 'utf8'");
+    
+        // Controllo della connessione
+        if ($connection->connect_error) {
+            die("Connection failed: " . $connection->connect_error);
+        }
         $rsGxg = mysqli_query($connection, "SELECT g.link, i.nome FROM gxg g, img i WHERE g.id_img = i.id ORDER BY g.id DESC LIMIT 1");
         $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);

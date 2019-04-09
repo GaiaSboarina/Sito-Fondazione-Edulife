@@ -15,6 +15,10 @@ body {
       background-size: cover;
 }
 
+img{
+      height: 100%;
+      width: 100%;
+}
 
 .index2{
       height: 100%;
@@ -450,3 +454,6 @@ h1 {
 }
 
 /* freccia_rossa che rimbalza finisce */
+a:hover{
+      text-decoration: none;
+}
