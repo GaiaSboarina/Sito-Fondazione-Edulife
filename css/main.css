@@ -275,16 +275,6 @@ h1 {
       top: 0%;
 }
 
-.overlay h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 20px;
-      font-weight: bolder;
-      letter-spacing: 12px;
-}
-
 .esagonale {
 
       text-align: center;
@@ -399,4 +389,13 @@ h1 {
   100% {transform: scale(1.1); opacity:.1;}
 }
 
+/* freccia_rossa che rimbalza finisce */
+a:hover{
+      text-decoration: none;
+}
+
+iframe{
+      border-radius: 25%;
+      margin: auto;
+}
 /* freccia_rossa che rimbalza finisce */
