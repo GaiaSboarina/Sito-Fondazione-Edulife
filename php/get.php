@@ -13,13 +13,10 @@
                 $query = "SELECT t.titolo, t.contenuto, i.nome FROM $table t, img i WHERE t.id = ? AND t.id_img = i.id";
             }
 
-            $stmt = $con->prepare($query);
+            $stmt = $conn->prepare($query);
             $stmt->bind_param('s', $id);
             $stmt->execute();
             $result = $stmt->get_result();
-            $user = $result->fetch_object();
-
-            $result = $conn->query($query);
 
             if($result->num_rows > 0){
                 $row = $result->fetch_assoc();
