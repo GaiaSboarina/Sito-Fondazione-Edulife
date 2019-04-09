@@ -2,41 +2,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Fondazione Edulife</title>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Fondazione Edulife</title>
 
-        <!-- font -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <!-- font -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="../css/main.css">
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/loader.css">
 
-        <!-- font-awesome -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- font-awesome -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="../js/script.js"></script>
+      <!-- jquery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="js/script.js"></script>
 
-        <!-- greensock -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <!-- greensock -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-        <!-- particles.js -->
-        <script src="../js/particles.min.js"></script>
+      <!-- particles.js -->
+      <script src="js/particles.min.js"></script>
 
         
     </head>
     <body>
-    <div class="overlay">
-            <h1>Caricamento...</h1>
-      </div>
+        <div class="overlay">
+                <div class="container-loader">
+                        <div class="circle"></div>
+                </div>
+        </div>
                 <a href="index2.php"><div class="logo"><img src="../media/img/effe.png" id="imgLogo"></div></a>
                 
                 <div id="nav-toggle">
