@@ -102,11 +102,16 @@
 
 
             <div class="container">
+                  <div class=row>
                   <div class="header col-sm-12" id="anteprimaGXG">
                         <h1 class="scritte_home">Ultimo video caricato:</h1>
-                        <div class="esagonale">
+                        <div class=container>
                         <?= getGxgHome() ?>
                         </div>
+                              
+                  </div>
+                  
+                    
                         
                   </div>
 

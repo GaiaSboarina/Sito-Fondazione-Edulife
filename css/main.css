@@ -392,3 +392,12 @@ h1 {
 }
 
 /* freccia_rossa che rimbalza finisce */
+a:hover{
+      text-decoration: none;
+}
+
+iframe{
+      border-radius: 25%;
+      margin: auto;
+}
+/* freccia_rossa che rimbalza finisce */
