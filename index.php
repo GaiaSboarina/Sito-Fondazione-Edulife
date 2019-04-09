@@ -115,6 +115,9 @@
                         </div>
                         
                   </div>
+
+                  <h1 style="color: #E6DA31;">Le ultime news:</h1>
+
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
@@ -122,6 +125,8 @@
                               </div>
                         </div>
                   </div>
+
+                  <h1 style="color: #E6DA31;">I nostri progetti:</h1>
 
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
