@@ -1,5 +1,6 @@
 <?php include "php/insert_newsHome.php" ?>
 <?php include "php/insert_gxg.php" ?>
+<?php include "php/insert_progetti.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,7 @@
       <!-- particles.js -->
       <script src="js/particles.min.js"></script>
 
+      
 </head>
 <body>
       
@@ -104,6 +106,7 @@
                   <p>GxG, una piattaforma fatta dai giovani per i giovani</p>
             </div>
 
+
             <div class="container">
                   <div class="header col-sm-12" id="anteprimaGXG">
                         <h1 style="color: #E6DA31;">Ultimo video caricato:</h1>
@@ -112,6 +115,9 @@
                         </div>
                         
                   </div>
+
+                  <h1 style="color: #E6DA31;">Le ultime news:</h1>
+
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
@@ -119,6 +125,17 @@
                               </div>
                         </div>
                   </div>
+
+                  <h1 style="color: #E6DA31;">I nostri progetti:</h1>
+
+                  <div class="container bottom-bar" id="newsHome">
+                        <div class="container">
+                              <div class="row">
+                                    <?= getAllProgettiHome() ?>
+                              </div>
+                        </div>
+                  </div>
+
             </div>
             <canvas class="background"></canvas>
 
