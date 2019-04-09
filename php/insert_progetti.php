@@ -61,7 +61,7 @@ function getAllProgettiHome(){
     for($i = 0; $i < count($progetti); $i++) {
         echo "
             <div class='col-sm-12 col-md-4'>
-                <h6 style='color: #E6DA31'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
+                <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
                 </h6>
                 <p>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
                 </p>

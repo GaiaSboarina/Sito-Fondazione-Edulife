@@ -42,7 +42,7 @@
             <h1>Caricamento...</h1>
       </div>
 
-            <a href="index2.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
+            <a href="index.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
             
             <div id="nav-toggle">
                   <div>
@@ -100,7 +100,7 @@
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_home"><strong>GxG</strong>, una piattaforma fatta dai giovani per i giovani</h3>
+                  <h3 class="scritte_home">Il sito ufficiale di Fondazione Edulife</h3>
             </div>
 
 
@@ -115,12 +115,12 @@
 
             <div class="container">
                   <div class="header col-sm-12">
-                  <div><img src="media/img/arrow.png" class="arrow"></div>
+                  <div><img src="media/img/arrow-rossa.png" class="arrow"></div>
                   <div class="shadow"></div>
                   </div>
                         
                   </div>
-                  <h1 style="color: #E6DA31;">Le ultime news:</h1>
+                  <h1 class="scritte_home">Le ultime news:</h1>
 
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
@@ -130,7 +130,7 @@
                         </div>
                   </div>
 
-                  <h1 style="color: #E6DA31;">I nostri progetti:</h1>
+                  <h1 class="scritte_home">I nostri progetti:</h1>
 
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
