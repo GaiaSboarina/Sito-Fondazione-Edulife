@@ -126,7 +126,7 @@
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
-                                    <?= getAllProjects() ?>
+                                    <?= getAllProgettiHome() ?>
                               </div>
                         </div>
                   </div>
