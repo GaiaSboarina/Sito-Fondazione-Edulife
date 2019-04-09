@@ -3,7 +3,8 @@ html, body {
       padding: 0;
       width: 100%;
       height: 100%;
-      font-family: 'Raleway' !important;
+      font-family: 'PT Sans', sans-serif;
+      text-align: justify;
 }
 
 body {
@@ -200,10 +201,6 @@ h1 {
       transition-delay: 0.9s;
 }
 
-
-
-
-
 /* hamburger open */
     
 .open {
@@ -290,8 +287,8 @@ h1 {
       
       transform: translateZ(0);
    
-      width: 250px;
-      height: 250px;
+      width: 50px;
+      height: 50px;
       margin: auto;
 }
 
@@ -443,3 +440,7 @@ iframe{
       margin: auto;
 }
 /* freccia_rossa che rimbalza finisce */
+
+h1{
+      font-weight: 700;
+}

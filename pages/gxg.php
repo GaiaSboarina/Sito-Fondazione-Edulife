@@ -19,6 +19,7 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="../css/mainGXG.css">
+      <link rel="stylesheet" href="../css/loaderGXG.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,7 +38,7 @@
 <body class="index2">
       
       <div class="overlay">
-            <h1>Caricamento...</h1>
+      
       </div>
       
             <div class="logo"><img src="../media/img/effe_gialla.png" id="imgLogo"></div>

@@ -3,13 +3,13 @@
 session_start();
 
 function verify($password, $input_password, $con){
+    
     if (md5($password) == $input_password) {
         return true;
     }else {
         return false;
     }
 
-    
 }
 
 if ( ! empty( $_POST ) ) {

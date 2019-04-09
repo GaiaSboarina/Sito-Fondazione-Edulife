@@ -1,9 +1,19 @@
 <?php
-include("connection.php");
 function getAllImgGlider(){
 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "edulife";
+
     // Creazione della connessione
-    $conn = connection();
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn->query("SET NAMES 'utf8'");
+
+    // Controllo della connessione
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
     //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
  
