@@ -1,6 +1,5 @@
 <?php include "php/insert_newsHome.php" ?>
 <?php include "php/insert_gxg.php" ?>
-<?php include "php/insert_progetti.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,15 +33,14 @@
       <!-- particles.js -->
       <script src="js/particles.min.js"></script>
 
-      
 </head>
-<body>
+<body class="index2">
       
       <div class="overlay">
             <h1>Caricamento...</h1>
       </div>
-
-            <a href="index2.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
+      
+            <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
             
             <div id="nav-toggle">
                   <div>
@@ -78,50 +76,39 @@
                   <ul>
                         <li>
                               <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
-                                    <i class="fa fa-facebook social_home" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
-                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
-                                    <i class="fa fa-instagram social_home" aria-hidden="true"></i>
+                              <a href="#" target="_blank">
+                                    <i class="fa fa-instagram social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://twitter.com/EdulifeOnlus" target="_blank">
-                                    <i class="fa fa-twitter social_home" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
-                                    <i class="fa fa-map-marker social_home" aria-hidden="true"></i>
+                                    <i class="fa fa-map-marker social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                   </ul>
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_home"><strong>GxG</strong>, una piattaforma fatta dai giovani per i giovani</h3>
+                  <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
-
 
             <div class="container">
                   <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video caricato:</h1>
+                        <h1 class="scritte_gxg">Ultimo video caricato:</h1>
                         <div class="esagonale">
                         <?= getGxgHome() ?>
                         </div>
                         
                   </div>
-
-            <div class="container">
-                  <div class="header col-sm-12">
-                  <div><img src="media/img/arrow.png" class="arrow"></div>
-                  <div class="shadow"></div>
-                  </div>
-                        
-                  </div>
-                  <h1 style="color: #E6DA31;">Le ultime news:</h1>
-
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
@@ -129,17 +116,6 @@
                               </div>
                         </div>
                   </div>
-
-                  <h1 style="color: #E6DA31;">I nostri progetti:</h1>
-
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
-                              <div class="row">
-                                    <?= getAllProgettiHome() ?>
-                              </div>
-                        </div>
-                  </div>
-
             </div>
             <canvas class="background"></canvas>
 

@@ -8,13 +8,22 @@ html, body {
 
 body {
       height: 100%;
-      background-image: url("../media/img/bg.png");
+      background-image: url("../media/img/bg4.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
 }
 
+
+.index2{
+      height: 100%;
+      background-image: url("../media/img/bg.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+}
 
 .logo {
       position: fixed;
@@ -36,7 +45,7 @@ body {
 
 h1 {
       text-align: center;
-      padding-top: 60px;
+
 }
 
 #nav-toggle {
@@ -84,7 +93,7 @@ h1 {
 }
     
 .open #nav-toggle span {
-      background: #E6DA31;
+      background: rgb(255, 255, 255);
 }
     
 .open #nav-toggle span:nth-child(1) {
@@ -135,7 +144,7 @@ h1 {
     
 #gloval-nav a {
       display: block;
-      color: #E6DA31;
+      color: rgb(255, 255, 255);
       text-decoration: none;
       padding: 10px 0;
       transition: color 0.6s ease; 
@@ -201,12 +210,21 @@ h1 {
       top: 50%;
       transform: translateY(-50%);
       z-index: 2;
+      background-color: rgba(77, 77, 77, 0.438);
 }
 
 .social-media ul li {
       list-style: none;
       color: #fff;
       padding-top: 20px;
+}
+
+.social_home{
+      color: #e21212;   
+}
+
+.social_gxg{
+      color: #E6DA31;   
 }
 
 .header {     
@@ -216,22 +234,15 @@ h1 {
 }
 
 .header h1 {
-      color: #fff;
       font-weight: bolder;
 }
 
 .header p {
-      color: #fff;
       font-weight: lighter;
 }
 
 .esagonale img{
     height: 100%;
-}
-
-.bottom-bar {
-      color: #fff;
- 
 }
 
 .row {
@@ -281,7 +292,7 @@ h1 {
       -webkit-transform: translateZ(0);
       
       transform: translateZ(0);
-
+   
       width: 250px;
       height: 250px;
       margin: auto;
@@ -301,7 +312,7 @@ h1 {
 }
 
 #newsHome {
-      padding-top: 14%;
+      padding-top: 2%;
 }
 
 .scritta {
@@ -309,9 +320,9 @@ h1 {
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #E6DA31;
+  color: rgb(255, 255, 255);
   font-size: 32px;
-  border-right: 1px solid #E6DA31;
+  border-right: 1px solid rgb(255, 255, 255);
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 5s steps(50) 0.5s 1 normal both,
@@ -324,13 +335,13 @@ h1 {
   }
   
   to {
-    width: 23em;
+    width: 20.2em;
   }
 }
 
 @keyframes cursorblink {
   from {
-    border-right: 1px solid #E6DA31;
+    border-right: 1px solid rgb(255, 255, 255);
   }
   
   to {
@@ -345,6 +356,10 @@ h1 {
 }
 
 /* fine scrollbar */
+.scritte_home{
+      color: #e21212;
+      /*background-color: #e21212;*/
+}
 
 .arrow {
   width: 10%;
@@ -374,4 +389,8 @@ h1 {
   100% {transform: scale(1.1); opacity:.1;}
 }
 
+.scritte_gxg{
+      color: #E6DA31;
+      /*background-color: #e21212;*/
+}
 
