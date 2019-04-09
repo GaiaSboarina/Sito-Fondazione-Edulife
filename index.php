@@ -35,8 +35,6 @@
       <!-- particles.js -->
       <script src="js/particles.min.js"></script>
 
-      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-
       
 </head>
 <body>
