@@ -1,5 +1,6 @@
 <?php include "php/insert_newsHome.php" ?>
 <?php include "php/insert_gxg.php" ?>
+<?php include "php/insert_progetti.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,7 @@
       <!-- particles.js -->
       <script src="js/particles.min.js"></script>
 
+      
 </head>
 <body>
       
@@ -80,7 +82,7 @@
                               </a>
                         </li>
                         <li>
-                              <a href="#" target="_blank">
+                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
                                     <i class="fa fa-instagram social_home" aria-hidden="true"></i>
                               </a>
                         </li>
@@ -101,6 +103,7 @@
                   <h3 class="scritte_home"><strong>GxG</strong>, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
 
+
             <div class="container">
                   <div class="header col-sm-12" id="anteprimaGXG">
                         <h1 class="scritte_home">Ultimo video caricato:</h1>
@@ -109,6 +112,9 @@
                         </div>
                         
                   </div>
+
+                  <h1 style="color: #E6DA31;">Le ultime news:</h1>
+
                   <div class="container bottom-bar" id="newsHome">
                         <div class="container">
                               <div class="row">
@@ -116,6 +122,17 @@
                               </div>
                         </div>
                   </div>
+
+                  <h1 style="color: #E6DA31;">I nostri progetti:</h1>
+
+                  <div class="container bottom-bar" id="newsHome">
+                        <div class="container">
+                              <div class="row">
+                                    <?= getAllProgettiHome() ?>
+                              </div>
+                        </div>
+                  </div>
+
             </div>
             <canvas class="background"></canvas>
 
