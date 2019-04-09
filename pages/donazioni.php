@@ -41,7 +41,7 @@
       </div>
       </div>
 
-            <a href="index.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
+            <a href="../index.php"><div class="logo"><img src="../media/img/effe.png" id="imgLogo"></div></a>
             
             <div id="nav-toggle">
                   <div>
