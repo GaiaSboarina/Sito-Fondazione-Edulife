@@ -362,12 +362,12 @@ h1 {
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
-      animation: typewriter 3s steps(50) 0.5s 1 normal both,
+      animation: typewriterDonazioni 3s steps(50) 0.5s 1 normal both,
       cursorblink 2s infinite;
       animation-delay: 2s;
 }
 
-@keyframes typewriter {
+@keyframes typewriterDonazioni {
   from {
     width: 0;
   }
@@ -377,7 +377,7 @@ h1 {
   }
 }
 
-@keyframes cursorblink {
+@keyframes cursorblinkDonazioni {
   from {
     border-right: 1px solid #e21212;
   }
