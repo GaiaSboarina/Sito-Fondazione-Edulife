@@ -18,7 +18,7 @@
 
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/mainGXG.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,7 +40,7 @@
             <h1>Caricamento...</h1>
       </div>
       
-            <div class="logo"><img src="media/img/effe.png" id="imgLogo"></div>
+            <div class="logo"><img src="../media/img/effe_gialla.png" id="imgLogo"></div>
             
             <div id="nav-toggle">
                   <div>
@@ -53,12 +53,6 @@
             <div id="gloval-nav">
                   <nav>
                         <ul>
-                              <li>
-                                    <a href="pages/news.php">News</a>
-                              </li>
-                              <li>
-                                    <a href="pages/progetti.php">Progetti</a>
-                              </li>
                               <li>
                                     <a href="pages/gxg.php">GxG</a>
                               </li>
@@ -80,7 +74,7 @@
                               </a>
                         </li>
                         <li>
-                              <a href="#" target="_blank">
+                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
                                     <i class="fa fa-instagram social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
@@ -103,18 +97,11 @@
             
             <div class="container">
                   <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_gxg">Ultimo video caricato:</h1>
+                        <h1 class="scritte_home">Ultimo video caricato:</h1>
                         <div class="esagonale">
                         <?= getGxgHome() ?>
                         </div>
                         
-                  </div>
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
-                              <div class="row">
-                                    <?= getAllNewsHome() ?>
-                              </div>
-                        </div>
                   </div>
             </div>
             <canvas class="background"></canvas>
