@@ -133,7 +133,6 @@
                               </div>
                         </div>
                   </div>
-
             </div>
             <canvas class="background"></canvas>
 

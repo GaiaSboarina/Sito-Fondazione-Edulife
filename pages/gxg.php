@@ -54,13 +54,13 @@
                   <nav>
                         <ul>
                               <li>
-                                    <a href="pages/gxg.php">GxG</a>
+                                    <a href="../index.php">Home</a>
                               </li>
                               <li>
-                                    <a href="pages/donazione.html">5x1000</a>
+                                    <a href="../pages/donazione.html">5x1000</a>
                               </li>
                               <li>
-                                    <a href="pages/chisiamo.html">Chi siamo</a>
+                                    <a href="../pages/chisiamo.html">Chi siamo</a>
                               </li>
                         </ul>
                   </nav>
