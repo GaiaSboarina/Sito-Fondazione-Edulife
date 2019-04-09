@@ -1,7 +1,3 @@
-<?php include "php/insert_newsHome.php" ?>
-<?php include "php/insert_gxg.php" ?>
-<?php include "php/insert_progetti.php" ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,21 +15,21 @@
 
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/loader.css">
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="../css/loader.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <!-- jquery -->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script src="js/script.js"></script>
+      <script src="../js/script.js"></script>
 
       <!-- greensock -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
       <!-- particles.js -->
-      <script src="js/particles.min.js"></script>
+      <script src="../js/particles.min.js"></script>
 
       
 </head>
@@ -58,12 +54,12 @@
             <div id="gloval-nav">
                   <nav>
                         <ul>
-                              <li>
-                                    <a href="pages/gxg.php">GxG</a>
-                              </li>
-                              <li>
-                                    <a href="pages/donazioni.php">5x1000</a>
-                              </li>
+                            <li>
+                                <a href="../index.php">Home</a>
+                            </li>
+                            <li>
+                                <a href="pages/gxg.php">GxG</a>
+                            </li>
                         </ul>
                   </nav>
             </div><!-- /#gloval-nav -->
@@ -93,68 +89,65 @@
                   </ul>
             </div>
       
-            <div class="scritta" class="container">
-                  <h3 class="scritte_home">Il sito ufficiale di Fondazione Edulife</h3>
+            <div class="scrittaDonazioni" class="container">
+                  <h2 class="scritte_home">Dona al 5x1000</h2>
             </div>
 
-
-            <div class="container">
-                  <div class=row>
-                  <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video caricato:</h1>
-                        <div class=container>
-                        <?= getGxgHome() ?>
-                        </div>
-                              
-                  </div>
-                  
-                    
-                        
-                  </div>
-
-            <div class="container">
-                  <div class="header col-sm-12">
-                  <div><img src="media/img/arrow-rossa.png" class="arrow"></div>
-                  <div class="shadow"></div>
-                  </div>
-                        
-                  </div>
-                  <h1 class="scritte_home">Le ultime news</h1>
-
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
-                              <div class="row">
-                                    <?= getAllNewsHome() ?>
-                              </div>
-                        </div>
-                  </div>
-
-                  <h1 class="scritte_home">I nostri progetti</h1>
-
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
-                              <div class="row">
-                                    <?= getAllProgettiHome() ?>
-                              </div>
-                        </div>
-                  </div>
-
-                  <h1 class="scritte_home">Chi siamo</h1>
-
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
-                              <div class="row">
-                                    <p>
-                                          <b>Fondazione Edulife Onlus</b> nasce nell’ambito di una rete mondiale dedicata alla educazione dei giovani ed ha come finalità aiutare i giovani nella scoperta del proprio progetto di vita e promuovere gli adulti nel loro ruolo educativo.
-
-                                          L’attività della <b>Fondazione</b> si sviluppa in tre ambiti: - <strong>Centro di ricerca per la innovazione didattica sviluppata con persone, enti, imprese ed istituzioni;</strong> - <strong>“Pensatoio” per la ideazione di progetti a favore della crescita umana e professionale dei giovani;</strong> - <strong>fondi per sostenere progetti educativi sempre destinati ai giovani.</strong>
-                                          
-                                          La <b>Fondazione</b> opera in stretta relazione con una rete di organizzazioni educative presenti in 131 Paesi, con oltre 4.000 opere educative e circa 2.000.000 di giovani destinatari.
-                                    </p>
-                              </div>
-                        </div>
-                  </div>
+            <div class="container" id="newsHome">
+                <div class="container">
+                    <div class="row">
+                        <h6>
+                            Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
+                            <br>
+                            <br>
+                            Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.
+                            <br>
+                            La Fondazione Edulife ha una struttura di costi molto leggera (grazie al contributo di Edulife Spa) e quindi 
+                            <strong>tutto quanto donerai sarà dedicato a sostenere progetti che aiuteranno i giovani a scoprire i propri talenti ed il proprio progetto di vita.</strong>
+                            <br>
+                            <br>
+                            <strong>Come fare per donare il tuo 5 per mille a Fondazione Edulife:</strong>
+                            <br>
+                            <br>
+                            <u>Se presenti il Modello 730 o Unico:</u>
+                            <br>
+                            <br>
+                            <ol>
+                                <li>
+                                Compila la scheda sul modello 730 o Unico;
+                                </li>
+                                <li>
+                                Firma nel riquadro indicato come "Finanziamento della ricerca scientifica...";
+                                </li>
+                                <li>
+                                Indica nel riquadro il codice fiscale di Fondazione Edulife: 932 232 902 35.
+                                </li>
+                            </ol>
+                            <u>Se non sei tenuto a presentare la dichiarazione dei redditi:</u>
+                            <br>
+                            <br>
+                            Anche se non devi presentare la dichiarazione dei redditi puoi donare a Fondazione Edulife il tuo 5 per mille;
+                            <br>
+                            <br>
+                            <ol>
+                                <li>
+                                Compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come "Finanziamento della ricerca scientifica..." e indicando il codice fiscale di Fondazione Edulife: 932 232 902 35;
+                                </li>
+                                <li>
+                                Inserisci la scheda in una busta chiusa;
+                                </li>
+                                <li>
+                                Scrivi sulla busta "DESTINAZIONE CINQUE PER MILLE IRPEF" e indica il tuo cognome, nome e codice fiscale;
+                                </li>
+                                <li>
+                                Consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).
+                                </li>
+                            </ol>
+                        </h6>
+                    </div>
+                </div>
             </div>
+
             <canvas class="background"></canvas>
 
       <script type="text/javascript">

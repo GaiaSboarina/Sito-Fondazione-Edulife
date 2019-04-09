@@ -309,8 +309,10 @@ h1 {
 }
 
 #newsHome {
-      padding-top: 2%;
+      padding-top: 4%;
 }
+
+/* Scritta home */
 
 .scritta {
       position: absolute;
@@ -347,6 +349,48 @@ h1 {
   }
 }
 
+/* fine scritta home */
+
+
+
+/* Scritta donazioni */
+
+.scrittaDonazioni {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-size: 32px;
+      border-right: 1px solid rgb(255, 255, 255);
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriter 3s steps(50) 0.5s 1 normal both,
+      cursorblink 2s infinite;
+      animation-delay: 2s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 7.1em;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #e21212;
+  }
+  
+  to {
+    border-right: 1px solid #666;
+  }
+}
+
+/* fine scritta home */
 
 
 

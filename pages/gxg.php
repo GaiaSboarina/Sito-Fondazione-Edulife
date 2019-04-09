@@ -57,10 +57,7 @@
                                     <a href="../index.php">Home</a>
                               </li>
                               <li>
-                                    <a href="../pages/donazione.html">5x1000</a>
-                              </li>
-                              <li>
-                                    <a href="../pages/chisiamo.html">Chi siamo</a>
+                                    <a href="../pages/donazioni.php">5x1000</a>
                               </li>
                         </ul>
                   </nav>
