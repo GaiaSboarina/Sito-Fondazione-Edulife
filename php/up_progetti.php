@@ -1,5 +1,5 @@
 <?php
-
+    include("connection.php");
     function connection($table, $titolo, $text){
 
         // Parametri per la connessione al database
@@ -9,13 +9,7 @@
         $dbname = "edulife";
 
         // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        } else {
+        $conn = connection();
             //inserimento dell'immagine nella tabella img
             $file = $_FILES["fileToUpload"]["name"];
             
@@ -99,7 +93,7 @@
             // Chiusura della connessione
             $conn->close();
             header("Location: ../admin/choose.php");
-        }
+        
 
         
 
