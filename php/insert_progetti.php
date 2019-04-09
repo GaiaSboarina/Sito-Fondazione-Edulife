@@ -72,13 +72,11 @@ function getAllProgettiHome(){
 
     for($i = 0; $i < count($progetti); $i++) {
         echo "
-            <div class='col-sm-12 col-md-4'>
-                <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
         <a class='col-sm-12 col-md-4' href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
             <div>
-                <h6 style='color: #E6DA31'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
+                <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
                 </h6>
-                <p>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
+                <p class='scritteParagrafoHome'>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
                 </p>
             </div>
         </a>
