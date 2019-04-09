@@ -20,6 +20,7 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/loader.css">
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +40,9 @@
 <body>
       
       <div class="overlay">
-            <h1>Caricamento...</h1>
+            <div class="container-loader">
+            <div class="circle"></div>
+      </div>
       </div>
 
             <a href="index.php"><div class="logo"><img src="media/img/effe.png" id="imgLogo"></div></a>
