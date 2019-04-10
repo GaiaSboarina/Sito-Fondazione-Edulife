@@ -50,14 +50,20 @@ function shorter($testo, $limiteCaratteri) {
 
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
-            <a class='col-sm-12 col-md-4' href='pages/show.php?table=news&id=".$newsHome[$i]['id']."'>
-                <div >
-                    <h6 class='scritte_home'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
-                    </h6>
-                    <p style='color:#000'>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                    </p>
-                </div>
-            </a>    
+            <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
+
+            <input type='hidden' name='table' value='news' />
+            <input type='hidden' name='id' value='".$newsHome[$i]['id']."' />
+
+                <button type='submit'>
+                    <div >
+                        <h6 class='scritte_home'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
+                        </h6>
+                        <p style='color:#000'>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
+                        </p>
+                    </div>
+                </button>    
+            </form>
             ";
         }
 

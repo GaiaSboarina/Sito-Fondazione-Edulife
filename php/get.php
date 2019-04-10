@@ -2,10 +2,10 @@
     include("connection.php");
 
     function show(){
-        if (isset($_GET['table']) && isset($_GET['id'])) {
+        if (isset($_POST['table']) && isset($_POST['id'])) {
             $conn = connection();
-            $table = $_GET['table'];
-            $id = $_GET['id'];
+            $table = $_POST['table'];
+            $id = $_POST['id'];
             
             if ($table == "evento") {
                 $query = "SELECT t.titolo, t.contenuto, t.data_evento, i.nome FROM $table t, img i WHERE t.id = ? AND t.id_img = i.id";
