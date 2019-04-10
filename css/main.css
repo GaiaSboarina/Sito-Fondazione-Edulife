@@ -525,6 +525,99 @@ img { width: 100%; height: auto; }
       #testoCinquePerMille {
             padding-top: 10%;
       }
+
+}
+
+/* query per display più piccoli di 1280px */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+      .scritta {
+            top: 5%;
+      }
+
+      iframe{
+            width:1024px;
+            height:576px;
+      }
+
+      .arrow {
+            margin: 180px auto 0;
+      }
+      
+      #testoCinquePerMille {
+            padding-top: 10%;
+      }
+
+}
+
+/* query per ipad portrait */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+      .scritta {
+            top: 5%;
+      }
+
+      iframe{
+            width:512px;
+            height:228px;
+      }
+
+      .arrow {
+            margin: 90px auto 0;
+      }
+      
+      #testoCinquePerMille {
+            padding-top: 10%;
+      }
+      
+}
+
+/* query per ipad landscape */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+      .scritta {
+            top: 5%;
+      }
+
+      iframe{
+            width:640px;
+            height:360px;
+      }
+
+      .arrow {
+            margin: 160px auto 0;
+      }
+      
+      #testoCinquePerMille {
+            padding-top: 10%;
+      }
+      
+}
+
+/* query per smartphone */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+      .scritta {
+            top: 5%;
+      }
+
+      iframe{
+            width:384px;
+            height:216px;
+      }
+
+      .arrow {
+            margin: 160px auto 0;
+      }
+      
+      #testoCinquePerMille {
+            padding-top: 10%;
+      }
+      
 }
 
 /* fine media query */
