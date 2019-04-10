@@ -57,12 +57,15 @@
             <div id="gloval-nav">
                   <nav>
                         <ul>
-                              <li>
-                                    <a href="pages/gxg.php">GxG</a>
-                              </li>
-                              <li>
-                                    <a href="pages/donazioni.php">5x1000</a>
-                              </li>
+                                <li>
+                                        <a href="pages/gxg.php">GxG</a>
+                                </li>
+                                <li>
+                                        <a href="pages/donazioni.php">5x1000</a>
+                                </li>
+                                <li>
+                                        <a href="#">Bilancio Sociale</a>
+                                </li>
                         </ul>
                   </nav>
             </div><!-- /#gloval-nav -->
