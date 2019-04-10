@@ -58,7 +58,7 @@
                                     <a href="../index.php">Home</a>
                               </li>
                               <li>
-                                    <a href="pages/gxg.php">GxG</a>
+                                    <a href="../pages/gxg.php">GxG</a>
                               </li>
                               <li>
                                     <a href="#">Bilancio Sociale</a>
