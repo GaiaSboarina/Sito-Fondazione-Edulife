@@ -1,4 +1,3 @@
-<?php include "../php/insert_newsHome.php" ?>
 <?php include "../php/insert_gxg.php" ?>
 
 <!DOCTYPE html>
@@ -117,10 +116,9 @@
                                     &nbsp;Emmy&nbsp;Award.
                               </p>
                               <div class="btn-wrap">
-                                    <a class="btn btn-red btn-fx _tb" href="https://www.imdb.com/title/tt0883772/" style="opacity: 1;">
-                                          <span class="btn-over btn-over-red"></span> <span class="btn-txt btn-txt-dark">DISCOVER</span> 
+                                    <a class="btn btn-outline-warning" href="#" style="opacity: 1;">
+                                          DISCOVER
                                     </a>
-                                    <span class="btn-cover btn-cover-red btn-cover-fx" style="transform: translate3d(101%, 0px, 0px);"></span>
                               </div>
                               </div>
                         </div>
