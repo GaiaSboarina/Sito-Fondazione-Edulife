@@ -39,6 +39,7 @@ img{
 
 .scritte_home{
       color: #e21212;
+      margin-bottom: 5%;
 }
 
 .scritteParagrafoHome {
@@ -296,12 +297,13 @@ h1 {
 }
 
 .background {
-      position: absolute;
+      position: fixed;
       top: 0;
-      bottom: 0;
       left: 0;
       right: 0;
       z-index: -1;
+      height: 100%;
+      width: 100%;
 }
 
 #anteprimaGXG {
@@ -408,7 +410,7 @@ h1 {
 .arrow {
   width: 10%;
   height: 10%;
-  margin: 50px auto 0;
+  margin: 50px auto 10px;
   animation: arrow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
   animation-delay: 2s;
 }
@@ -417,6 +419,7 @@ h1 {
   height: 10px;
   background-color: #e21212;
   display:block;
+  border-radius: 50%;
   margin: 0 auto;
   position: relative;
   top: -10px;
@@ -443,3 +446,61 @@ iframe{
       margin: auto;
 }
 /* freccia_rossa che rimbalza finisce */
+
+button {
+      display: inline-block;
+      border: none;
+      padding: 1rem 2rem;
+      margin: 0;
+      text-decoration: none;
+      background: transparent;
+      color: #333;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: justify;
+      transition: background 250ms ease-in-out, 
+                  transform 150ms ease;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+  
+  button:hover,
+  button:focus {
+      background: transparent;
+  }
+  
+  button:focus {
+      outline: 1px solid transparent;
+      outline-offset: -4px;
+  }
+  
+  button:active {
+      transform: scale(0.99);
+  }
+
+  .avatar {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 5%;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	
+}
+img { width: 100%; height: auto; }
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}

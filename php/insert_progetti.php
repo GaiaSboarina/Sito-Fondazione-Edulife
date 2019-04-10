@@ -72,14 +72,19 @@ function getAllProgettiHome(){
 
     for($i = 0; $i < count($progetti); $i++) {
         echo "
-        <a class='col-sm-12 col-md-4' href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
+        <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
+
+            <input type='hidden' name='table' value='news' />
+            <input type='hidden' name='id' value='".$progetti[$i]['id']."' />
+            <button href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
             <div>
                 <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
                 </h6>
                 <p class='scritteParagrafoHome'>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
                 </p>
             </div>
-        </a>
+            </button>
+        </form>
         ";
     }
 }
