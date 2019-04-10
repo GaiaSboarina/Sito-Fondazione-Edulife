@@ -103,7 +103,7 @@
         for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
             echo "
                
-                <iframe width='560' height='315' src='https://www.youtube.com/embed/".$gxg[$i]['link']."?rel=0&amp;autoplay=1&mute=1&loop=0' frameborder='0' allowfullscreen></iframe>
+                <iframe src='https://www.youtube.com/embed/".$gxg[$i]['link']."?rel=0&amp;autoplay=1&mute=1&loop=0' frameborder='0' allowfullscreen></iframe>
                 
                 ";
             }

@@ -327,23 +327,23 @@ h1 {
 }
 
 @keyframes typewriter {
-  from {
-    width: 0;
-  }
-  
-  to {
-    width: 14.3em;
-  }
+      from {
+      width: 0;
+      }
+      
+      to {
+      width: 14.3em;
+      }
 }
 
 @keyframes cursorblink {
-  from {
-    border-right: 1px solid #e21212;
-  }
-  
-  to {
-    border-right: 1px solid #666;
-  }
+      from {
+      border-right: 1px solid #e21212;
+      }
+      
+      to {
+      border-right: 1px solid #666;
+      }
 }
 
 /* fine scritta home */
@@ -368,23 +368,23 @@ h1 {
 }
 
 @keyframes typewriterDonazioni {
-  from {
-    width: 0;
-  }
-  
-  to {
-    width: 7.1em;
-  }
+      from {
+      width: 0;
+      }
+      
+      to {
+      width: 7.1em;
+      }
 }
 
 @keyframes cursorblinkDonazioni {
-  from {
-    border-right: 1px solid #e21212;
-  }
-  
-  to {
-    border-right: 1px solid #666;
-  }
+      from {
+      border-right: 1px solid #e21212;
+      }
+      
+      to {
+      border-right: 1px solid #666;
+      }
 }
 
 /* fine scritta home */
@@ -395,7 +395,7 @@ h1 {
 /* inizio scrollbar */
 
 ::-webkit-scrollbar {
-  width: 0px;
+      width: 0px;
 }
 
 /* fine scrollbar */
@@ -403,32 +403,32 @@ h1 {
 /* freccia_rossa che rimbalza */
 
 .arrow {
-  width: 10%;
-  height: 10%;
-  margin: 95px auto 0;
-  animation: arrow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
-  animation-delay: 2s;
+      width: 10%;
+      height: 10%;
+      margin: 95px auto 0;
+      animation: arrow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+      animation-delay: 2s;
 }
 .shadow {
-  width: 10px;
-  height: 10px;
-  background-color: #e21212;
-  display:block;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  top: -10px;
-  opacity: 0.7;
-  animation: shadow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
-  animation-delay: 2s;
+      width: 10px;
+      height: 10px;
+      background-color: #e21212;
+      display:block;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      top: -10px;
+      opacity: 0.7;
+      animation: shadow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+      animation-delay: 2s;
 }
 @keyframes arrow {
-  0%{transform: translateY(0px);}
-  100% {transform: translateY(-50px);}
+      0%{transform: translateY(0px);}
+      100% {transform: translateY(-50px);}
 }
 @keyframes shadow {
-  0%{transform: scale(.5);}
-  100% {transform: scale(1.1); opacity:.1;}
+      0%{transform: scale(.5);}
+      100% {transform: scale(1.1); opacity:.1;}
 }
 
 /* freccia_rossa che rimbalza finisce */
@@ -437,6 +437,8 @@ a:hover{
 }
 
 iframe{
+      width:512px; 
+      height:288px;
       border-radius: 25%;
       margin: auto;
 }
@@ -457,23 +459,22 @@ button {
                   transform 150ms ease;
       -webkit-appearance: none;
       -moz-appearance: none;
-  }
+}
   
-  button:hover,
-  button:focus {
+button:hover, button:focus {
       background: transparent;
-  }
+}
   
-  button:focus {
+button:focus {
       outline: 1px solid transparent;
       outline-offset: -4px;
-  }
+}
   
-  button:active {
+button:active {
       transform: scale(0.99);
-  }
+}
 
-  .avatar {
+.avatar {
 	width: 100%;
 	height: auto;
 	box-sizing: border-box;
@@ -484,7 +485,9 @@ button {
 	animation: float 6s ease-in-out infinite;
 	
 }
+
 img { width: 100%; height: auto; }
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -499,3 +502,29 @@ img { width: 100%; height: auto; }
 		transform: translatey(0px);
 	}
 }
+
+/* inizio media query */
+
+/* query per display maggiori di 1281px */
+
+@media (min-width: 1281px) {
+
+      .scritta {
+            top: 5%;
+      }
+
+      iframe{
+            width:1024px;
+            height:576px;
+      }
+
+      .arrow {
+            margin: 130px auto 0;
+      }
+      
+      #testoCinquePerMille {
+            padding-top: 10%;
+      }
+}
+
+/* fine media query */
