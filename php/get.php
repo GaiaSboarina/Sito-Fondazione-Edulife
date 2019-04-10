@@ -23,7 +23,7 @@
                 if ($table == "evento") {
                     echo "
                         <div class='col-sm-12 col-md-6'>
-                            <img src='../media/img/".$row['nome']."'>
+                            <img class='avatar' src='../media/img/".$row['nome']."'>
                         </div>
                         <div class='col-sm-12 col-md-6'>
                             <h1>".$row['titolo']."</h1>
@@ -34,7 +34,7 @@
                 } else {
                     echo "
                         <div class='col-sm-12 col-md-6'>
-                            <img src='../media/img/".$row['nome']."'>
+                            <img class='avatar' src='../media/img/".$row['nome']."'>
                         </div>
                         <div class='col-sm-12 col-md-6'>
                             <h1>".$row['titolo']."</h1>

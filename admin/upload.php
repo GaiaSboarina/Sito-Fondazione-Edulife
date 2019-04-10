@@ -59,7 +59,7 @@
 
             <div id="showTitle" class="form-group myDiv">
                 <label for="titolo">Titolo</label>
-                <input type="text" class="form-control" id="titolo" placeholder="Titolo" name="titolo">
+                <input maxlength="75" type="text" class="form-control" id="titolo" placeholder="Titolo" name="titolo">
             </div>
         
             <div id="showContent" class="form-group myDiv">
