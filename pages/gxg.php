@@ -100,12 +100,31 @@
             </div>
             
             <div class="container">
-                  <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video caricato:</h1>
-                        <div class="esagonale">
-                        <?= getGxgHome() ?>
-                  </div>
-                        
+                  <div class="common-box btn-trigger-fx line-trigger-fx">
+                        <div class="common-box-txt-wrap">
+                              <div class="common-box-txt">
+                              <h2 class="title title-m title-dark title-marge-ml">Man vs. Wild</h2>
+                              <div class="line-wrap">
+                                    <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+                              </div>
+                              <p class="p-s p-dark">
+                                    Bear travels the globe seeking out ever mo
+                                    re inhospitable places in which to use his ex
+                                    traordinary survival skills – teaching us all t
+                                    hese techniques along the way. The show ran for s
+                                    even explosive seasons and was regularly viewed by more 
+                                    than 1.2 billion worldwide.&nbsp;It was also nominated for an
+                                    &nbsp;Emmy&nbsp;Award.
+                              </p>
+                              <div class="btn-wrap">
+                                    <a class="btn btn-red btn-fx _tb" href="https://www.imdb.com/title/tt0883772/" style="opacity: 1;">
+                                          <span class="btn-over btn-over-red"></span> <span class="btn-txt btn-txt-dark">DISCOVER</span> 
+                                    </a>
+                                    <span class="btn-cover btn-cover-red btn-cover-fx" style="transform: translate3d(101%, 0px, 0px);"></span>
+                              </div>
+                              </div>
+                        </div>
+                        <div id="common-box-img-0" class="common-box-img" style="background-image: url(../media/img/miri.jpg); transform: translate3d(0px, -150px, 0px);"></div>
                   </div>
             </div>
             <canvas class="background"></canvas>
