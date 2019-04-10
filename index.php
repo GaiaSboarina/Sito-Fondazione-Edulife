@@ -239,7 +239,7 @@
             var particles = Particles.init({
                   selector: '.background',
                   color: 'white',
-                  maxParticles: 200
+                  maxParticles: 300
             });
       </script>
 </body>
