@@ -1,4 +1,6 @@
 <?php include("../php/get.php") ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,7 +26,7 @@
 
       <!-- jquery -->
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script src="js/script.js"></script>
+      <script src="../js/script.js"></script>
 
       <!-- greensock -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -35,67 +37,64 @@
         
     </head>
     <body>
-        <div class="overlay">
-                <div class="container-loader">
-                        <div class="circle"></div>
-                </div>
-        </div>
-                <a href="index2.php"><div class="logo"><img src="../media/img/effe.png" id="imgLogo"></div></a>
-                
-                <div id="nav-toggle">
-                    <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                    </div>
-                </div>
+      
+      <div class="overlay">
+            <div class="container-loader">
+            <div class="circle"></div>
+            </div>
+      </div>
 
-                <div id="gloval-nav">
-                    <nav>
-                            <ul>
-                                <li>
-                                        <a href="pages/news.php">News</a>
-                                </li>
-                                <li>
-                                        <a href="pages/progetti.php">Progetti</a>
-                                </li>
-                                <li>
-                                        <a href="pages/gxg.php">GxG</a>
-                                </li>
-                                <li>
-                                        <a href="pages/donazione.html">5x1000</a>
-                                </li>
-                                <li>
-                                        <a href="pages/chisiamo.html">Chi siamo</a>
-                                </li>
-                            </ul>
-                    </nav>
-                </div><!-- /#gloval-nav -->
-                
-                <div class="social-media">
-                    <ul>
-                            <li>
-                                <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
-                                        <i class="fa fa-facebook social_home" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
-                                        <i class="fa fa-instagram social_home" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/EdulifeOnlus" target="_blank">
-                                        <i class="fa fa-twitter social_home" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
-                                        <i class="fa fa-map-marker social_home" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
+            <a href="index.php"><div class="logo"><img src="../media/img/effe.png" id="imgLogo"></div></a>
+            
+            <div id="nav-toggle">
+                  <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </div>
+            </div>
+
+            <div id="gloval-nav">
+                  <nav>
+                        <ul>
+                              <li>
+                                    <a href="pages/gxg.php">GxG</a>
+                              </li>
+                              <li>
+                                    <a href="pages/donazioni.php">5x1000</a>
+                              </li>
+                        </ul>
+                  </nav>
+            </div><!-- /#gloval-nav -->
+            
+            <div class="social-media">
+                  <ul>
+                        <li>
+                              <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
+                                    <i class="fa fa-facebook social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
+                                    <i class="fa fa-instagram social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://twitter.com/EdulifeOnlus" target="_blank">
+                                    <i class="fa fa-twitter social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>
+                        <li>
+                              <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
+                                    <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>
+                  </ul>
+            </div>
+      
+            <div class="scritta" class="container">
+                  <h3 class="scritte_home">Il sito ufficiale di Fondazione Edulife</h3>
+            </div>
   
                 
                 <div class="container">

@@ -121,7 +121,7 @@
                   </div>
                   <h1 class="scritte_home">Le ultime news</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
+                  <div class="container bottom-bar">
                         <div class="container">
                               <div class="row">
                                     <?= getAllNewsHome() ?>
@@ -131,7 +131,7 @@
 
                   <h1 class="scritte_home">I nostri progetti</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
+                  <div class="container bottom-bar">
                         <div class="container">
                               <div class="row">
                                     <?= getAllProgettiHome() ?>
@@ -141,7 +141,7 @@
 
                   <h1 class="scritte_home">Chi siamo</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
+                  <div class="container bottom-bar">
                         <div class="container">
                               <div class="row">
                                     <p>
