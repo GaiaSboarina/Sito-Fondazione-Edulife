@@ -453,8 +453,7 @@ button {
       margin: 0;
       text-decoration: none;
       background: transparent;
-      color: transparent;
-      font-family: sans-serif;
+      color: #333;
       font-size: 1rem;
       cursor: pointer;
       text-align: justify;
