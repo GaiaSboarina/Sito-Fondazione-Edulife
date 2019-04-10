@@ -20,6 +20,7 @@
       <!-- stylesheet -->
       <link rel="stylesheet" href="../css/mainGXG.css">
       <link rel="stylesheet" href="../css/loaderGXG.css">
+      
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,10 +36,10 @@
       <script src="../js/particles.min.js"></script>
 
 </head>
-<body class="index2">
+<body>
       
       <div class="overlay">
-      
+          
       </div>
       
             <a href="../index.php"><div class="logo"><img src="../media/img/effe_gialla.png" id="imgLogo"></div></a>
@@ -98,7 +99,7 @@
                         <h1 class="scritte_home">Ultimo video caricato:</h1>
                         <div class="esagonale">
                         <?= getGxgHome() ?>
-                        </div>
+                  </div>
                         
                   </div>
             </div>

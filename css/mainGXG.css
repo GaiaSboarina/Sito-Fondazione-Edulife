@@ -361,7 +361,7 @@ width: 0px;
 
 /* fine scrollbar */
 
-/* freccia_rossa che rimbalza */
+/* freccia_gialla che rimbalza */
 
 .arrow {
 width: 10%;
@@ -391,4 +391,4 @@ animation-delay: 2s;
 100% {transform: scale(1.1); opacity:.1;}
 }
 
-/* freccia_rossa che rimbalza finisce */
+/* freccia_gialla che rimbalza finisce */
