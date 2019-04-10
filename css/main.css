@@ -39,6 +39,7 @@ img{
 
 .scritte_home{
       color: #e21212;
+      margin-bottom: 5%;
 }
 
 .scritteParagrafoHome {
@@ -408,7 +409,7 @@ h1 {
 .arrow {
   width: 10%;
   height: 10%;
-  margin: 50px auto 0;
+  margin: 50px auto 10px;
   animation: arrow 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
   animation-delay: 2s;
 }
@@ -417,6 +418,7 @@ h1 {
   height: 10px;
   background-color: #e21212;
   display:block;
+  border-radius: 50%;
   margin: 0 auto;
   position: relative;
   top: -10px;
