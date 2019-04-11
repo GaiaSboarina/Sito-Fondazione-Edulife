@@ -2,7 +2,8 @@
 $array_news = getAllNewsHome();
 ?>
 <?php include "php/insert_gxg.php" ?>
-<?php include "php/insert_progetti.php" ?>
+<?php include "php/insert_progetti.php";
+$array_progetti = getAllProgettiHome(); ?>
 <?php include "php/get_file.php" ?>
 
 <!DOCTYPE html>
@@ -184,7 +185,24 @@ $array_news = getAllNewsHome();
             <div class="container bottom-bar">
                   <div class="container col-sm-12">
                         <div class="row">
-                              <?= getAllProgettiHome() ?>
+                              <?php for($i = 0; $i < count($array_progetti); $i++){ ?> 
+                                    <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
+
+                                          <input type='hidden' name='table' value='progetto' />
+                                          <input type='hidden' name='id' value='<?= $array_progetti[$i]['id'] ?>' />
+                                          <button  href='pages/show.php?table=progetto&id=<?= $array_progetti[$i]['id']?>'>
+                                          <div class='card' style='background-color: rgba(255, 255, 255, 0.5) !important; width: 18rem; transition: transform .6s;'>
+                                          <img class='card-img-top' src='../media/img/<?= $array_progetti[$i]['nome'] ?>' alt='Card image cap'>
+                                          <div class='card-body'>
+                                                <h6 class='title'><?= corto($array_progetti[$i]['titolo'], 25) ?>
+                                                </h6>
+                                                <p class='card-text'style='color:#000; font-size: 10px'><?= corto($array_progetti[$i]['contenuto'], 75)?>
+                                                </p>
+                                          </div>
+                                          </div>
+                                          </button>   
+                                    </form>
+                              <?php }?>
                         </div>
                   </div>
             </div>
