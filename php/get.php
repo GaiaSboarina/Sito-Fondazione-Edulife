@@ -20,29 +20,16 @@
 
             if($result->num_rows > 0){
                 $row = $result->fetch_assoc();
-                if ($table == "evento") {
-                    echo "
-                        <div class='col-sm-12 col-md-6'>
-                            <img class='avatar' src='../media/img/".$row['nome']."'>
-                        </div>
-                        <div class='col-sm-12 col-md-6'>
-                            <h1>".$row['titolo']."</h1>
-                            <h2>".$row['data_evento']."</h2>
-                            <p>".$row['contenuto']."</p>
-                        </div>
-                    ";
-                } else {
-                    echo "
-                        <div class='col-sm-12 col-md-6'>
-                            <img class='avatar' src='../media/img/".$row['nome']."'>
-                        </div>
-                        <div class='col-sm-12 col-md-6'>
-                            <h1>".$row['titolo']."</h1>
-                            <p>".$row['contenuto']."</p>
-                        </div>
-                    ";
-                }
                 
+                echo "
+                    <div class='col-sm-12 col-md-6' id='immagineNews'>
+                        <img class='avatar' src='../media/img/".$row['nome']."'>
+                    </div>
+                    <div class='col-sm-12 col-md-6'>
+                        <h3 class='title'>".$row['titolo']."</h1>
+                        <p>".$row['contenuto']."</p>
+                    </div>
+                ";           
             }
         }
     }

@@ -63,6 +63,9 @@
                                     <a href="pages/gxg.php">GxG</a>
                               </li>
                               <li>
+                                    <a href="pages/news.php">News</a>
+                              </li>
+                              <li>
                                     <a href="pages/donazioni.php">5x1000</a>
                               </li>
                               <li>
@@ -84,6 +87,10 @@
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
                                     <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
+                              <a href="#" target="_blank">
+                                    <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                              
 				</p>
                   </nav>
             </div><!-- /#gloval-nav -->
@@ -110,6 +117,11 @@
                                     <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
                         </li>
+                        <li>
+                              <a href="#" target="_blank">
+                              <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>       
                   </ul>
             </div>
       
@@ -121,7 +133,6 @@
             <div class="container" id="boxPerMobile">
                   <div class=row id="video">
                   <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video:</h1>
                         <div class=container>
                         <?= getGxgHome() ?>
                         </div>
@@ -258,7 +269,7 @@
       <script>
             var particles = Particles.init({
                   selector: '.background',
-                  color: 'white',
+                  color: '#e21212',
                   maxParticles: 300
             });
       </script>

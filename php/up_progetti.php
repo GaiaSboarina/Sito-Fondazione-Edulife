@@ -4,8 +4,8 @@
         echo "hai la mamma puttana";
 
         if (!($table == "File")) {
-            $titolo = addslashes($_POST['titolo']);
-            $text = addslashes($_POST['text']);
+            $titolo = addcslashes($_POST['titolo'], "'");
+            $text = addcslashes($_POST['text'], "'");
         }
 
         // Parametri per la connessione al database
@@ -49,11 +49,13 @@
                 
                 $query = "SELECT * FROM img";          
                 $result = $conn->query($query);
+                $id = 0;
                 echo var_dump($result); 
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
-                        $id = $row["id"];
-                        $id = (int)$id;
+                        if ($id < (int)$row['id']) {
+                            $id = (int)$row["id"];
+                        }                               
                     }
                         
                 }else {
@@ -72,18 +74,6 @@
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
-            }elseif ($table == "Evento"){
-                $data = date('Y-m-d H:i:s');
-                $data_evento = $_POST['data_evento'];
-
-                $sql = "INSERT INTO $table (titolo, contenuto, data_evento, data, id_img)
-                VALUES ('$titolo', '$text', '$data_evento', '$data', '$id')";
-        
-                if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
-                } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                }
             }elseif ($table == "Progetto"){
                 $sql = "INSERT INTO $table (titolo, contenuto, id_img)
                 VALUES ('$titolo', '$text', '$id')";
@@ -96,11 +86,11 @@
         
             }elseif ($table == "Video"){
                 $link = $_POST['link'];
+                $link2 = $_POST['link2'];
                 $table = "gxg";
                 $data = date('Y-m-d H:i:s');
-                echo "<br>$link, $titolo, $text, $data <br>";
-                $sql = "INSERT INTO $table (link, titolo, contenuto, data, id_img)
-                VALUES ('$link', '$titolo', '$text', '$data', '$id')";
+                $sql = "INSERT INTO $table (link, link2, titolo, contenuto, data, id_img)
+                VALUES ('$link', '$link2', '$titolo', '$text', '$data', '$id')";
         
                 if ($conn->query($sql) === TRUE) {
                     echo "New record created successfully";
@@ -182,10 +172,8 @@
                 } else {
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-                        connection($table); 
                     } else {
                         echo "Sorry, there was an error uploading your file.";
-                        connection($table);
                     }
                 }
                 

@@ -42,11 +42,10 @@
         <div class="container">
 
             <div class="form-group">
-                <label for="tipo">Progetto - Evento - News - Video - File</label>
+                <label for="tipo">Progetto - News - Video - File</label>
                 <select class="form-control" id="tipo" name="tipo">
                     <option></option>
                     <option value="Progetto">Progetto</option>
-                    <option value="Evento">Evento</option>
                     <option value="News">News</option>
                     <option value="Video">Video</option>
                     <option value="File">File</option>
@@ -55,7 +54,12 @@
 
             <div id="showLink" class="form-group myDiv">
                 <label for="link">Link</label>
-                <input type="text" class="form-control" id="link" placeholder="Link" name="link">
+                <input type="text" class="form-control" id="link" placeholder="Trailer" name="link">
+            </div>
+
+            <div id="showLink2" class="form-group myDiv">
+                <label for="link2">Link</label>
+                <input type="text" class="form-control" id="link2" placeholder="Intervista" name="link2">
             </div>
 
             <div id="showTitle" class="form-group myDiv">

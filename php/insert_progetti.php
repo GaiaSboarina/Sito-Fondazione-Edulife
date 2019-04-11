@@ -74,7 +74,7 @@ function getAllProgettiHome(){
         echo "
         <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
 
-            <input type='hidden' name='table' value='news' />
+            <input type='hidden' name='table' value='progetto' />
             <input type='hidden' name='id' value='".$progetti[$i]['id']."' />
             <button href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
             <div>
