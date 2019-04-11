@@ -860,10 +860,12 @@ img { width: 100%; height: auto; }
       iframe{
             width: auto;
             height: auto;
+            padding-left: 10%;
       }
 
       button {
-            padding: 0;
+            padding-left: 15%;
+            margin: 5px;
       }
       
       .social-media {
