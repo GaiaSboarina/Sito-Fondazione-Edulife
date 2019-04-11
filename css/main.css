@@ -669,6 +669,7 @@ img { width: 100%; height: auto; }
       }
       #donazioni {
             width: 50%;
+            margin-top: 50%;
       }
 }
 
