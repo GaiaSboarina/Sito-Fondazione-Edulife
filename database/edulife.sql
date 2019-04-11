@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Apr 11, 2019 alle 11:34
+-- Creato il: Apr 11, 2019 alle 16:23
 -- Versione del server: 10.1.34-MariaDB
 -- Versione PHP: 7.2.8
 
@@ -25,21 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `evento`
---
-
-CREATE TABLE `evento` (
-  `id` int(11) NOT NULL,
-  `titolo` varchar(250) NOT NULL,
-  `contenuto` mediumtext NOT NULL,
-  `data_evento` date NOT NULL,
-  `data` date NOT NULL,
-  `id_img` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Struttura della tabella `file`
 --
 
@@ -53,7 +38,7 @@ CREATE TABLE `file` (
 --
 
 INSERT INTO `file` (`id`, `nome`) VALUES
-(8, 'BILANCIO SOCIALE FONDAZIOEN EDULIFE 2017.pdf');
+(9, 'BILANCIO SOCIALE FONDAZIOEN EDULIFE 2017.pdf');
 
 -- --------------------------------------------------------
 
@@ -64,6 +49,7 @@ INSERT INTO `file` (`id`, `nome`) VALUES
 CREATE TABLE `gxg` (
   `id` int(11) NOT NULL,
   `link` varchar(250) NOT NULL,
+  `link2` varchar(250) NOT NULL,
   `titolo` varchar(250) NOT NULL,
   `contenuto` mediumtext NOT NULL,
   `data` date NOT NULL,
@@ -74,10 +60,10 @@ CREATE TABLE `gxg` (
 -- Dump dei dati per la tabella `gxg`
 --
 
-INSERT INTO `gxg` (`id`, `link`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
-(1, 'fbS2TLMErlM', 'Zeni', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis est ligula, eget sollicitudin massa tempus eu. Nulla faucibus tortor non magna molestie, quis imperdiet ante laoreet. Praesent sagittis pulvinar ex consequat venenatis. Mauris varius finibus purus. Fusce et mollis ipsum. Duis tincidunt aliquam odio eu interdum. Vestibulum ut efficitur metus. Phasellus vel urna cursus, mollis augue ac, viverra mi. Ut eu diam felis. In et felis quis velit posuere fringilla. Mauris scelerisque ullamcorper egestas. Aenean ut rutrum lectus, a blandit odio.\r\n\r\nMaecenas iaculis ornare diam, vitae pellentesque sem condimentum vel. Donec mollis velit magna, sit amet accumsan nisl finibus sed. Sed eu pellentesque magna. Nullam venenatis vitae justo eu auctor. Proin vel mi turpis. Mauris cursus neque vel ex congue faucibus. Pellentesque hendrerit finibus ligula, vel auctor purus faucibus sit amet. Aenean tristique orci vitae elit egestas ultrices. Proin eu sapien neque.', '2019-04-01', 1),
-(3, '5--lgXlHI98', 'Mirandola', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis est ligula, eget sollicitudin massa tempus eu. Nulla faucibus tortor non magna molestie, quis imperdiet ante laoreet. Praesent sagittis pulvinar ex consequat venenatis. Mauris varius finibus purus. Fusce et mollis ipsum. Duis tincidunt aliquam odio eu interdum. Vestibulum ut efficitur metus. Phasellus vel urna cursus, mollis augue ac, viverra mi. Ut eu diam felis. In et felis quis velit posuere fringilla. Mauris scelerisque ullamcorper egestas. Aenean ut rutrum lectus, a blandit odio.\r\n\r\nMaecenas iaculis ornare diam, vitae pellentesque sem condimentum vel. Donec mollis velit magna, sit amet accumsan nisl finibus sed. Sed eu pellentesque magna. Nullam venenatis vitae justo eu auctor. Proin vel mi turpis. Mauris cursus neque vel ex congue faucibus. Pellentesque hendrerit finibus ligula, vel auctor purus faucibus sit amet. Aenean tristique orci vitae elit egestas ultrices. Proin eu sapien neque.', '2019-04-01', 3),
-(4, 'TFj31mp1A9E', 'Samu', 'lisfg drog hdòo hdòog hdsò òbfobx', '2019-04-08', 8);
+INSERT INTO `gxg` (`id`, `link`, `link2`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
+(15, 'IhEP3_mIqV8', '5--lgXlHI98&t', 'Andrea Mirandola', 'Studente dell\'ITS, \r\nci racconta i suoi primi passi in Edulife. \r\n“ITS è una scuola decisamente diversa dalle superiori, perché dinamica, viva e ci sono sempre cose nuove da imparare“ \r\nAndiamo insieme a rivivere le emozioni del suo percorso!!', '2019-04-11', 42),
+(16, '4LVi9ihO43M', '1Ar3SBx96oE&t', 'Lorenzo Vezzaro', 'Studente dell\'ITS, \r\nci racconta i suoi primi passi in Edulife. \r\n“Il parkour mi ha sicuramente fatto imparare a superare gli ostacoli non solo nella disciplina stessa, ma anche nella vita reale, quindi quando incontri un ostacolo non ci giri attorno, non fai la strada più corta, ma anzi provi a scavalcarlo nel migliore dei modi” \r\nAndiamo insieme a rivivere le emozioni del suo percorso!!', '2019-04-11', 43),
+(14, 'TFj31mp1A9E', 'fbS2TLMErlM&t', 'Cristian Zeni', 'Programmatore, amministratore di sistema e docente dell\'ITS, \r\nsi racconta a 10 anni dall\'inizio della sua esperienza in Edulife.\r\n\"Si possono fare un milione di cose nella vita, certo è che se sei indeciso e non hai grandi certezze e sicurezze, la cosa migliore che puoi fare è prendere una tua passione e provare a seguirla che tanto alla fine qualcosa salta fuori\"\r\nRipercorriamo insieme il suo percorso!!', '2019-04-11', 35);
 
 -- --------------------------------------------------------
 
@@ -95,13 +81,9 @@ CREATE TABLE `img` (
 --
 
 INSERT INTO `img` (`id`, `nome`) VALUES
-(1, 'imggxg.jpg'),
-(3, 'imggxg.jpg'),
-(4, 'architecture-blank-space-blue-sky-921294.jpg'),
-(5, 'architecture-blank-space-blue-sky-921294.jpg'),
-(6, 'architecture-blank-space-blue-sky-921294.jpg'),
-(7, 'architecture-blank-space-blue-sky-921294.jpg'),
-(8, 'mirandola.jpg');
+(43, 'vezzaro.jpeg'),
+(42, 'mirandola.jpeg'),
+(35, 'zeni.jpeg');
 
 -- --------------------------------------------------------
 
@@ -122,8 +104,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `titolo`, `contenuto`, `data`, `id_img`) VALUES
-(1, 'Progetto Yachay - La Città della Conoscenza\r\n', 'La Fondazione Edulife collabora con il governo ecuadoriano nella progettazione di Yachay, la Citta della Conoscenza, che sarà una delle Università più moderne dell\'America Latina e del mondo.\r\n\r\nUn ecosistema di innovazione tecnologica; una vera e propria città, che avrà come obiettivo quello di generare felicità e soddisfazione tra tutti gli abitanti, e di costruire un collegamento tra le tradizioni del paese, le nuove metodologie didattiche e le tecnologie più avanzate.\r\n\r\nUn progetto molto ambizioso e strettamente legato al territorio, che funzionerà da ponte tra Università e mondo del lavoro.', '2019-03-30', 8),
-(2, 'Presentazione della ricerca sul progetto IUS: \"Un processo di costruzione partecipata del profilo docente in una rete di Istituzioni di Educazione Superiore in America Latina\"\r\n', 'A Roma dal 10 al 14 luglio p.v. Si terrà l\'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa.\r\n\r\nDurante l\'incontro porterà un suo contributo istituzionale anche il Rettor Maggiore p. Pasqual Chavez, la massima autorità della Congregazione Salesiana.\r\n\r\nDurante l’Assemblea sarà presentata dal Comitato Scientifico della Fondazione Edulife la ricerca sul progetto IUS, “Gestione Integrata delle Risorse Umane”, che ha visto coinvolta una rete di 17 università (sudamericane ed europee), che hanno lavorato assieme attraverso una comunità di pratica, sviluppando i profili del docente universitario, del direttivo e dell\'amministrativo.\r\n\r\nAlla conferenza sarà presente anche il prof. Ernesto González, Consigliere Accademico dell\'Istituto Internazionale della UNESCO per l\'Educazione Superiore in America Latina e nei Caraibi (IESALC).', '2019-03-30', 8);
+(9, 'Presentazione della ricerca sul progetto IUS', 'A Roma dal 10 al 14 luglio p.v. Si terrà l\'Assemblea Generale delle IUS - Istituzioni Salesiane di Educazione Superiore -, un evento istituzionale che si celebra ogni due/tre anni, e che conta con la presenza dei rettori delle Università Salesiane presenti in America Latina, Asia (India) ed Europa.\r\n\r\nDurante l\'incontro porterà un suo contributo istituzionale anche il Rettor Maggiore p. Pasqual Chavez, la massima autorità della Congregazione Salesiana.\r\n\r\nDurante l’Assemblea sarà presentata dal Comitato Scientifico della Fondazione Edulife la ricerca sul progetto IUS, “Gestione Integrata delle Risorse Umane”, che ha visto coinvolta una rete di 17 università (sudamericane ed europee), che hanno lavorato assieme attraverso una comunità di pratica, sviluppando i profili del docente universitario, del direttivo e dell\'amministrativo.\r\n\r\nAlla conferenza sarà presente anche il prof. Ernesto González, Consigliere Accademico dell\'Istituto Internazionale della UNESCO per l\'Educazione Superiore in America Latina e nei Caraibi (IESALC).', '2019-04-11', 16);
 
 -- --------------------------------------------------------
 
@@ -137,6 +118,13 @@ CREATE TABLE `progetto` (
   `contenuto` mediumtext NOT NULL,
   `id_img` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `progetto`
+--
+
+INSERT INTO `progetto` (`id`, `titolo`, `contenuto`, `id_img`) VALUES
+(0, 'PLAN YOUR FUTURE', 'Il progetto Plan your future è a supporto dei principali attori delle attività di orientamento che gli Istituti secondari di II grado hanno organizzato per sostenere le scelte formative e professionali del dopo maturità.\r\n\r\nGrazie a un ambiente virtuale di apprendimento: www.planyourfuture.eu, intenzionalmente progettato secondo metodologie collaborative attente alle nuove modalità di comunicazione in rete, con la supervisione di esperti in temi di orientamento, studenti, studentesse, docenti e famiglie potranno:\r\n\r\n- conoscere i percorsi professionali di manager, imprenditori, dirigenti di azienda e liberi professionisti, attraverso le diverse videointerviste presenti nell’ambiente;\r\n- mettersi in contatto diretto con i testimoni, grazie a un blog dedicato e porre delle domande;\r\n- accedere sia a contenuti informativi sul mondo del lavoro (disponibili per studenti, docenti e famiglie)  sia a unità formative strutturate, a supporto delle attività di orientamento (disponibili per docenti).\r\n\r\nIl progetto è promosso dalla Fondazione Edulife insieme all’associazione Prospera www.prospera.it e al COSP di Verona www.cosp.verona.it.', 17);
 
 -- --------------------------------------------------------
 
@@ -159,13 +147,6 @@ INSERT INTO `user` (`username`, `password`) VALUES
 --
 -- Indici per le tabelle scaricate
 --
-
---
--- Indici per le tabelle `evento`
---
-ALTER TABLE `evento`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `id_img` (`id_img`);
 
 --
 -- Indici per le tabelle `file`
@@ -214,25 +195,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT per la tabella `file`
 --
 ALTER TABLE `file`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT per la tabella `gxg`
 --
 ALTER TABLE `gxg`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT per la tabella `img`
 --
 ALTER TABLE `img`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT per la tabella `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
