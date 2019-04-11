@@ -34,10 +34,12 @@ img{
 
 #imgLogo {
     max-width: 40%;
+    margin-left: -14%;
 }
 
 .scritte_home{
     color: #E6DA31;
+    margin-bottom: 5%;
 }
 
 .scritteParagrafoHome {
@@ -47,8 +49,6 @@ img{
 a:hover{
     text-decoration: none;
 }
-
-
 
 
 /* hamburger menu */
@@ -301,6 +301,7 @@ h1 {
     position: absolute;
     top: 5%;
     left: 50%;
+    margin-bottom: 5%;
     transform: translate(-50%, -50%);
     color: #E6DA31;
     font-size: 32px;

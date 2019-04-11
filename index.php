@@ -11,6 +11,8 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Fondazione Edulife</title>
 
+      <link rel="shortcut icon" href="/media/img/favicon.ico" type="image/x-icon">
+
       <!-- font -->
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 

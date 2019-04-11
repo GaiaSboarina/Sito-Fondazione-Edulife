@@ -12,6 +12,8 @@ $array = getGxg();
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Fondazione Edulife</title>
 
+      <link rel="shortcut icon" href="../media/img/gxg.png" type="image/png">
+
       <!-- font -->
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -48,7 +50,7 @@ $array = getGxg();
             </div>
       </div>
       
-            <a href="../index.php"><div class="logo"><img src="../media/img/effe_gialla.png" id="imgLogo"></div></a>
+            <a href="../pages/gxg.php"><div class="logo"><img src="../media/img/gxg_gialla.png" id="imgLogo"></div></a>
             
             <div id="nav-toggle">
                   <div>
@@ -128,7 +130,7 @@ $array = getGxg();
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
+                  <h3 class="scritte_home">GxG, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
             <div class="space"></div>
                   <?php for($i = 0; $i < count($array); $i++){ ?>
