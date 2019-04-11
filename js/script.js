@@ -21,11 +21,19 @@ $(document).ready(function(){
             $("#showContent").show();
             $("#showImg").show();
             $("#showDate").show();
+            
         } else if(demovalue == "Video"){
             $("#showLink").show();
             $("#showTitle").show();
             $("#showContent").show();
             $("#showImg").show();
+            $("#showDate").hide();
+
+        }else if(demovalue == "File"){
+            $("#showImg").show();
+            $("#showLink").hide();
+            $("#showTitle").hide();
+            $("#showContent").hide();
             $("#showDate").hide();
         }else{
             $("div.myDiv").hide();

@@ -6,6 +6,7 @@ include("select.php");
     $array_eventi=eventi();
     $array_news=news();
     $array_gxg=gxg();
+    $array_file=get_file();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -173,6 +174,34 @@ include("select.php");
                 </tbody>
             </table>
 
+            <br>
+            <h1>File</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <?php 
+                    for ($i=0; $i < count($array_file); $i++) { 
+                        echo "<tr>";
+                        foreach ($array_file[$i] as $key => $value) {
+                            echo "<td>$value</td>";
+                        }
+                        $id = $array_file[$i]['id'];
+                        echo '
+                        <form action="select.php" method="post">
+                            <input type="hidden" name="table" value="news">
+                            <input type="hidden" name="id" value="'.$id.'">
+                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
+                        </form>';
+                        echo "</tr>";
+                    } ?>
+                </tbody>
+            </table>
 
         </div>
 
