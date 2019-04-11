@@ -121,7 +121,6 @@
             <div class="container" id="boxPerMobile">
                   <div class=row id="video">
                   <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video:</h1>
                         <div class=container>
                         <?= getGxgHome() ?>
                         </div>
@@ -258,7 +257,7 @@
       <script>
             var particles = Particles.init({
                   selector: '.background',
-                  color: 'white',
+                  color: '#e21212',
                   maxParticles: 300
             });
       </script>
