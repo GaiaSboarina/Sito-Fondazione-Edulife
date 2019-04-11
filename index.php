@@ -11,7 +11,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Fondazione Edulife</title>
 
-      <link rel="shortcut icon" href="/media/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/media/img/effe_icon.png" type="image/png">
 
       <!-- font -->
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -133,15 +133,12 @@
 
             <div class="container" id="boxPerMobile">
                   <div class=row id="video">
-                  <div class="header col-sm-12" id="anteprimaGXG">
-                        <div class=container>
-                        <?= getGxgHome() ?>
-                        </div>
-                              
-                  </div>
-                  
-                    
-                        
+                        <div class="header col-sm-12" id="anteprimaGXG">
+                              <div class=container>
+                              <?= getGxgHome() ?>
+                              </div>
+                                    
+                        </div>    
                   </div>
 
             <div class="container">
