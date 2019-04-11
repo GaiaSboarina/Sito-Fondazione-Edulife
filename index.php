@@ -102,10 +102,10 @@
             </div>
 
 
-            <div class="container">
-                  <div class=row>
+            <div class="container" id="boxPerMobile">
+                  <div class=row id="video">
                   <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video caricato:</h1>
+                        <h1 class="scritte_home">Ultimo video:</h1>
                         <div class=container>
                         <?= getGxgHome() ?>
                         </div>
@@ -127,7 +127,7 @@
 
                   <div class="container bottom-bar">
                         <div class="container col-sm-12">
-                              <div class="row">
+                              <div class="row" id="newsHome">
                                     <?= getAllNewsHome() ?>
                               </div>
                         </div>
