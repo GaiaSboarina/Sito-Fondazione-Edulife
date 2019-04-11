@@ -119,13 +119,12 @@
                         </li>       
                   </ul>
             </div>
-                <div class="container" id="newsHome">
-                    <div class="row" id="testoCinquePerMille">
-                        <div class="card">
-                              <div class="card-body">
-                                    <h2 class="card-title">Dona al 5xMILLE</h2>
-                                    <p class="card-text">
-                                                Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
+                <div class="container" id="impaginazioneNews">
+                        <div class="backgroundNews">
+                              <div class="row">
+                                    <h3 class='title'>Dona al 5xMILLE</h3>
+                                    <p>
+                                          Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
 
                                           Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.
                                           La Fondazione Edulife ha una struttura di costi molto leggera (grazie al contributo di Edulife Spa) e quindi tutto quanto donerai sarà dedicato a sostenere progetti che aiuteranno i giovani a scoprire i propri talenti ed il proprio progetto di vita.
@@ -144,11 +143,11 @@
                                           compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come "Finanziamento della ricerca scientifica..." e indicando il codice fiscale di Fondazione Edulife: 932 232 902 35;
                                           inserisci la scheda in una busta chiusa;
                                           scrivi sulla busta "DESTINAZIONE CINQUE PER MILLE IRPEF" e indica il tuo cognome, nome e codice fiscale;
-                                          consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).</p>
+                                          consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).
+                                    </p>
                               </div>
                         </div>
                   </div>
-            </div>
 
             <canvas class="background"></canvas>
 

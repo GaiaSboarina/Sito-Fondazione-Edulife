@@ -26,7 +26,7 @@
                         <img class='avatar' src='../media/img/".$row['nome']."'>
                     </div>
                     <div class='col-sm-12 col-md-6'>
-                        <h3 class='title'>".$row['titolo']."</h1>
+                        <h3 class='title'>".$row['titolo']."</h3>
                         <p>".$row['contenuto']."</p>
                     </div>
                 ";           
