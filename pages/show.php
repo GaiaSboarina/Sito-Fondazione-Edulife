@@ -1,4 +1,5 @@
 <?php include("../php/get.php") ?>
+<?php include "php/get_file.php" ?>
 
 
 <!DOCTYPE html>
@@ -64,7 +65,7 @@
                                         <a href="pages/donazioni.php">5x1000</a>
                                 </li>
                                 <li>
-                                        <a href="#">Bilancio Sociale</a>
+                                    <?=getFile()?>
                                 </li>
                         </ul>
                   </nav>
