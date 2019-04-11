@@ -1,5 +1,5 @@
 <?php include("../php/get.php") ?>
-<?php include "php/get_file.php" ?>
+<?php include "../php/get_file.php" ?>
 
 
 <!DOCTYPE html>
