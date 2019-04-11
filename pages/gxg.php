@@ -122,7 +122,9 @@
                               </div>
                               </div>
                         </div>
-                        <div id="common-box-img-0" class="common-box-img" style="background-image: url(../media/img/miri.jpg); transform: translate3d(0px, -150px, 0px);"></div>
+                        <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
+                              <img src="../media/img/miri.jpg">
+                        </div>
                   </div>
             </div>
             <canvas class="background"></canvas>
