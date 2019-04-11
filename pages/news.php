@@ -71,58 +71,78 @@ $array = getNews();
                               </li>
                         </ul>
                   </nav>
+                  <nav>
+				<p class="socialMobile" style="color: #e21212;">
+                              <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
+                                    <i class="fa fa-facebook social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
+                                    <i class="fa fa-instagram social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                              <a href="https://twitter.com/EdulifeOnlus" target="_blank">
+                                    <i class="fa fa-twitter social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                              <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
+                                    <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                              <a href="#" target="_blank">
+                                    <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+				</p>
+                  </nav>
             </div><!-- /#gloval-nav -->
             
             <div class="social-media">
                   <ul>
                         <li>
                               <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
-                                    <i class="fa fa-facebook social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
-                                    <i class="fa fa-instagram social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://twitter.com/EdulifeOnlus" target="_blank">
-                                    <i class="fa fa-twitter social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
-                                    <i class="fa fa-map-marker social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
+                                    <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
                         </li>
+                        <li>
+                              <a href="#" target="_blank">
+                              <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
+                              </a>
+                        </li>       
                   </ul>
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
+                  <h3 class="scritte_home">Le ultime news</h3>
             </div>
             <?php for($i = 0; $i < count($array); $i++){ ?>
-                  <div class="container">
-      
-                        <div class="common-box btn-trigger-fx line-trigger-fx">
-                              <div class="common-box-txt-wrap">
-                                    <div class="common-box-txt">
-                                    <h2 class="title title-m title-dark title-marge-ml"><?= $array[$i]['titolo'] ?></h2>
-                                    <div class="line-wrap">
-                                          <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
-                                    </div>
-                                    <p class="p-s p-dark">
+
+            <div class="container" id="impaginazioneNews">
+                  <div class="backgroundNews">
+                        <div class="row" >
+                              <div class='col-sm-12 col-md-6' id='immagineNews'>
+                                    <img class='avatar' src="../media/img/<?= $array[$i]['nome'] ?>">
+                              </div>
+                              <div class='col-sm-12 col-md-6'>
+                                    <h3 h3 class='title'><?= $array[$i]['titolo'] ?></h3>
+                                    <p>
                                           <?= $array[$i]['contenuto'] ?>
                                     </p>
-                                    
-                                    </div>
-                              </div>
-                              <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
-                                    <img src="../media/img/<?= $array[$i]['nome'] ?>">
                               </div>
                         </div>
-                        
                   </div>
+            </div>
+
             <?php ;} ?>
             <canvas class="background"></canvas>
 

@@ -90,7 +90,6 @@
                               <a href="#" target="_blank">
                                     <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
                               </a>
-                              
 				</p>
                   </nav>
             </div><!-- /#gloval-nav -->
