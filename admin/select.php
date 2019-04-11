@@ -74,6 +74,20 @@
         return $array;
     }
 
+    function get_file(){
+        $conn = connection();
+        $query = "SELECT * FROM file";
+        $result = $conn->query($query);
+        $array = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
+        return $array;
+    }
+
     function delete($table, $id){
         $conn = connection();
         echo "$table , $id";
