@@ -57,7 +57,7 @@ function shorter($testo, $limiteCaratteri) {
 
                 <button type='submit'>
                     <div class='card' style='background-color: rgba(255, 255, 255, 0.5) !important; width: 18rem; transition: transform .6s;'>
-                        <img class='card-img-top' src='../media/img/img_top.jpg' alt=' Card image cap'>
+                        <img class='card-img-top' src='../media/img/plan-your-future.jpg' alt='Card image cap'>
                         <div class='card-body'>
                             <h6 class='title'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
                             </h6>
@@ -71,7 +71,4 @@ function shorter($testo, $limiteCaratteri) {
         }
 
     }
-
-    
-
 ?>

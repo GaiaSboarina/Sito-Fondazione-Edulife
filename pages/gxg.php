@@ -23,6 +23,7 @@ $array = getGxg();
       <!-- stylesheet -->
       <link rel="stylesheet" href="../css/mainGXG.css">
       <link rel="stylesheet" href="../css/loaderGXG.css">
+      <link rel="stylesheet" href="../css/gxg.scss">
       
 
       <!-- font-awesome -->
@@ -42,8 +43,8 @@ $array = getGxg();
 <body>
       
       <div class="overlay">
-      <div class="container-loader">
-            <div class="circle"></div>
+            <div class="container-loader">
+                  <div class="circle"></div>
             </div>
       </div>
       
@@ -129,36 +130,38 @@ $array = getGxg();
             <div class="scritta" class="container">
                   <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
-            <?php for($i = 0; $i < count($array); $i++){ ?>
-                  <div class="container">
-      
-                        <div class="common-box btn-trigger-fx line-trigger-fx">
-                              <div class="common-box-txt-wrap">
-                                    <div class="common-box-txt">
-                                    <h2 class="title title-m title-dark title-marge-ml"><?= $array[$i]['titolo'] ?></h2>
-                                    <div class="line-wrap">
-                                          <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
-                                    </div>
-                                    <p class="p-s p-dark">
-                                          <?= $array[$i]['contenuto'] ?>
-                                    </p>
-                                    <div class="btn-wrap">
-                                          <a target="_blank" class="btn btn-outline-warning" href="https://www.youtube.com/watch?v=<?= $array[$i]['link'] ?>" style="opacity: 1;">
-                                                TRAILER
-                                          </a>
-                                          <a target="_blank" class="btn btn-outline-warning" href="https://www.youtube.com/watch?v=<?= $array[$i]['link2'] ?>" style="opacity: 1;">
-                                                INTERVISTA
-                                          </a>
-                                    </div>
+            <div class="space"></div>
+                  <?php for($i = 0; $i < count($array); $i++){ ?>
+                        <section>
+                              <div class="container py-3">
+                                    <div class="card">
+                                          <div class="row ">
+                                                <div class="col-md-4">
+                                                      <img src="../media/img/<?= $array[$i]['nome'] ?>" class="w-100">
+                                                </div>
+                                                <div class="col-md-8 px-3">
+                                                      <div class="card-block px-3">
+                                                            <h4 class="card-title"><?= $array[$i]['titolo'] ?></h4>
+                                                            <p class="card-text"><?= $array[$i]['contenuto'] ?></p>
+                                                            <div class="line-wrap">
+                                                                  <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+                                                            </div>
+
+                                                            <a href="https://www.youtube.com/watch?v=<?= $array[$i]['link'] ?>" target="_blank" class="btn btn-primary">TRAILER</a>
+                                                            <a href="https://www.youtube.com/watch?v=<?= $array[$i]['link2'] ?>" target="_blank" class="btn btn-primary">INTERVISTA</a>
+                                                      </div>
+                                                </div>
+
+                                          </div>
                                     </div>
                               </div>
-                              <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
-                                    <img src="../media/img/<?= $array[$i]['nome'] ?>">
-                              </div>
-                        </div>
                         
-                  </div>
-            <?php ;} ?>
+                        </section>
+                  
+                  <?php ;} ?>
+                  
+            
+
             <canvas class="background"></canvas>
 
       <script type="text/javascript">

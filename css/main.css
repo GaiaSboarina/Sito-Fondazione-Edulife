@@ -39,7 +39,6 @@ img{
 
 .scritte_home{
       color: #e21212;
-      text-shadow: 2px 0 0 rgba(255, 255, 255, 0.4), -2px 0 0 rgba(255, 255, 255, 0.4), 0 2px 0 rgba(255, 255, 255, 0.4), 0 -2px 0 rgba(255, 255, 255, 0.4), 1px 1px rgba(255, 255, 255, 0.4), -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .scritteParagrafoHome {
@@ -937,7 +936,7 @@ img { width: 100%; height: auto; }
 }
 
 .card-body:hover {
-      background-color: rgb(255, 255, 226) !important;
+      background-color: #fff !important;
 }
 
 .title {

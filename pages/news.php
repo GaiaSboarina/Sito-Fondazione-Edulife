@@ -64,6 +64,9 @@ $array = getNews();
                                     <a href="../index.php">Home</a>
                               </li>
                               <li>
+                                    <a href="pages/gxg.php">GxG</a>
+                              </li>
+                              <li>
                                     <a href="../pages/donazioni.php">5x1000</a>
                               </li>
                               <li>
