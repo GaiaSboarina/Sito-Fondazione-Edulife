@@ -72,7 +72,7 @@ $array = getGxg();
                         </ul>
                   </nav>
                   <nav>
-			<p class="socialMobile" style="color: #e6da31;">
+			<!-- <p class="socialMobile" style="color: #e6da31;">
                               <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
                                     <i class="fa fa-facebook social_home" aria-hidden="true" style="color:#E6DA31;"></i>
                               </a>
@@ -89,7 +89,7 @@ $array = getGxg();
                                     <i class="fa fa-youtube social_home" aria-hidden="true" style="color:#E6DA31;"></i>
                               </a>
                               
-				</p>
+				</p> -->
                   </nav>	
             </div><!-- /#gloval-nav -->
             
