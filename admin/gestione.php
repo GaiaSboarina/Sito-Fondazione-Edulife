@@ -149,6 +149,7 @@ include("select.php");
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Link</th>
+                    <th scope="col">Link2</th>
                     <th scope="col">Titolo</th>
                     <th scope="col">Contenuto</th>
                     <th scope="col">Img</th>

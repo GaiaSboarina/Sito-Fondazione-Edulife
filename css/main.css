@@ -667,6 +667,8 @@ img { width: 100%; height: auto; }
       .socialMobile {
             display: inline;
       }
+      #ciao {
+            width: 50%;
 }
 
 /* fine media query */
