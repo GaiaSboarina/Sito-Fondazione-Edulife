@@ -49,6 +49,9 @@ a:hover{
       text-decoration: none;
 }
 
+.socialMobile {
+      display: none;
+}
 
 /* hamburger menu */
 
@@ -659,6 +662,10 @@ img { width: 100%; height: auto; }
 
       .scritta {
             display: none;
+      }
+
+      .socialMobile {
+            display: inline;
       }
 }
 
