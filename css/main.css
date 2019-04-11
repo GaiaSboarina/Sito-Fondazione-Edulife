@@ -54,6 +54,25 @@ a:hover{
       display: none;
 }
 
+#immagineNews {
+      padding-top: 5%;
+}
+
+#impaginazioneNews {
+      padding-top: 10%;
+}
+
+.backgroundNews {
+      background: #fff;
+      border-radius: 2px;
+      display: inline-block;
+      height: auto;
+      margin: 1rem;
+      position: relative;
+      width: auto;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 /* hamburger menu */
 
 h1 {
@@ -667,7 +686,7 @@ img { width: 100%; height: auto; }
       .socialMobile {
             display: inline;
       }
-      #ciao {
+      #donazioni {
             width: 50%;
       }
 }
@@ -686,3 +705,14 @@ img { width: 100%; height: auto; }
 .title {
       color: #e21212;
 }
+
+button:hover {
+      background-color: #fff;
+}
+<<<<<<< HEAD
+.card-title {
+      color: #e21212;
+}
+=======
+
+>>>>>>> parent of 83a7dce... Donazioni
