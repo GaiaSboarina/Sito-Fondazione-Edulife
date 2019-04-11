@@ -257,6 +257,10 @@ h1 {
       padding-top: 20px;
 }
 
+.fa{
+      font-size: 25px !important;
+}
+
 .header {     
       margin: auto;
       text-align: center;
@@ -478,7 +482,6 @@ a:hover{
 iframe{
       width:512px; 
       height:288px;
-      border-radius: 25%;
       margin: auto;
 }
 /* freccia_rossa che rimbalza finisce */
