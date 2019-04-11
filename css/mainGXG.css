@@ -422,7 +422,7 @@ animation-delay: 2s;
 }
 
 .common-box:nth-child(odd) .common-box-txt {
-    padding: 0 0 0 33vw;
+    padding: 0 0 0 25vw;
 }
 
 .title-dark {
@@ -499,6 +499,7 @@ element.style {
     font-size: .78125vw;
     letter-spacing: -.05em;
     line-height: 170%;
+    padding-right: 50px;
 }
 
 .avatar {
@@ -528,4 +529,171 @@ element.style {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+
+/* inizio media query */
+
+/* query per display maggiori di 1281px */
+
+@media (min-width: 1281px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:1024px;
+          height:576px;
+    }
+
+    .arrow {
+          margin: 130px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+
+}
+
+/* query per display più piccoli di 1280px */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:1024px;
+          height:576px;
+    }
+
+    .arrow {
+          margin: 180px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+
+}
+
+/* query per ipad portrait */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:512px;
+          height:228px;
+    }
+
+    .arrow {
+          margin: 90px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+    
+}
+
+/* query per ipad landscape */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:640px;
+          height:360px;
+    }
+
+    .arrow {
+          margin: 160px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+    
+}
+
+/* query per smartphone */
+
+@media (min-width: 320px) and (max-width: 812px) {
+
+    .logo {
+          position: absolute;
+          margin: 1.2em 0 0 1.2em;
+    }
+
+    .scritte_home{
+          white-space: nowrap;
+    }
+
+    .scritta {
+          top: 10%;
+          left: 65%;
+          font-size: 16px;
+    }
+
+    #boxPerMobile {
+          width: -webkit-fill-available;
+    }
+
+    #video {
+          padding-top: 20%;
+          
+    }
+
+    #newsHome {
+          width: min-content;
+          padding-left: 5px;
+          padding-bottom: 10px;
+          padding-right: 0px;
+    }
+
+    .row {
+          padding: 0 0 0 0;
+    }
+
+    iframe{
+          width: auto;
+          height: auto;
+    }
+
+    button {
+          padding: 0;
+    }
+    
+    .social-media {
+          display: none;
+    }
+
+    .arrow {
+          display: none;
+    }
+
+    .shadow {
+          display: none;
+    }
+
+    .scritta {
+          display: none;
+    }
+
+    .socialMobile {
+          display: inline;
+    }
+    #donazioni {
+          width: 50%;
+          margin-top: 50%;
+    }
 }
