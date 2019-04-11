@@ -519,6 +519,11 @@ element.style {
 	
 }
 
+.fa{
+    font-size: 25px !important;
+}
+
+
 
 
 @keyframes float {
