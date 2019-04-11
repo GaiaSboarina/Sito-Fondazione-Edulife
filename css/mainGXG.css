@@ -50,6 +50,9 @@ a:hover{
     text-decoration: none;
 }
 
+.socialMobile {
+    display: none;
+}
 
 /* hamburger menu */
 

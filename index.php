@@ -127,7 +127,7 @@
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_home">Il sito ufficiale di Fondazione Edulife</h3>
+                  <h3 class="scritte_home">Fondazione Edulife</h3>
             </div>
 
 
@@ -173,20 +173,17 @@
 
                   <h1 class="scritte_home">Chi siamo</h1>
 
-                  <div class="container bottom-bar">
-                        <div class="container">
-                              <div class="row">
-                                    <p>
-                                          <b>Fondazione Edulife Onlus</b> nasce nell’ambito di una rete mondiale dedicata alla educazione dei giovani ed ha come finalità aiutare i giovani nella scoperta del proprio progetto di vita e promuovere gli adulti nel loro ruolo educativo.
+                  <div class="backgroundNews">
+                        <div class="row" id="testoDonazioni">
+                              <p>
+                                    <b>Fondazione Edulife Onlus</b> nasce nell’ambito di una rete mondiale dedicata alla educazione dei giovani ed ha come finalità aiutare i giovani nella scoperta del proprio progetto di vita e promuovere gli adulti nel loro ruolo educativo.
 
-                                          L’attività della <b>Fondazione</b> si sviluppa in tre ambiti: - <strong>Centro di ricerca per la innovazione didattica sviluppata con persone, enti, imprese ed istituzioni;</strong> - <strong>“Pensatoio” per la ideazione di progetti a favore della crescita umana e professionale dei giovani;</strong> - <strong>fondi per sostenere progetti educativi sempre destinati ai giovani.</strong>
-                                          
-                                          La <b>Fondazione</b> opera in stretta relazione con una rete di organizzazioni educative presenti in 131 Paesi, con oltre 4.000 opere educative e circa 2.000.000 di giovani destinatari.
-                                    </p>
-                              </div>
+                                    L’attività della <b>Fondazione</b> si sviluppa in tre ambiti: - <strong>Centro di ricerca per la innovazione didattica sviluppata con persone, enti, imprese ed istituzioni;</strong> - <strong>“Pensatoio” per la ideazione di progetti a favore della crescita umana e professionale dei giovani;</strong> - <strong>fondi per sostenere progetti educativi sempre destinati ai giovani.</strong>
+                                    
+                                    La <b>Fondazione</b> opera in stretta relazione con una rete di organizzazioni educative presenti in 131 Paesi, con oltre 4.000 opere educative e circa 2.000.000 di giovani destinatari.
+                              </p>
                         </div>
                   </div>
-            </div>
             <canvas class="background"></canvas>
 
       <script type="text/javascript">

@@ -34,7 +34,6 @@
       <!-- particles.js -->
       <script src="../js/particles.min.js"></script>
 
-      
 </head>
 <body>
       

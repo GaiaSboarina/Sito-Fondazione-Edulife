@@ -1,6 +1,5 @@
 <?php 
 
-
 include("select.php"); 
     $array_progetti=progetti();
     $array_news=news();

@@ -1,4 +1,5 @@
 <?php
+include_once("connection.php");
 function shorter($testo, $limiteCaratteri) {
     if (strlen($testo) > $limiteCaratteri) {
         $nuovo_testo = substr($testo, 0, $limiteCaratteri);
@@ -28,18 +29,9 @@ function shorter($testo, $limiteCaratteri) {
 */
 
     function getAllNewsHome(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
 
-        $connection = new mysqli($servername, $username, $password, $dbname);
-        $connection->query("SET NAMES 'utf8'");
-
-        // Controllo della connessione
-        if ($connection->connect_error) {
-            die("Connection failed: " . $connection->connect_error);
-        }
+        $connection = connection();
+        
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 3");
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
