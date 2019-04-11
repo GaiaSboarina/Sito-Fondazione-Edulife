@@ -2,6 +2,7 @@
 include "../php/insert_gxg.php";
 $array = getGxg();
 ?>
+<?php include "../php/get_file.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +67,7 @@ $array = getGxg();
                                     <a href="../pages/donazioni.php">5x1000</a>
                               </li>
                               <li>
-                                    <a href="#">Bilancio Sociale</a>
+                                    <?=getFile()?>
                               </li>
                         </ul>
                   </nav>
