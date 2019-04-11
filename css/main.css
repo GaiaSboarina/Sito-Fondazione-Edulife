@@ -587,6 +587,20 @@ img { width: 100%; height: auto; }
 
 }
 
+@media  screen and (max-width: 1366px) {
+
+      iframe{
+            width:896px;
+            height:504px;
+      }
+
+      .arrow {
+            margin: 0 auto 0;
+      }
+
+}
+
+
 /* query per display più piccoli di 1280px */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -723,10 +737,28 @@ img { width: 100%; height: auto; }
       .socialMobile {
             display: inline;
       }
+
       #donazioni {
             width: 50%;
             margin-top: 50%;
       }
+
+      #testoDonazioni {
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: left;
+            margin: 15px;
+      }
+
+      #impaginazioneNews {
+            padding-top: 20%;
+            text-align: left;
+      }
+
+      #layoutNews {
+            margin: 15px;
+      }
+
 }
 
 /* fine media query */
