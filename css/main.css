@@ -371,7 +371,44 @@ h1 {
 
 /* fine scritta home */
 
+/* Scritta news */
 
+.scrittaNews {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-size: 32px;
+      border-right: 1px solid rgb(255, 255, 255);
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriterNews 2.5s steps(50) 0.5s 1 normal both,
+      cursorblinkNews 2s infinite;
+      animation-delay: 2s;
+}
+
+@keyframes typewriterNews {
+      from {
+      width: 0;
+      }
+      
+      to {
+      width: 6.2em;
+      }
+}
+
+@keyframes cursorblinkNews {
+      from {
+      border-right: 1px solid #e21212;
+      }
+      
+      to {
+      border-right: 1px solid #666;
+      }
+}
+
+/* fine scritta news */
 
 /* Scritta donazioni */
 
