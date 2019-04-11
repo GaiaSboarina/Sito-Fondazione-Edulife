@@ -686,6 +686,9 @@ img { width: 100%; height: auto; }
       .socialMobile {
             display: inline;
       }
+      #donazioni {
+            width: 50%;
+      }
 }
 
 /* fine media query */
@@ -706,4 +709,6 @@ img { width: 100%; height: auto; }
 button:hover {
       background-color: #fff;
 }
-
+.card-title {
+      color: #e21212;
+}
