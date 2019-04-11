@@ -169,6 +169,7 @@ h1 {
     
 #gloval-nav ul {
       list-style: none;
+      padding-inline-start: 0px;
 }
     
 #gloval-nav ul li {
@@ -599,8 +600,9 @@ img { width: 100%; height: auto; }
 /* query per smartphone */
 
 @media (min-width: 320px) and (max-width: 812px) {
-  
+
       .logo {
+            position: absolute;
             margin: 1.2em 0 0 1.2em;
       }
 
