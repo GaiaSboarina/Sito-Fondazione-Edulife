@@ -133,7 +133,7 @@ $array = getNews();
                               <div class='col-sm-12 col-md-6' id='immagineNews'>
                                     <img class='avatar' src="../media/img/<?= $array[$i]['nome'] ?>">
                               </div>
-                              <div class='col-sm-12 col-md-6'>
+                              <div class='col-sm-12 col-md-6' id="layoutNews">
                                     <h3 h3 class='title'><?= $array[$i]['titolo'] ?></h3>
                                     <p>
                                           <?= $array[$i]['contenuto'] ?>
