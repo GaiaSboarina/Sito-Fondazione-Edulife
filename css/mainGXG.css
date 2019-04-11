@@ -8,7 +8,7 @@ html, body {
 
 body {
     height: 100%;
-    background-image: url("../media/img/bg.png");
+    background-image: url("../media/img/bg_gxg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -34,7 +34,7 @@ img{
 
 #imgLogo {
     max-width: 40%;
-    margin-left: -12%;
+    margin-left: -9%;
 }
 
 .scritte_home{
@@ -735,4 +735,8 @@ element.style {
 
 .space{
     height: 65px;
+}
+
+.card-title {
+    color: #E6DA31;
 }
