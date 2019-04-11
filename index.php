@@ -154,11 +154,9 @@ $array_news = getAllNewsHome();
 
             <div class="container" id="impaginazioneNews">
                   <div class="backgroundNews">
-                        <div class="row" >
+                        <div class="row">
                               <div class='col-sm-12 col-md-6'>
                                     <img class='avatar' src="media/img/<?= $array_news[$i]['nome'] ?>">
-                              </div>
-                              <div class='col-sm-12 col-md-6' id="layoutNews">
                                     <h3 h3 class='title'><?= shorter($array_news[$i]['titolo'], 25) ?></h3>
                                     <p>
                                           <?= shorter($array_news[$i]['contenuto'], 255) ?>
