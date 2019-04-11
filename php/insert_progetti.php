@@ -76,14 +76,17 @@ function getAllProgettiHome(){
 
             <input type='hidden' name='table' value='progetto' />
             <input type='hidden' name='id' value='".$progetti[$i]['id']."' />
-            <button href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
-            <div>
-                <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
-                </h6>
-                <p class='scritteParagrafoHome'>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                </p>
+            <button  href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
+            <div class='card' style='background-color: rgba(255, 255, 255, 0.5) !important; width: 18rem; transition: transform .6s;'>
+                <img class='card-img-top' src='../media/img/plan-your-future.jpg' alt='Card image cap'>
+                <div class='card-body'>
+                    <h6 class='title'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
+                    </h6>
+                    <p class='card-text'style='color:#000; font-size: 10px'>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
+                    </p>
+                </div>
             </div>
-            </button>
+        </button>   
         </form>
         ";
     }
