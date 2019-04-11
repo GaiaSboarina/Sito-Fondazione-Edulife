@@ -184,7 +184,7 @@ $array_progetti = getAllProgettiHome(); ?>
                                           <input type='hidden' name='table' value='progetto' />
                                           <input type='hidden' name='id' value='<?= $array_progetti[$i]['id'] ?>' />
                                           <button  href='pages/show.php?table=progetto&id=<?= $array_progetti[$i]['id']?>'>
-                                          <div class='card' style='background-color: rgba(255, 255, 255, 0.5) !important; width: 18rem; transition: transform .6s;'>
+                                          <div class='card' style='background-color: rgba(255, 255, 255) !important; width: 18rem; transition: transform .6s;'>
                                           <img class='card-img-top' src='../media/img/<?= $array_progetti[$i]['nome'] ?>' alt='Card image cap'>
                                           <div class='card-body'>
                                                 <h6 class='title'><?= corto($array_progetti[$i]['titolo'], 25) ?>
@@ -192,6 +192,7 @@ $array_progetti = getAllProgettiHome(); ?>
                                                 <p class='card-text'style='color:#000; font-size: 10px'><?= corto($array_progetti[$i]['contenuto'], 75)?>
                                                 </p>
                                           </div>
+                                          <div class="shadow"></div>
                                           </div>
                                           </button>   
                                     </form>
