@@ -150,24 +150,28 @@ $array_progetti = getAllProgettiHome(); ?>
             </div>
                   
             </div>
-            <h1 class="scritte_home">Le ultime news</h1>
-            <?php for($i = 0; $i < count($array_news); $i++){ ?>
 
+
+            <h1 class="scritte_home">Le ultime news</h1>
             <div class="container" id="impaginazioneNews">
-                  <div class="backgroundNews">
-                        <div class="row">
-                              <div class='col-sm-12 col-md-6'>
-                                    <img class='avatar' src="media/img/<?= $array_news[$i]['nome'] ?>">
-                                    <h3 h3 class='title'><?= shorter($array_news[$i]['titolo'], 25) ?></h3>
-                                    <p>
-                                          <?= shorter($array_news[$i]['contenuto'], 255) ?>
-                                    </p>
+                  <div class="row">
+                        <?php for($i = 0; $i < count($array_news); $i++){ ?>
+
+                              <div class="backgroundNews col-sm-12 col-md-4">
+                                    <div class="row">
+                                          <div class='col-sm-12'>
+                                                <img class='avatar' src="media/img/<?= $array_news[$i]['nome'] ?>">
+                                                <h3 h3 class='title'><?= shorter($array_news[$i]['titolo'], 25) ?></h3>
+                                                <p>
+                                                      <?= shorter($array_news[$i]['contenuto'], 255) ?>
+                                                </p>
+                                          </div>
+                                    </div>
                               </div>
-                        </div>
+                        
+                        <?php ;} ?>
                   </div>
             </div>
-
-            <?php ;} ?>
 
             <h1 class="scritte_home">I nostri progetti</h1>
 
