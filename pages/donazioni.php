@@ -58,6 +58,9 @@
                                     <a href="../index.php">Home</a>
                               </li>
                               <li>
+                                    <a href="../pages/news.php">News</a>
+                              </li>
+                              <li>
                                     <a href="../pages/gxg.php">GxG</a>
                               </li>
                               <li>

@@ -170,6 +170,7 @@ h1 {
   
 #gloval-nav ul {
     list-style: none;
+    padding-inline-start: 0px;
 }
   
 #gloval-nav ul li {
