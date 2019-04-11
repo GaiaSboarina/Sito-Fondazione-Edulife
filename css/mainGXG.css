@@ -736,3 +736,7 @@ element.style {
 .space{
     height: 65px;
 }
+
+.card-title {
+    color: #E6DA31;
+}
