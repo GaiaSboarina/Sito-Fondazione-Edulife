@@ -74,18 +74,6 @@
                 } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                 }
-            }elseif ($table == "Evento"){
-                $data = date('Y-m-d H:i:s');
-                $data_evento = $_POST['data_evento'];
-
-                $sql = "INSERT INTO $table (titolo, contenuto, data_evento, data, id_img)
-                VALUES ('$titolo', '$text', '$data_evento', '$data', '$id')";
-        
-                if ($conn->query($sql) === TRUE) {
-                    echo "New record created successfully";
-                } else {
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                }
             }elseif ($table == "Progetto"){
                 $sql = "INSERT INTO $table (titolo, contenuto, id_img)
                 VALUES ('$titolo', '$text', '$id')";

@@ -42,11 +42,10 @@
         <div class="container">
 
             <div class="form-group">
-                <label for="tipo">Progetto - Evento - News - Video - File</label>
+                <label for="tipo">Progetto - News - Video - File</label>
                 <select class="form-control" id="tipo" name="tipo">
                     <option></option>
                     <option value="Progetto">Progetto</option>
-                    <option value="Evento">Evento</option>
                     <option value="News">News</option>
                     <option value="Video">Video</option>
                     <option value="File">File</option>
