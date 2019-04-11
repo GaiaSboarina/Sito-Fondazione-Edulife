@@ -54,12 +54,15 @@
             <div id="gloval-nav">
                   <nav>
                         <ul>
-                            <li>
-                                <a href="../index.php">Home</a>
-                            </li>
-                            <li>
-                                <a href="pages/gxg.php">GxG</a>
-                            </li>
+                              <li>
+                                    <a href="../index.php">Home</a>
+                              </li>
+                              <li>
+                                    <a href="../pages/gxg.php">GxG</a>
+                              </li>
+                              <li>
+                                    <a href="#">Bilancio Sociale</a>
+                              </li>
                         </ul>
                   </nav>
             </div><!-- /#gloval-nav -->
@@ -95,7 +98,7 @@
 
             <div class="container" id="newsHome">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="testoCinquePerMille">
                         <h6>
                             Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
                             <br>

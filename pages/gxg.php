@@ -1,4 +1,3 @@
-<?php include "../php/insert_newsHome.php" ?>
 <?php include "../php/insert_gxg.php" ?>
 
 <!DOCTYPE html>
@@ -63,6 +62,9 @@
                               <li>
                                     <a href="../pages/donazioni.php">5x1000</a>
                               </li>
+                              <li>
+                                    <a href="#">Bilancio Sociale</a>
+                              </li>
                         </ul>
                   </nav>
             </div><!-- /#gloval-nav -->
@@ -97,12 +99,30 @@
             </div>
             
             <div class="container">
-                  <div class="header col-sm-12" id="anteprimaGXG">
-                        <h1 class="scritte_home">Ultimo video caricato:</h1>
-                        <div class="esagonale">
-                        <?= getGxgHome() ?>
-                  </div>
-                        
+                  <div class="common-box btn-trigger-fx line-trigger-fx">
+                        <div class="common-box-txt-wrap">
+                              <div class="common-box-txt">
+                              <h2 class="title title-m title-dark title-marge-ml">Man vs. Wild</h2>
+                              <div class="line-wrap">
+                                    <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+                              </div>
+                              <p class="p-s p-dark">
+                                    Bear travels the globe seeking out ever mo
+                                    re inhospitable places in which to use his ex
+                                    traordinary survival skills – teaching us all t
+                                    hese techniques along the way. The show ran for s
+                                    even explosive seasons and was regularly viewed by more 
+                                    than 1.2 billion worldwide.&nbsp;It was also nominated for an
+                                    &nbsp;Emmy&nbsp;Award.
+                              </p>
+                              <div class="btn-wrap">
+                                    <a class="btn btn-outline-warning" href="#" style="opacity: 1;">
+                                          DISCOVER
+                                    </a>
+                              </div>
+                              </div>
+                        </div>
+                        <div id="common-box-img-0" class="common-box-img" style="background-image: url(../media/img/miri.jpg); transform: translate3d(0px, -150px, 0px);"></div>
                   </div>
             </div>
             <canvas class="background"></canvas>

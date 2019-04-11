@@ -64,6 +64,9 @@
                               <li>
                                     <a href="pages/donazioni.php">5x1000</a>
                               </li>
+                              <li>
+                                    <a href="#">Bilancio Sociale</a>
+                              </li>
                         </ul>
                   </nav>
             </div><!-- /#gloval-nav -->
@@ -121,8 +124,8 @@
                   </div>
                   <h1 class="scritte_home">Le ultime news</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
+                  <div class="container bottom-bar">
+                        <div class="container col-sm-12">
                               <div class="row">
                                     <?= getAllNewsHome() ?>
                               </div>
@@ -131,8 +134,8 @@
 
                   <h1 class="scritte_home">I nostri progetti</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
-                        <div class="container">
+                  <div class="container bottom-bar">
+                        <div class="container col-sm-12">
                               <div class="row">
                                     <?= getAllProgettiHome() ?>
                               </div>
@@ -141,7 +144,7 @@
 
                   <h1 class="scritte_home">Chi siamo</h1>
 
-                  <div class="container bottom-bar" id="newsHome">
+                  <div class="container bottom-bar">
                         <div class="container">
                               <div class="row">
                                     <p>
