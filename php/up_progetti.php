@@ -1,10 +1,11 @@
 <?php   
     
     function connection($table){
+        echo "hai la mamma puttana";
 
-        if (!$table == "File") {
-            $titolo = $_POST['titolo'];
-            $text = $_POST['text'];
+        if (!($table == "File")) {
+            $titolo = addslashes($_POST['titolo']);
+            $text = addslashes($_POST['text']);
         }
 
         // Parametri per la connessione al database
@@ -59,11 +60,7 @@
                     echo "errore";
                 }
             }
-
             
-        
-            
-
             //Controllo della tabella in cui inserire i dati con relativo inserimento
             if ($table == "News"){
                 $data = date('Y-m-d H:i:s');
@@ -127,9 +124,11 @@
     session_start();
 
     if ( isset( $_SESSION['user_id'] ) ) {
+        
        //Controllo dei dati passati
        
         if(isset($_POST['tipo'])){
+            
           
             //Parametri passati
             $tipo = $_POST['tipo'];
@@ -137,6 +136,7 @@
             
             $table = $tipo;
             if ($table == "File") {
+                
                 $uploaddir = '../media/pdf/';
                 $uploadfile = $uploaddir . basename($_FILES['fileToUpload']['name']);
                 
@@ -148,12 +148,9 @@
                     echo "Possible file upload attack!\n";
                     connection($table);
                 }
-            }
-                
             }else{
                 $target_dir = "../media/img/";
-            
-            
+                
                 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
                 $uploadOk = 1;
                 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -171,11 +168,7 @@
                     echo "Sorry, file already exists.";
                     $uploadOk = 0;
                 }
-                // Check file size
-                if ($_FILES["fileToUpload"]["size"] > 500000) {
-                    echo "Sorry, your file is too large.";
-                    $uploadOk = 0;
-                }
+                
                 // Allow certain file formats
                 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
                 && $imageFileType != "gif" && $imageFileType != "pdf") {
@@ -189,8 +182,10 @@
                 } else {
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+                        connection($table); 
                     } else {
                         echo "Sorry, there was an error uploading your file.";
+                        connection($table);
                     }
                 }
                 
@@ -201,7 +196,7 @@
             
             }
         }
-    else {
+    }else {
         // Redirect them to the login page
             header("Location: ../admin/choose.php");
         }
