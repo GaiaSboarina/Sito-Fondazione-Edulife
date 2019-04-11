@@ -120,10 +120,10 @@
                                 Compila la scheda sul modello 730 o Unico;
                                 </li>
                                 <li>
-                                Firma nel riquadro indicato come "Finanziamento della ricerca scientifica...";
+                                Firma nel riquadro indicato come <b>"Finanziamento della ricerca scientifica..."</b>;
                                 </li>
                                 <li>
-                                Indica nel riquadro il codice fiscale di Fondazione Edulife: 932 232 902 35.
+                                Indica nel riquadro il codice fiscale di Fondazione Edulife: <b>932 232 902 35</b>.
                                 </li>
                             </ol>
                             <u>Se non sei tenuto a presentare la dichiarazione dei redditi:</u>
@@ -134,13 +134,13 @@
                             <br>
                             <ol>
                                 <li>
-                                Compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come "Finanziamento della ricerca scientifica..." e indicando il codice fiscale di Fondazione Edulife: 932 232 902 35;
+                                Compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come <b>"Finanziamento della ricerca scientifica..."</b> e indicando il codice fiscale di Fondazione Edulife: <b>932 232 902 35</b>;
                                 </li>
                                 <li>
                                 Inserisci la scheda in una busta chiusa;
                                 </li>
                                 <li>
-                                Scrivi sulla busta "DESTINAZIONE CINQUE PER MILLE IRPEF" e indica il tuo cognome, nome e codice fiscale;
+                                Scrivi sulla busta <b>"DESTINAZIONE CINQUE PER MILLE IRPEF"</b> e indica il tuo cognome, nome e codice fiscale;
                                 </li>
                                 <li>
                                 Consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).
