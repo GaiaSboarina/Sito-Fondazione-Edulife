@@ -112,7 +112,7 @@ element.style {
 }
 
 .line-red {
-    background: #e74315;
+    background: #E6DA31;
 }
 
 .line-fx {
@@ -134,7 +134,7 @@ element.style {
 
 .p-s {
     margin: 2.29vw 0 0;
-    font-size: .78125vw;
+    font-size: 1.08125vw;
     letter-spacing: -.05em;
     line-height: 170%;
 }
