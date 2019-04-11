@@ -1,19 +1,9 @@
 <?php
-
+    include_once("connection.php");
     function getGxg(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
 
         // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        $conn = connection();
 
         $query = "SELECT * FROM gxg g, img i WHERE g.id_img = i.id";
         $result = $conn->query($query);
@@ -31,18 +21,10 @@
     }
 
     function getGxgHome(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
 
-        $connection = new mysqli($servername, $username, $password, $dbname);
+        $connection = connection();
         $connection->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($connection->connect_error) {
-            die("Connection failed: " . $connection->connect_error);
-        }
+
         $rsGxg = mysqli_query($connection, "SELECT g.link, i.nome FROM gxg g, img i WHERE g.id_img = i.id ORDER BY g.id DESC LIMIT 1");
         $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);

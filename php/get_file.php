@@ -1,11 +1,9 @@
 <?php
+include_once("connection.php");
 function getFile(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
+        
 
-        $connection = new mysqli($servername, $username, $password, $dbname);
+        $connection = connection();
         $connection->query("SET NAMES 'utf8'");
     
         // Controllo della connessione

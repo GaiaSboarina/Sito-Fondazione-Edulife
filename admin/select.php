@@ -1,21 +1,6 @@
 <?php
 
-    function connection(){
-        // Parametri per la connessione al database
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
-
-        // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        } 
-        return $conn;
-    }
+    include_once("../php/connection.php");
 
     function progetti(){
         $conn = connection();
