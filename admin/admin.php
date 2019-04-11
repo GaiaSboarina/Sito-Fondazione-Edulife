@@ -33,7 +33,7 @@ if ( ! empty( $_POST ) ) {
             
             header("Location: choose.php");
     	}else {
-            echo "password non verificata";
+            header("Location: index.php");
         }
     }
 }
