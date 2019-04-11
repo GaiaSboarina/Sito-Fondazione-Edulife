@@ -1,44 +1,6 @@
 <?php
 
-    function getAllGxg(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
-
-        $connection = new mysqli($servername, $username, $password, $dbname);
-        $connection->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($connection->connect_error) {
-            die("Connection failed: " . $connection->connect_error);
-        }
-        $rsGxg = mysqli_query($connection, "SELECT * FROM gxg");
-        $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
-        mysqli_close($connection);
-        for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
-            echo "
-                <div class='container'>
-                    <h1 class='my-4'>".$gxg[$i]['titolo']."
-                    </h1>
-                    <div class='row'>
-                        <div class='col-md-8'>
-                            <iframe width='420' height='315'
-                                src='https://www.youtube.com/embed/".$gxg[$i]['link']."'>
-                            </iframe>
-                        </div>
-                        <div class='col-md-4'>
-                            <h3 class='my-3'>Descrizione utente</h3>
-                            <p>".$gxg[$i]['contenuto']."</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            ";
-        }
-    }
-
-    function getGxg($link){
+    function getGxg(){
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -52,36 +14,20 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
-        $query = "SELECT * FROM gxg";
+
+        $query = "SELECT * FROM gxg g, img i WHERE g.id_img = i.id";
         $result = $conn->query($query);
+        $array = array();
         if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()){
-                if ($row['link']==$link) {
-                    echo "
-                    <div class='container'>
-                        <h1 class='my-4'>".$row['titolo']."
-                        </h1>
-                        <div class='row'>
-                            <div class='col-md-8'>
-                                <iframe width='420' height='315'
-                                    src='https://www.youtube.com/embed/".$row['link']."'>
-                                </iframe>
-                            </div>
-                            <div class='col-md-4'>
-                                <h3 class='my-3'>Descrizione utente</h3>
-                                <p>".$row['contenuto']."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    ";
-                }
-            } 
-                
-        
-        }
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
         mysqli_close($conn);
+        return $array;
+        
+        
     }
 
     function getGxgHome(){

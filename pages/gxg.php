@@ -1,4 +1,7 @@
-<?php include "../php/insert_gxg.php" ?>
+<?php 
+include "../php/insert_gxg.php";
+$array = getGxg();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -97,36 +100,33 @@
             <div class="scritta" class="container">
                   <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
-            
-            <div class="container">
-                  <div class="common-box btn-trigger-fx line-trigger-fx">
-                        <div class="common-box-txt-wrap">
-                              <div class="common-box-txt">
-                              <h2 class="title title-m title-dark title-marge-ml">Man vs. Wild</h2>
-                              <div class="line-wrap">
-                                    <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+            <?php for($i = 0; $i < count($array); $i++){ ?>
+                  <div class="container">
+      
+                        <div class="common-box btn-trigger-fx line-trigger-fx">
+                              <div class="common-box-txt-wrap">
+                                    <div class="common-box-txt">
+                                    <h2 class="title title-m title-dark title-marge-ml"><?= $array[$i]['titolo'] ?></h2>
+                                    <div class="line-wrap">
+                                          <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+                                    </div>
+                                    <p class="p-s p-dark">
+                                          <?= $array[$i]['contenuto'] ?>
+                                    </p>
+                                    <div class="btn-wrap">
+                                          <a target="_blank" class="btn btn-outline-warning" href="https://www.youtube.com/watch?v=<?= $array[$i]['link'] ?>" style="opacity: 1;">
+                                                DISCOVER
+                                          </a>
+                                    </div>
+                                    </div>
                               </div>
-                              <p class="p-s p-dark">
-                                    Bear travels the globe seeking out ever mo
-                                    re inhospitable places in which to use his ex
-                                    traordinary survival skills – teaching us all t
-                                    hese techniques along the way. The show ran for s
-                                    even explosive seasons and was regularly viewed by more 
-                                    than 1.2 billion worldwide.&nbsp;It was also nominated for an
-                                    &nbsp;Emmy&nbsp;Award.
-                              </p>
-                              <div class="btn-wrap">
-                                    <a class="btn btn-outline-warning" href="#" style="opacity: 1;">
-                                          DISCOVER
-                                    </a>
-                              </div>
+                              <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
+                                    <img src="../media/img/<?= $array[$i]['nome'] ?>">
                               </div>
                         </div>
-                        <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
-                              <img src="../media/img/miri.jpg">
-                        </div>
+                        
                   </div>
-            </div>
+            <?php ;} ?>
             <canvas class="background"></canvas>
 
       <script type="text/javascript">
