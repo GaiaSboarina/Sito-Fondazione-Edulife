@@ -45,12 +45,12 @@ function shorter($testo, $limiteCaratteri) {
         $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
         mysqli_close($connection);
 
-        $limiteCaratteriTitolo = 30;
+        $limiteCaratteriTitolo = 25;
         $limiteCaratteriContenuto = 255;
 
         for($i = 0; $i < count($newsHome); $i++) {
             echo "
-            <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
+            <form class='col-sm-12 col-md-4' id='newsHome' action='pages/show.php' method='post'>
 
             <input type='hidden' name='table' value='news' />
             <input type='hidden' name='id' value='".$newsHome[$i]['id']."' />
