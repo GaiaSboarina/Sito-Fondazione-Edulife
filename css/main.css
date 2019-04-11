@@ -869,7 +869,7 @@ img { width: 100%; height: auto; }
       }
 
       button {
-            padding-left: 15%;
+            padding-left: 11%;
             margin: 5px;
       }
       
@@ -912,10 +912,6 @@ img { width: 100%; height: auto; }
 
       #layoutNews {
             margin: 15px;
-      }
-
-      .backgroundNews {
-            margin-left: 4%;
       }
 
 }
