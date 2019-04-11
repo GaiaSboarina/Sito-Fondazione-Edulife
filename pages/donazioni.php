@@ -125,9 +125,9 @@
                 <div class="container" id="impaginazioneNews">
                         <div class="backgroundNews">
                               <div class="row">
-                                    <h3 class='title'>Dona al 5xMILLE</h3>
+                                    <h3 class='title'>Dona il tuo 5xMILLE</h3>
                                     <h6>
-                                          Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
+                                          Destina il tuo cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
                                           <br>
                                           <br>
                                           Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.
