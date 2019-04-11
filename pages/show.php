@@ -101,12 +101,13 @@
             </div>
   
                 
-                <div class="container">
-                    <div class="row">
+        <div class="container" id="impaginazioneNews">
+                <div class="backgroundNews">
+                    <div class="row" >
                         <?=show();?>
                     </div>
-                    
-                </div>
+                </div>  
+        </div>
                
                 <canvas class="background"></canvas>
 
