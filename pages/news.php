@@ -1,5 +1,8 @@
+<?php 
+include "../php/insert_news.php";
+$array = getNews();
+?>
 <?php include "../php/get_file.php" ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +23,7 @@
       <!-- stylesheet -->
       <link rel="stylesheet" href="../css/main.css">
       <link rel="stylesheet" href="../css/loader.css">
+      
 
       <!-- font-awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,16 +38,15 @@
       <!-- particles.js -->
       <script src="../js/particles.min.js"></script>
 
-      
 </head>
 <body>
       
       <div class="overlay">
-            <div class="container-loader">
+      <div class="container-loader">
             <div class="circle"></div>
+            </div>
       </div>
-      </div>
-
+      
             <a href="../index.php"><div class="logo"><img src="../media/img/effe.png" id="imgLogo"></div></a>
             
             <div id="nav-toggle">
@@ -61,32 +64,12 @@
                                     <a href="../index.php">Home</a>
                               </li>
                               <li>
-                                    <a href="../pages/gxg.php">GxG</a>
+                                    <a href="../pages/donazioni.php">5x1000</a>
                               </li>
                               <li>
                                     <?=getFile()?>
                               </li>
                         </ul>
-                  </nav>
-                  <nav>
-				<p class="socialMobile" style="color: #e21212;">
-                              <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
-                                    <i class="fa fa-facebook social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                              <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
-                                    <i class="fa fa-instagram social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                              <a href="https://twitter.com/EdulifeOnlus" target="_blank">
-                                    <i class="fa fa-twitter social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                              <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
-                                    <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                              <a href="#" target="_blank">
-                                    <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                              
-				</p>
                   </nav>
             </div><!-- /#gloval-nav -->
             
@@ -94,60 +77,53 @@
                   <ul>
                         <li>
                               <a href="https://www.facebook.com/FondazioneEdulife" target="_blank">
-                                    <i class="fa fa-facebook social_home" aria-hidden="true" style="color: #e21212;"></i>
+                                    <i class="fa fa-facebook social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.instagram.com/fondazione.edulife/?hl=it" target="_blank">
-                                    <i class="fa fa-instagram social_home" aria-hidden="true" style="color: #e21212;"></i>
+                                    <i class="fa fa-instagram social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://twitter.com/EdulifeOnlus" target="_blank">
-                                    <i class="fa fa-twitter social_home" aria-hidden="true" style="color: #e21212;"></i>
+                                    <i class="fa fa-twitter social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
                         <li>
                               <a href="https://www.google.it/maps/place/311+Verona/@45.4303778,10.9963367,17z/data=!3m1!4b1!4m5!3m4!1s0x477f5f3fd94d631f:0xb9a1156ee2f8c5e!8m2!3d45.4303741!4d10.9985254" target="_blank">
-                                    <i class="fa fa-map-marker social_home" aria-hidden="true" style="color: #e21212;"></i>
+                                    <i class="fa fa-map-marker social_gxg" style="color:#E6DA31" aria-hidden="true"></i>
                               </a>
                         </li>
-                        <li>
-                              <a href="#" target="_blank">
-                              <i class="fa fa-youtube social_home" aria-hidden="true" style="color: #e21212;"></i>
-                              </a>
-                        </li>       
                   </ul>
             </div>
-                <div class="container" id="newsHome">
-                    <div class="row" id="testoCinquePerMille">
-                    <div class="card">
-  <div class="card-body">
-    <h2 class="card-title">Dona al 5xMILLE</h2>
-    <p class="card-text">
-          Destina il cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
-
-Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.
-La Fondazione Edulife ha una struttura di costi molto leggera (grazie al contributo di Edulife Spa) e quindi tutto quanto donerai sarà dedicato a sostenere progetti che aiuteranno i giovani a scoprire i propri talenti ed il proprio progetto di vita.
-
-Come fare per donare il tuo 5 per mille a Fondazione Edulife
-
-Se presenti il Modello 730 o Unico
-
-compila la scheda sul modello 730 o Unico;
-firma nel riquadro indicato come "Finanziamento della ricerca scientifica...";
-indica nel riquadro il codice fiscale di Fondazione Edulife: 932 232 902 35.
-Se non sei tenuto a presentare la dichiarazione dei redditi
-
-Anche se non devi presentare la dichiarazione dei redditi puoi donare a Fondazione Edulife il tuo 5 per mille:
-
-compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come "Finanziamento della ricerca scientifica..." e indicando il codice fiscale di Fondazione Edulife: 932 232 902 35;
-inserisci la scheda in una busta chiusa;
-scrivi sulla busta "DESTINAZIONE CINQUE PER MILLE IRPEF" e indica il tuo cognome, nome e codice fiscale;
-consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).</p>
-  </div>
+      
+            <div class="scritta" class="container">
+                  <h3 class="scritte_gxg">GxG, una piattaforma fatta dai giovani per i giovani</h3>
             </div>
-
+            <?php for($i = 0; $i < count($array); $i++){ ?>
+                  <div class="container">
+      
+                        <div class="common-box btn-trigger-fx line-trigger-fx">
+                              <div class="common-box-txt-wrap">
+                                    <div class="common-box-txt">
+                                    <h2 class="title title-m title-dark title-marge-ml"><?= $array[$i]['titolo'] ?></h2>
+                                    <div class="line-wrap">
+                                          <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
+                                    </div>
+                                    <p class="p-s p-dark">
+                                          <?= $array[$i]['contenuto'] ?>
+                                    </p>
+                                    
+                                    </div>
+                              </div>
+                              <div id="common-box-img-0" class="common-box-img avatar" style="transform: translate3d(0px, -150px, 0px);">
+                                    <img src="../media/img/<?= $array[$i]['nome'] ?>">
+                              </div>
+                        </div>
+                        
+                  </div>
+            <?php ;} ?>
             <canvas class="background"></canvas>
 
       <script type="text/javascript">
