@@ -465,7 +465,7 @@ button {
 }
   
 button:hover, button:focus {
-      background: transparent;
+      background-color: white;
 }
   
 button:focus {
@@ -669,6 +669,7 @@ img { width: 100%; height: auto; }
       }
       #ciao {
             width: 50%;
+      }
 }
 
 /* fine media query */
