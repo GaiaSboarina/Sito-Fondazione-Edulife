@@ -159,7 +159,7 @@ $array_progetti = getAllProgettiHome(); ?>
                               <?php for($i = 0; $i < count($array_news); $i++){ ?> 
                                     <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
 
-                                          <input type='hidden' name='table' value='progetto' />
+                                          <input type='hidden' name='table' value='news' />
                                           <input type='hidden' name='id' value='<?= $array_news[$i]['id'] ?>' />
                                           <button  href='pages/show.php?table=progetto&id=<?= $array_news[$i]['id']?>'>
                                           <div class='card' style='background-color: rgba(255, 255, 255) !important; width: 18rem; transition: transform .6s;'>
