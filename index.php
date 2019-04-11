@@ -153,23 +153,28 @@ $array_progetti = getAllProgettiHome(); ?>
 
 
             <h1 class="scritte_home">Le ultime news</h1>
-            <div class="container" id="impaginazioneNews">
-                  <div class="row">
-                        <?php for($i = 0; $i < count($array_news); $i++){ ?>
+            <div class="container bottom-bar">
+                  <div class="container col-sm-12">
+                        <div class="row">
+                              <?php for($i = 0; $i < count($array_news); $i++){ ?> 
+                                    <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
 
-                              <div class="backgroundNews col-sm-12 col-md-4">
-                                    <div class="row">
-                                          <div class='col-sm-12'>
-                                                <img class='avatar' src="media/img/<?= $array_news[$i]['nome'] ?>">
-                                                <h3 h3 class='title'><?= shorter($array_news[$i]['titolo'], 25) ?></h3>
-                                                <p>
-                                                      <?= shorter($array_news[$i]['contenuto'], 255) ?>
+                                          <input type='hidden' name='table' value='progetto' />
+                                          <input type='hidden' name='id' value='<?= $array_news[$i]['id'] ?>' />
+                                          <button  href='pages/show.php?table=progetto&id=<?= $array_news[$i]['id']?>'>
+                                          <div class='card' style='background-color: rgba(255, 255, 255) !important; width: 18rem; transition: transform .6s;'>
+                                          <img class='card-img-top' src='../media/img/<?= $array_news[$i]['nome'] ?>' alt='Card image cap'>
+                                          <div class='card-body'>
+                                                <h6 class='title'><?= corto($array_news[$i]['titolo'], 25) ?>
+                                                </h6>
+                                                <p class='card-text'style='color:#000; font-size: 10px'><?= corto($array_news[$i]['contenuto'], 75)?>
                                                 </p>
                                           </div>
-                                    </div>
-                              </div>
-                        
-                        <?php ;} ?>
+                                          </div>
+                                          </button>   
+                                    </form>
+                              <?php }?>
+                        </div>
                   </div>
             </div>
 
@@ -192,7 +197,6 @@ $array_progetti = getAllProgettiHome(); ?>
                                                 <p class='card-text'style='color:#000; font-size: 10px'><?= corto($array_progetti[$i]['contenuto'], 75)?>
                                                 </p>
                                           </div>
-                                          <div class="shadow"></div>
                                           </div>
                                           </button>   
                                     </form>
