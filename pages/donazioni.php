@@ -123,14 +123,16 @@
                   </ul>
             </div>
                 <div class="container" id="impaginazioneNews">
+                      <div class="scrittaDonazioni" class="container">
+                  <h3 class="scritte_home">Dona il tuo 5x1000</h3>
+            </div>
                         <div class="backgroundNews">
                               <div class="row" id="testoDonazioni">
-                                    <h3 class='title'>Dona il tuo 5xMILLE</h3>
                                     <h6>
-                                          Destina il tuo cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei giovani. Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
+                                          Destina il tuo cinque per mille alla Fondazione Edulife Onlus per sostenere la ricerca educativa e promuovere progetti rivolti allo sviluppo umano e professionale dei <strong>giovani</strong>.<br> Grazie al tuo contributo proseguiremo a cofinanziare il progetto “Oratorio Learning Center” (vedi sezione progetti), per la creazione a Verona di uno spazio di animazione permanente per bambini, ragazzi, animatori, genitori e sacerdoti.., e metteremo a disposizione nuove borse di studio per i giovani che vogliano partecipare in percorsi professionalizzanti in Cina (progetto ETE).
                                           <br>
                                           <br>
-                                          Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.
+                                          Infine continueremo a lavorare sempre e di più per promuovere un modello educativo centrato nella persona, in cui la formazione è intesa come un bene pubblico sociale per l’espressione del potenziale umano.<br>
                                           <br>
                                           La Fondazione Edulife ha una struttura di costi molto leggera (grazie al contributo di Edulife Spa) e quindi 
                                           <strong>tutto quanto donerai sarà dedicato a sostenere progetti che aiuteranno i giovani a scoprire i propri talenti ed il proprio progetto di vita.</strong>
@@ -145,10 +147,10 @@
                                           <ol>
                                                 <li>
                                                 Compila la scheda sul modello 730 o Unico;
-                                                </li>
+                                                </li><br>
                                                 <li>
                                                 Firma nel riquadro indicato come <strong>"Finanziamento della ricerca scientifica..."</strong>;
-                                                </li>
+                                                </li><br>
                                                 <li>
                                                 Indica nel riquadro il codice fiscale di Fondazione Edulife: <strong>932 232 902 35</strong>.
                                                 </li>
@@ -162,13 +164,13 @@
                                           <ol>
                                                 <li>
                                                 Compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall'ente erogatore della pensione, firmando nel riquadro indicato come <strong>"Finanziamento della ricerca scientifica..."</strong> e indicando il codice fiscale di Fondazione Edulife: <strong>932 232 902 35</strong>;
-                                                </li>
+                                                </li><br>
                                                 <li>
                                                 Inserisci la scheda in una busta chiusa;
-                                                </li>
+                                                </li><br>
                                                 <li>
                                                 Scrivi sulla busta <strong>"DESTINAZIONE CINQUE PER MILLE IRPEF"</strong> e indica il tuo cognome, nome e codice fiscale;
-                                                </li>
+                                                </li><br>
                                                 <li>
                                                 Consegnala a un ufficio postale, a uno sportello bancario - che le ricevono gratuitamente - o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti...).
                                                 </li>
