@@ -1,19 +1,11 @@
 <?php
-
+    include_once("connection.php");
     function getAllProjects(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
+        
 
         // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        $conn = connection();
+        
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $query = "SELECT p.titolo, p.contenuto, i.nome FROM progetto p, img i WHERE p.id_img = i.id";
         $result = $conn->query($query);
@@ -50,18 +42,9 @@ function corto($testo, $limiteCaratteri) {
 }
 
 function getAllProgettiHome(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "edulife";
 
-    $connection = new mysqli($servername, $username, $password, $dbname);
-    $connection->query("SET NAMES 'utf8'");
-
-    // Controllo della connessione
-    if ($connection->connect_error) {
-        die("Connection failed: " . $connection->connect_error);
-    }
+    $connection = connection();
+    
     //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
     $rsProgetti = mysqli_query($connection, "SELECT * FROM progetto ORDER BY id DESC LIMIT 3");
     $progetti = mysqli_fetch_all($rsProgetti, MYSQLI_ASSOC);

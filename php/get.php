@@ -1,5 +1,5 @@
 <?php 
-    include("connection.php");
+    include_once("connection.php");
 
     function show(){
         if (isset($_POST['table']) && isset($_POST['id'])) {
