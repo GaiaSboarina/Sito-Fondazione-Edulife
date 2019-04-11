@@ -216,7 +216,7 @@ $array = getGxg();
       <script>
             var particles = Particles.init({
                   selector: '.background',
-                  color: 'white',
+                  color: 'yellow',
                   maxParticles: 200
             });
       </script>
