@@ -10,9 +10,9 @@ $array = getGxg();
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Fondazione Edulife</title>
+      <title>GxG</title>
 
-      <link rel="shortcut icon" href="../media/img/gxg.png" type="image/png">
+      <link rel="icon" href="../media/img/gxg_icon.png" type="image/png">
 
       <!-- font -->
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -137,7 +137,7 @@ $array = getGxg();
                         <section>
                               <div class="container py-3">
                                     <div class="card">
-                                          <div class="row ">
+                                          <div class="row">
                                                 <div class="col-md-4">
                                                       <img src="../media/img/<?= $array[$i]['nome'] ?>" class="w-100">
                                                 </div>
