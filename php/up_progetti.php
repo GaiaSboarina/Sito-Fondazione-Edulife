@@ -1,7 +1,6 @@
 <?php   
-    
+    include_once("connection.php");
     function connection($table){
-        echo "hai la mamma puttana";
 
         if (!($table == "File")) {
             $titolo = addcslashes($_POST['titolo'], "'");
@@ -9,19 +8,11 @@
         }
 
         // Parametri per la connessione al database
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
+   
 
         // Creazione della connessione
-        $conn =  new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        $conn = connection();
+        
             //inserimento dell'immagine nella tabella img
             $file = $_FILES["fileToUpload"]["name"];
             

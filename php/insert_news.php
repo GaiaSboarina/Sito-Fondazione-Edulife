@@ -1,19 +1,10 @@
 <?php
+include_once("connection.php");
     function getNews(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
-
+        
         // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
+        $conn = connection();
+       
         $query = "SELECT * FROM news n, img i WHERE n.id_img = i.id";
         $result = $conn->query($query);
         $array = array();
