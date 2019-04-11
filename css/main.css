@@ -609,7 +609,7 @@ img { width: 100%; height: auto; }
       }
 
       .scritta {
-            top: 5%;
+            top: 10%;
             left: 65%;
             font-size: 16px;
       }
@@ -652,6 +652,10 @@ img { width: 100%; height: auto; }
       }
 
       .shadow {
+            display: none;
+      }
+
+      .scritta {
             display: none;
       }
 }
