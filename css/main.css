@@ -624,6 +624,75 @@ img { width: 100%; height: auto; }
 
 }
 
+/* inizio query dell'iphone 5 */
+
+@media (min-width: 320px) and (max-width: 568px){
+      h3.scritte_home{
+            position:absolute;
+            top:-200px;
+      
+      }
+
+      div.shadow{
+            position: absolute;
+            top: -200px;
+      }
+
+      img.arrow{
+            position: absolute;
+            top: -200px;
+      }
+
+      .social-media{
+            display: none;
+      }
+
+      .socialMobile{
+            display: inline;
+      }
+      .logo {
+            position: absolute;
+            margin: 1.2em 0 0 1.2em;
+      }
+
+
+      .scritta {
+            top: 10%;
+            left: 65%;
+            font-size: 16px;
+      }
+
+      #boxPerMobile {
+            padding-left: 0px;
+      }
+
+      #video {
+            padding-top: 20%;
+      }
+
+      #newsHome {
+            width: min-content;
+            padding-left: 0px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+      }
+
+      .row {
+            padding: 0 0 0 0;
+      }
+
+      iframe{
+            width: auto;
+            height: auto;
+      }
+
+      button{
+            padding: 0 0 0 0;
+      }
+
+
+}
+
 /* query per ipad portrait */
 
 @media (min-width: 768px) and (max-width: 1024px) {
