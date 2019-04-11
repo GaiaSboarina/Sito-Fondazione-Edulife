@@ -125,7 +125,7 @@
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_home">Il sito ufficiale di Fondazione Edulife</h3>
+                  <h3 class="scritte_home">Fondazione Edulife</h3>
             </div>
 
 
