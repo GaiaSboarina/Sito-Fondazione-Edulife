@@ -59,10 +59,10 @@
                   <nav>
                         <ul>
                                 <li>
-                                        <a href="pages/gxg.php">GxG</a>
+                                        <a href="../pages/gxg.php">GxG</a>
                                 </li>
                                 <li>
-                                        <a href="pages/donazioni.php">5x1000</a>
+                                        <a href="../pages/donazioni.php">5x1000</a>
                                 </li>
                                 <li>
                                     <?=getFile()?>
@@ -101,12 +101,13 @@
             </div>
   
                 
-                <div class="container">
-                    <div class="row">
+        <div class="container" id="impaginazioneNews">
+                <div class="backgroundNews">
+                    <div class="row" >
                         <?=show();?>
                     </div>
-                    
-                </div>
+                </div>  
+        </div>
                
                 <canvas class="background"></canvas>
 

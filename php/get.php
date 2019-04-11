@@ -26,18 +26,18 @@
                             <img class='avatar' src='../media/img/".$row['nome']."'>
                         </div>
                         <div class='col-sm-12 col-md-6'>
-                            <h1>".$row['titolo']."</h1>
-                            <h2>".$row['data_evento']."</h2>
+                            <h3>".$row['titolo']."</h1>
+                            <h3>".$row['data_evento']."</h2>
                             <p>".$row['contenuto']."</p>
                         </div>
                     ";
                 } else {
                     echo "
-                        <div class='col-sm-12 col-md-6'>
+                        <div class='col-sm-12 col-md-6' id='immagineNews'>
                             <img class='avatar' src='../media/img/".$row['nome']."'>
                         </div>
                         <div class='col-sm-12 col-md-6'>
-                            <h1>".$row['titolo']."</h1>
+                            <h3 class='title'>".$row['titolo']."</h1>
                             <p>".$row['contenuto']."</p>
                         </div>
                     ";

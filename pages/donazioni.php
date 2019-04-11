@@ -1,3 +1,6 @@
+<?php include "../php/get_file.php" ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +64,7 @@
                                     <a href="../pages/gxg.php">GxG</a>
                               </li>
                               <li>
-                                    <a href="#">Bilancio Sociale</a>
+                                    <?=getFile()?>
                               </li>
                         </ul>
                   </nav>
@@ -116,7 +119,7 @@
                         </li>       
                   </ul>
             </div>
-                <div class="container" id="ciao">
+                <div class="container" id="newsHome">
                     <div class="row" id="testoCinquePerMille">
                     <div class="card">
   <div class="card-body">

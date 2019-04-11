@@ -143,8 +143,6 @@ $array = getGxg();
                                           <a target="_blank" class="btn btn-outline-warning" href="https://www.youtube.com/watch?v=<?= $array[$i]['link'] ?>" style="opacity: 1;">
                                                 TRAILER
                                           </a>
-                                    </div>
-                                    <div class="btn-wrap">
                                           <a target="_blank" class="btn btn-outline-warning" href="https://www.youtube.com/watch?v=<?= $array[$i]['link2'] ?>" style="opacity: 1;">
                                                 INTERVISTA
                                           </a>
