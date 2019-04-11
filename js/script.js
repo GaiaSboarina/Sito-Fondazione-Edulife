@@ -15,8 +15,10 @@ $(document).ready(function(){
             $("#showImg").show();
             $("#showDate").hide();
             $("#showLink").hide();
+            $("#showLink2").hide();
         } else if(demovalue == "Evento"){
             $("#showLink").hide();
+            $("#showLink2").hide();
             $("#showTitle").show();
             $("#showContent").show();
             $("#showImg").show();
@@ -24,6 +26,7 @@ $(document).ready(function(){
             
         } else if(demovalue == "Video"){
             $("#showLink").show();
+            $("#showLink2").show();
             $("#showTitle").show();
             $("#showContent").show();
             $("#showImg").show();
@@ -32,6 +35,7 @@ $(document).ready(function(){
         }else if(demovalue == "File"){
             $("#showImg").show();
             $("#showLink").hide();
+            $("#showLink2").hide();
             $("#showTitle").hide();
             $("#showContent").hide();
             $("#showDate").hide();
