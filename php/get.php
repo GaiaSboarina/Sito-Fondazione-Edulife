@@ -7,16 +7,10 @@
             $table = $_POST['table'];
             $id = $_POST['id'];
             
-            if ($table == "evento") {
-                $query = "SELECT t.titolo, t.contenuto, t.data_evento, i.nome FROM $table t, img i WHERE t.id = ? AND t.id_img = i.id";
-            }else{
-                $query = "SELECT t.titolo, t.contenuto, i.nome FROM $table t, img i WHERE t.id = ? AND t.id_img = i.id";
-            }
+            $query = "SELECT t.titolo, t.contenuto, i.nome FROM $table t, img i WHERE t.id = $id AND t.id_img = i.id";
+           
 
-            $stmt = $conn->prepare($query);
-            $stmt->bind_param('s', $id);
-            $stmt->execute();
-            $result = $stmt->get_result();
+            $result = $conn->query($query);
 
             if($result->num_rows > 0){
                 $row = $result->fetch_assoc();

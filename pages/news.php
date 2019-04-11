@@ -126,7 +126,7 @@ $array = getNews();
             </div>
       
             <div class="scrittaNews" class="container">
-                  <h3 class="scritte_home">Le ultime news</h3>
+                  <h3 class="scritte_home">News</h3>
             </div>
             <?php for($i = 0; $i < count($array); $i++){ ?>
 
