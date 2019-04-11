@@ -3,7 +3,6 @@
 
 include("select.php"); 
     $array_progetti=progetti();
-    $array_eventi=eventi();
     $array_news=news();
     $array_gxg=gxg();
     $array_file=get_file();
@@ -72,39 +71,6 @@ include("select.php");
                             <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
                         </form>';
   
-                        echo "</tr>";
-                    } ?>
-                </tbody>
-            </table>
-
-            <br>
-            <h1>Eventi</h1>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Titolo</th>
-                    <th scope="col">Contenuto</th>
-                    <th scope="col">Data Evento</th>
-                    <th scope="col">Data Inserimento</th>
-                    <th scope="col">Img</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <?php 
-                    for ($i=0; $i < count($array_eventi); $i++) { 
-                        echo "<tr>";
-                        foreach ($array_eventi[$i] as $key => $value) {
-                            echo "<td>$value</td>";
-                        }
-                        $id = $array_eventi[$i]['id'];
-                        echo '
-                        <form action="select.php" method="post">
-                            <input type="hidden" name="table" value="evento">
-                            <input type="hidden" name="id" value="'.$id.'">
-                            <td><button class="btn btn-danger" onclick="validate(event);" type="submit">Elimina</button></td>
-                        </form>';
                         echo "</tr>";
                     } ?>
                 </tbody>

@@ -32,19 +32,7 @@
         return $array;
     }
 
-    function eventi(){
-        $conn = connection();
-        $query = "SELECT * FROM evento";
-        $result = $conn->query($query);
-        $array = array();
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                array_push($array, $row);
-            }
-            
-        } 
-        return $array;
-    }
+    
 
     function news(){
         $conn = connection();
