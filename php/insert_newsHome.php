@@ -1,4 +1,16 @@
 <?php
+include_once("connection.php");
+function shorter($testo, $limiteCaratteri) {
+    if (strlen($testo) > $limiteCaratteri) {
+        $nuovo_testo = substr($testo, 0, $limiteCaratteri);
+        $nuovo_testo = trim($nuovo_testo);
+        return $nuovo_testo . "...";
+    } else {
+    return $testo;
+    }
+}
+
+/*
     function shorter($testo, $limiteCaratteri) {
         $parole = explode(" ", $testo);
 
@@ -14,27 +26,25 @@
 
         return $testoFinale;
     }
+*/
 
     function getAllNewsHome(){
-        $connection = mysqli_connect("localhost", "root", "", "edulife");
+
+        $connection = connection();
+        
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
-        $connection->query("SET NAMES 'utf8'");
-        $rsNewsHome = mysqli_query($connection, "SELECT * FROM news ORDER BY id DESC LIMIT 2");
-        $newsHome = mysqli_fetch_all($rsNewsHome, MYSQLI_ASSOC);
+        $query = "SELECT n.id, i.nome, n.titolo, n.contenuto FROM news n, img i WHERE n.id_img = i.id ORDER BY n.id DESC LIMIT 3";
+        $result = $connection->query($query);
+        $array = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
         mysqli_close($connection);
+        return $array;
+        
 
-        $limiteCaratteriTitolo = 30;
-        $limiteCaratteriContenuto = 255;
-
-        for($i = 0; $i < count($newsHome); $i++) {
-            echo "
-                <div class='col-sm-6'>
-                    <h2 style='color: #e21212'>" . shorter($newsHome[$i]['titolo'], $limiteCaratteriTitolo) . "
-                    </h2>
-                    <p>" . shorter($newsHome[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                    </p>
-                </div>
-            ";
-        }
     }
 ?>

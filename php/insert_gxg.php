@@ -1,74 +1,39 @@
 <?php
-    function getAllGxg(){
-        $connection = mysqli_connect("localhost", "root", "", "edulife");
-        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
+    include_once("connection.php");
+    function getGxg(){
+
+        // Creazione della connessione
+        $conn = connection();
+
+        $query = "SELECT * FROM gxg g, img i WHERE g.id_img = i.id";
+        $result = $conn->query($query);
+        $array = array();
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                array_push($array, $row);
+            }
+
+        } 
+        mysqli_close($conn);
+        return $array;
+        
+        
+    }
+
+    function getGxgHome(){
+
+        $connection = connection();
         $connection->query("SET NAMES 'utf8'");
-        $rsGxg = mysqli_query($connection, "SELECT * FROM gxg");
+
+        $rsGxg = mysqli_query($connection, "SELECT g.link, i.nome FROM gxg g, img i WHERE g.id_img = i.id ORDER BY g.id DESC LIMIT 1");
         $gxg = mysqli_fetch_all($rsGxg, MYSQLI_ASSOC);
         mysqli_close($connection);
         for($i=0; $i < count($gxg); $i++){ //Qui al posto del link dell'immagine, ci andrà il link al video.
             echo "
-                <div class='container'>
-                    <h1 class='my-4'>".$gxg[$i]['titolo']."
-                    </h1>
-                    <div class='row'>
-                        <div class='col-md-8'>
-                            <iframe width='420' height='315'
-                                src='https://www.youtube.com/embed/".$gxg[$i]['link']."'>
-                            </iframe>
-                        </div>
-                        <div class='col-md-4'>
-                            <h3 class='my-3'>Descrizione utente</h3>
-                            <p>".$gxg[$i]['contenuto']."</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-            ";
-        }
-    }
-
-    function getGxg($link){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
-
-        // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        } 
-        //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
-        $query = "SELECT * FROM gxg";
-        $result = $conn->query($query);
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()){
-                if ($row['link']==$link) {
-                    echo "
-                    <div class='container'>
-                        <h1 class='my-4'>".$row['titolo']."
-                        </h1>
-                        <div class='row'>
-                            <div class='col-md-8'>
-                                <iframe width='420' height='315'
-                                    src='https://www.youtube.com/embed/".$row['link']."'>
-                                </iframe>
-                            </div>
-                            <div class='col-md-4'>
-                                <h3 class='my-3'>Descrizione utente</h3>
-                                <p>".$row['contenuto']."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    ";
-                }
-            } 
+               
+                <iframe src='https://www.youtube.com/embed/".$gxg[$i]['link']."?rel=0&amp;autoplay=1&mute=1&loop=1&&playlist=".$gxg[$i]['link']."&showinfo=0&iv_load_policy=3&controls=0' frameborder='0' allowfullscreen></iframe>
                 
-        
+                ";
+            }
         }
-        mysqli_close($conn);
-    }
 ?>

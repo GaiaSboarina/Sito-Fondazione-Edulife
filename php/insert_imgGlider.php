@@ -1,18 +1,12 @@
 <?php
-
+include_once("connection.php");
 function getAllImgGlider(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "edulife";
 
+   
     // Creazione della connessione
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    $conn->query("SET NAMES 'utf8'");
-    // Controllo della connessione
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } 
+    $conn = connection();
+    
+
     //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
  
     $query = "SELECT i.id, i.nome, g.link FROM img i, gxg g WHERE g.id_img = i.id ORDER BY id DESC LIMIT 10";
@@ -20,7 +14,7 @@ function getAllImgGlider(){
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo "
-            <div><a href='../Sito-Fondazione-Edulife/pages/gxg.php?link=".$row['link']."'><img border='0' src='media/img/".$row['nome']."'></a></div>
+            <a href='../pages/gxg.php?link=".$row['link']."'><div><img border='0' src='media/img/".$row['nome']."'></div></a>
         ";
         }
     
