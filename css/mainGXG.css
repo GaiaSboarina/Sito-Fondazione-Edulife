@@ -8,7 +8,7 @@ html, body {
 
 body {
     height: 100%;
-    background-image: url("../media/img/bg.png");
+    background-image: url("../media/img/bg_gxg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -34,10 +34,12 @@ img{
 
 #imgLogo {
     max-width: 40%;
+    margin-left: -9%;
 }
 
 .scritte_home{
     color: #E6DA31;
+    margin-bottom: 5%;
 }
 
 .scritteParagrafoHome {
@@ -48,8 +50,9 @@ a:hover{
     text-decoration: none;
 }
 
-
-
+.socialMobile {
+    display: none;
+}
 
 /* hamburger menu */
 
@@ -170,6 +173,7 @@ h1 {
   
 #gloval-nav ul {
     list-style: none;
+    padding-inline-start: 0px;
 }
   
 #gloval-nav ul li {
@@ -300,6 +304,7 @@ h1 {
     position: absolute;
     top: 5%;
     left: 50%;
+    margin-bottom: 5%;
     transform: translate(-50%, -50%);
     color: #E6DA31;
     font-size: 32px;
@@ -309,6 +314,7 @@ h1 {
     animation: typewriter 5s steps(50) 0.5s 1 normal both,
     cursorblink 2s infinite;
     animation-delay: 2s;
+    
 }
 
 @keyframes typewriter {
@@ -384,7 +390,6 @@ animation-delay: 2s;
 .common-box {
     position: relative;
     height: 43.52vw;
-    left: 7%;
 }
 
 #common-box-img-0 {
@@ -422,7 +427,7 @@ animation-delay: 2s;
 }
 
 .common-box:nth-child(odd) .common-box-txt {
-    padding: 0 0 0 33vw;
+    padding: 0 0 0 25vw;
 }
 
 .title-dark {
@@ -463,7 +468,7 @@ h2 {
 
 .line-wrap {
     position: relative;
-    margin: 1.98vw 0 0;
+    margin: 1.98vw 0 1.98vw;
     width: 2.6vw;
     height: 2px;
     overflow: hidden;
@@ -499,6 +504,7 @@ element.style {
     font-size: .78125vw;
     letter-spacing: -.05em;
     line-height: 170%;
+    padding-right: 50px;
 }
 
 .avatar {
@@ -512,6 +518,11 @@ element.style {
 	animation: float 6s ease-in-out infinite;
 	
 }
+
+.fa{
+    font-size: 25px !important;
+}
+
 
 
 
@@ -528,4 +539,209 @@ element.style {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+
+/* inizio media query */
+
+/* query per display maggiori di 1281px */
+
+@media (min-width: 1281px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:1024px;
+          height:576px;
+    }
+
+    .arrow {
+          margin: 130px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+
+}
+
+/* query per display più piccoli di 1280px */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:1024px;
+          height:576px;
+    }
+
+    .arrow {
+          margin: 180px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+
+}
+
+/* query per ipad portrait */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:512px;
+          height:228px;
+    }
+
+    .arrow {
+          margin: 90px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+    
+}
+
+/* query per ipad landscape */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .scritta {
+          top: 5%;
+    }
+
+    iframe{
+          width:640px;
+          height:360px;
+    }
+
+    .arrow {
+          margin: 160px auto 0;
+    }
+    
+    #testoCinquePerMille {
+          padding-top: 10%;
+    }
+    
+}
+
+/* query per smartphone */
+
+@media (min-width: 320px) and (max-width: 812px) {
+
+    .logo {
+          position: absolute;
+          margin: 1.2em 0 0 1.2em;
+    }
+
+    .scritte_home{
+          white-space: nowrap;
+    }
+
+    .scritta {
+          top: 10%;
+          left: 65%;
+          font-size: 16px;
+    }
+
+    #boxPerMobile {
+          width: -webkit-fill-available;
+    }
+
+    #video {
+          padding-top: 20%;
+          
+    }
+
+    #newsHome {
+          width: min-content;
+          padding-left: 5px;
+          padding-bottom: 10px;
+          padding-right: 0px;
+    }
+
+    .row {
+          padding: 0 0 0 0;
+    }
+
+    iframe{
+          width: auto;
+          height: auto;
+    }
+
+    button {
+          padding: 0;
+    }
+    
+    .social-media {
+          display: none;
+    }
+
+    .arrow {
+          display: none;
+    }
+
+    .shadow {
+          display: none;
+    }
+
+    .scritta {
+          display: none;
+    }
+
+    .socialMobile {
+          display: inline;
+    }
+    #donazioni {
+          width: 50%;
+          margin-top: 50%;
+    }
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #ffffff;
+    color: #E6DA31;
+    border: #E6DA31 1px solid;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #E6DA31;
+    color: #ffffff;
+    border: #E6DA31 1px solid;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #E6DA31;
+    box-shadow: none;
+    border: #E6DA31 1px solid;
+}
+
+.space{
+    height: 65px;
+}
+
+.card-title {
+    color: #E6DA31;
 }

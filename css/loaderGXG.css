@@ -101,3 +101,12 @@
     opacity: 0;
   }
 }
+
+@media (min-width: 360px) and (max-width: 640px) {
+  .container-loader {
+      width: 100px;
+      height: 100px;
+      left: -8%;
+      top: -10%;
+  }
+}

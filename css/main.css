@@ -9,7 +9,7 @@ html, body {
 
 body {
       height: 100%;
-      background-image: url("../media/img/bg4.png");
+      background-image: url("../media/img/bg_index.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
@@ -39,7 +39,6 @@ img{
 
 .scritte_home{
       color: #e21212;
-      text-shadow: 2px 0 0 rgba(255, 255, 255, 0.4), -2px 0 0 rgba(255, 255, 255, 0.4), 0 2px 0 rgba(255, 255, 255, 0.4), 0 -2px 0 rgba(255, 255, 255, 0.4), 1px 1px rgba(255, 255, 255, 0.4), -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .scritteParagrafoHome {
@@ -67,10 +66,10 @@ a:hover{
       border-radius: 2px;
       display: inline-block;
       height: auto;
-      margin: 1rem;
       position: relative;
       width: auto;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      margin-bottom: 10%;
 }
 
 /* hamburger menu */
@@ -258,6 +257,10 @@ h1 {
       padding-top: 20px;
 }
 
+.fa{
+      font-size: 25px !important;
+}
+
 .header {     
       margin: auto;
       text-align: center;
@@ -298,26 +301,6 @@ h1 {
       top: 0%;
 }
 
-.esagonale {
-
-      text-align: center;
-      
-      -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-      clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-
-      border-left: 2px solid #fff;
-      
-      border-right: 2px solid #fff;
-      
-      -webkit-transform: translateZ(0);
-      
-      transform: translateZ(0);
-   
-      width: 50px;
-      height: 50px;
-      margin: auto;
-}
-
 .background {
       position: fixed;
       top: 0;
@@ -344,7 +327,7 @@ h1 {
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
-      animation: typewriter 5s steps(50) 0.5s 1 normal both,
+      animation: typewriter 3s steps(50) 0.5s 1 normal both,
       cursorblink 2s infinite;
       animation-delay: 2s;
 }
@@ -355,7 +338,7 @@ h1 {
       }
       
       to {
-      width: 14.3em;
+      width: 7.7em;
       }
 }
 
@@ -371,7 +354,44 @@ h1 {
 
 /* fine scritta home */
 
+/* Scritta news */
 
+.scrittaNews {
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-size: 32px;
+      border-right: 1px solid rgb(255, 255, 255);
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriterNews 1.5s steps(50) 0.5s 1 normal both,
+      cursorblinkNews 2s infinite;
+      animation-delay: 2s;
+}
+
+@keyframes typewriterNews {
+      from {
+      width: 0;
+      }
+      
+      to {
+      width: 2.3em;
+      }
+}
+
+@keyframes cursorblinkNews {
+      from {
+      border-right: 1px solid #e21212;
+      }
+      
+      to {
+      border-right: 1px solid #666;
+      }
+}
+
+/* fine scritta news */
 
 /* Scritta donazioni */
 
@@ -385,7 +405,7 @@ h1 {
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
-      animation: typewriterDonazioni 2s steps(50) 0.5s 1 normal both,
+      animation: typewriterDonazioni 2.5s steps(50) 0.5s 1 normal both,
       cursorblink 2s infinite;
       animation-delay: 2s;
 }
@@ -396,7 +416,7 @@ h1 {
       }
       
       to {
-      width: 7.1em;
+      width: 7.5em;
       }
 }
 
@@ -462,7 +482,6 @@ a:hover{
 iframe{
       width:512px; 
       height:288px;
-      border-radius: 25%;
       margin: auto;
 }
 /* freccia_rossa che rimbalza finisce */
@@ -550,6 +569,20 @@ img { width: 100%; height: auto; }
 
 }
 
+@media  screen and (max-width: 1366px) {
+
+      iframe{
+            width:896px;
+            height:504px;
+      }
+
+      .arrow {
+            margin: 0 auto 0;
+      }
+
+}
+
+
 /* query per display più piccoli di 1280px */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -569,6 +602,77 @@ img { width: 100%; height: auto; }
       
       #testoCinquePerMille {
             padding-top: 10%;
+      }
+
+}
+
+/* inizio query dell'iphone 5 */
+
+@media (min-width: 320px) and (max-width: 568px){
+      h3.scritte_home{
+            position:absolute;
+            top:-200px;
+      
+      }
+
+      div.shadow{
+            position: absolute;
+            top: -200px;
+      }
+
+      img.arrow{
+            position: absolute;
+            top: -200px;
+      }
+
+      .social-media{
+            display: none;
+      }
+
+      .socialMobile{
+            display: inline;
+      }
+      .logo {
+            position: absolute;
+            margin: 1.2em 0 0 1.2em;
+      }
+
+
+      .scritta {
+            top: 10%;
+            left: 65%;
+            font-size: 16px;
+      }
+
+      #boxPerMobile.container {
+            padding-right: 0px;
+      }
+
+      #video {
+            padding-top: 20%;
+      }
+
+      #newsHome {
+            width: min-content;
+            padding-bottom: 20px;
+      }
+
+      .row {
+            padding: 0 0 0 0;
+      }
+
+      iframe{
+            width: auto;
+            height: auto;
+      }
+
+      button{
+            padding: 0 0 0 0;
+      }
+
+      .container{
+            padding-left: 0px;
+            margin-bottom: 10%;
       }
 
 }
@@ -593,6 +697,13 @@ img { width: 100%; height: auto; }
       #testoCinquePerMille {
             padding-top: 10%;
       }
+
+      .row {
+            margin-right: 0px;
+            flex-wrap: unset;
+            margin: 10px;
+      }
+      
       
 }
 
@@ -616,12 +727,104 @@ img { width: 100%; height: auto; }
       #testoCinquePerMille {
             padding-top: 10%;
       }
+}
+
+/*Query pixel 2 */
+
+@media (min-width: 411px) and (max-width: 731px) {
+
+      .logo {
+            position: absolute;
+            margin: 1.2em 0 0 1.2em;
+      }
+
+      .scritte_home{
+            white-space: nowrap;
+      }
+
+      .scritta {
+            top: 10%;
+            left: 65%;
+            font-size: 16px;
+      }
+
+      #boxPerMobile {
+            width: -webkit-fill-available;
+      }
+
+      #video {
+            padding-top: 20%;
+            
+      }
+
+      #newsHome {
+            width: min-content;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            padding-right: 0px;
+      }
+
+      .row {
+            padding: 0 0 0 0;
+            margin-left: 0px;
+            margin-right: 0px;
+      }
+
+      iframe{
+            width: auto;
+            height: auto;
+      }
+
+      button {
+            padding: 0;
+      }
       
+      .social-media {
+            display: none;
+      }
+
+      .arrow {
+            display: none;
+      }
+
+      .shadow {
+            display: none;
+      }
+
+      .scritta {
+            display: none;
+      }
+
+      .socialMobile {
+            display: inline;
+      }
+
+      #donazioni {
+            width: 50%;
+            margin-top: 50%;
+      }
+
+      #testoDonazioni {
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: left;
+            margin: 15px;
+      }
+
+      #impaginazioneNews {
+            padding-top: 20%;
+            text-align: left;
+      }
+
+      #layoutNews {
+            margin: 15px;
+      }
+
 }
 
 /* query per smartphone */
 
-@media (min-width: 320px) and (max-width: 812px) {
+@media (min-width: 360px) and (max-width: 640px) {
 
       .logo {
             position: absolute;
@@ -661,10 +864,12 @@ img { width: 100%; height: auto; }
       iframe{
             width: auto;
             height: auto;
+            padding-left: 10%;
       }
 
       button {
-            padding: 0;
+            padding-left: 15%;
+            margin: 5px;
       }
       
       .social-media {
@@ -686,10 +891,32 @@ img { width: 100%; height: auto; }
       .socialMobile {
             display: inline;
       }
+
       #donazioni {
             width: 50%;
             margin-top: 50%;
       }
+
+      #testoDonazioni {
+            margin-left: 0px;
+            margin-right: 0px;
+            text-align: left;
+            margin: 15px;
+      }
+
+      #impaginazioneNews {
+            padding-top: 20%;
+            text-align: left;
+      }
+
+      #layoutNews {
+            margin: 15px;
+      }
+
+      .backgroundNews {
+            margin-left: 4%;
+      }
+
 }
 
 /* fine media query */
@@ -700,7 +927,7 @@ img { width: 100%; height: auto; }
 }
 
 .card-body:hover {
-      background-color: rgb(255, 255, 226) !important;
+      background-color: #fff !important;
 }
 
 .title {

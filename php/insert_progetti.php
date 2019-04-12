@@ -1,19 +1,11 @@
 <?php
-
+    include_once("connection.php");
     function getAllProjects(){
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "edulife";
+        
 
         // Creazione della connessione
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $conn->query("SET NAMES 'utf8'");
-    
-        // Controllo della connessione
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+        $conn = connection();
+        
         //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
         $query = "SELECT p.titolo, p.contenuto, i.nome FROM progetto p, img i WHERE p.id_img = i.id";
         $result = $conn->query($query);
@@ -50,43 +42,24 @@ function corto($testo, $limiteCaratteri) {
 }
 
 function getAllProgettiHome(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "edulife";
 
-    $connection = new mysqli($servername, $username, $password, $dbname);
-    $connection->query("SET NAMES 'utf8'");
-
-    // Controllo della connessione
-    if ($connection->connect_error) {
-        die("Connection failed: " . $connection->connect_error);
-    }
+    $connection = connection();
+    
     //query necessaria per evitare che i caratteri non inglesi (tipo le lettere accentate) non vengano visualizzati
-    $rsProgetti = mysqli_query($connection, "SELECT * FROM progetto ORDER BY id DESC LIMIT 3");
-    $progetti = mysqli_fetch_all($rsProgetti, MYSQLI_ASSOC);
+    $query = "SELECT p.id, i.nome, p.titolo, p.contenuto FROM progetto p, img i WHERE p.id_img = i.id ORDER BY p.id DESC LIMIT 3";
+
+    $result = $connection->query($query);
+    $array = array();
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            array_push($array, $row);
+        }
+
+    } 
     mysqli_close($connection);
+    return $array;
 
-    $limiteCaratteriTitolo = 30;
-    $limiteCaratteriContenuto = 255;
-
-    for($i = 0; $i < count($progetti); $i++) {
-        echo "
-        <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
-
-            <input type='hidden' name='table' value='progetto' />
-            <input type='hidden' name='id' value='".$progetti[$i]['id']."' />
-            <button href='pages/show.php?table=progetto&id=".$progetti[$i]['id']."'>
-            <div>
-                <h6 class='scritte_home'>" . corto($progetti[$i]['titolo'], $limiteCaratteriTitolo) . "
-                </h6>
-                <p class='scritteParagrafoHome'>" . corto($progetti[$i]['contenuto'], $limiteCaratteriContenuto) . "
-                </p>
-            </div>
-            </button>
-        </form>
-        ";
-    }
+    
 }
 
 
