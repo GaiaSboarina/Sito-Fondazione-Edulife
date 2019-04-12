@@ -17,6 +17,9 @@
     </head>
     <body style="background-color: rgb(236, 236, 236)">
     <header class="parallax">
+        <video autoplay muted loop id="myVideo">
+            <source src="media/video/Walking.mp4" type="video/mp4">
+        </video>
         <nav class="navbar fixed-top navbar-light navbar-expand-md bg-light justify-content-left">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
@@ -48,14 +51,14 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link abc" href="pages/chisiamo.html">Chi siamo</a>
+                    </div>
                     </li>
                 </ul>
-            </div>
         </nav>
 
         </header>
-
-            <div class="container">
+        <div class="container-fluid" style="background-color: white;">
+        <div class="container">
                 <br>
                 <br>
                 <div class="glider-contain">
@@ -84,7 +87,7 @@
                 <hr>
                 <br>
                 <br>
-            <div class="container">
+            <div class="container" style="padding-bottom:15px;">
             <div class="row">  
                 <div class="col-md-6 col-xs-6 text-right" style="border: none;">
                     <img src="media/img/gxg.png">
@@ -101,12 +104,8 @@
             </div>         
             
             </div>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-            <footer id = "footer">  
+               
+                <footer id = "footer">  
                 <div class = "footer-top">
                 <div class = "container">
                 <div class="row">
@@ -148,6 +147,10 @@
                 </div>
                 </div>
             </footer>
+        </div>
+
+            
+           
         
         <script src="js/jquery-3.3.1.slim.min.js"></script>
         <script src="js/popper.min.js"></script>

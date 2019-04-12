@@ -89,18 +89,28 @@ svg {
 
 .parallax { 
     /* The image used */
-    background-image: url(../media/img/temp_mid3.jpg);
+  
   
     /* Set a specific height */
 
     height: 1200px; 
-
+    width: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 
 .content{
     position: fixed;
