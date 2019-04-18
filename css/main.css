@@ -4,7 +4,7 @@ html, body {
       width: 100%;
       height: 100%;
       font-family: 'Raleway' !important;
-      text-align: justify;
+      text-align: left;
 }
 
 body {
@@ -170,7 +170,7 @@ h1 {
       display: flex;
       visibility: hidden;
       flex-direction: column;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       font-size: 29px;
       opacity: 0;
@@ -300,7 +300,6 @@ h1 {
 }
 
 .bottom-bar p {
-      font-size: 14px;
       font-weight: lighter;
 }
 
@@ -507,7 +506,7 @@ button {
       color: #333;
       font-size: 1rem;
       cursor: pointer;
-      text-align: justify;
+      text-align: left;
       transition: background 250ms ease-in-out, 
                   transform 150ms ease;
       -webkit-appearance: none;
