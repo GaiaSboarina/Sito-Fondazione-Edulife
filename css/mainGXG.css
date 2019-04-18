@@ -721,14 +721,14 @@ element.style {
 }
  
 .btn-primary {
-    background: #ffffff;
+    background: #020202;
     color: #E6DA31;
     border: #E6DA31 1px solid;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #E6DA31;
-    color: #ffffff;
+    color: #020202;
     border: #E6DA31 1px solid;
 }
  
@@ -744,4 +744,10 @@ element.style {
 
 .card-title {
     color: #E6DA31;
+}
+.card {
+    background-color: #020202;
+}
+.card-text {
+    color: #fff;
 }
