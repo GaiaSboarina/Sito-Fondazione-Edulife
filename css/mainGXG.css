@@ -18,6 +18,7 @@ body {
 img{
     height: 100%;
     width: 100%;
+    border-radius: 15px;
 }
 
 .logo {
@@ -512,7 +513,7 @@ element.style {
 	height: auto;
 	box-sizing: border-box;
       overflow: hidden;
-      border-radius: 5%;
+      border-radius: 15px;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
@@ -747,6 +748,7 @@ element.style {
 }
 .card {
     background-color: #020202;
+    border-radius: 15px;
 }
 .card-text {
     color: #fff;
