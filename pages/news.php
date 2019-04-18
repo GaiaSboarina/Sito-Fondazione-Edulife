@@ -57,7 +57,7 @@ $array = getNews();
                   </div>
             </div>
 
-            <div id="gloval-nav">
+            <div id="global-nav">
                   <nav>
                         <ul>
                               <li>
@@ -69,9 +69,7 @@ $array = getNews();
                               <li>
                                     <a href="../pages/donazioni.php">5x1000</a>
                               </li>
-                              <li>
-                                    <?=getFile()?>
-                              </li>
+                             
                         </ul>
                   </nav>
                   <nav>

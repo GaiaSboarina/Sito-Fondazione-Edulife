@@ -53,7 +53,7 @@
                   </div>
             </div>
 
-            <div id="gloval-nav">
+            <div id="global-nav">
                   <nav>
                         <ul>
                               <li>
@@ -65,9 +65,7 @@
                               <li>
                                     <a href="../pages/gxg.php">GxG</a>
                               </li>
-                              <li>
-                                    <?=getFile()?>
-                              </li>
+                           
                         </ul>
                   </nav>
                   <nav>
