@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 360px) and (max-width: 1024px) {
   .container-loader {
       width: 100px;
       height: 100px;

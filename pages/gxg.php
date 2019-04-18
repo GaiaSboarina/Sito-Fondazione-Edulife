@@ -148,7 +148,7 @@ $array = getGxg();
                                                             <div class="line-wrap">
                                                                   <div class="line line-yellow line-fx" style="transform: translate3d(0%, 0px, 0px);"></div>
                                                             </div>
-
+                                                            <p class="card-text">Guarda i video su YouTube: </p>
                                                             <a href="https://www.youtube.com/watch?v=<?= $array[$i]['link'] ?>" target="_blank" class="btn btn-primary">TRAILER</a>
                                                             <a href="https://www.youtube.com/watch?v=<?= $array[$i]['link2'] ?>" target="_blank" class="btn btn-primary">INTERVISTA</a>
                                                       </div>
