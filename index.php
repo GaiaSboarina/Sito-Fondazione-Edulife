@@ -133,28 +133,27 @@ $array_progetti = getAllProgettiHome(); ?>
             <h3 class="scritte_home">Fondazione Edulife</h3>
       </div>
 
-      <div class="container" id="boxPerMobile">
-            <div class=row id="video">
-                  <div class="header col-sm-12" id="anteprimaGXG">
-                        <div class=container>
-                        <?= getGxgHome() ?>
-                        </div>
-                              
-                  </div>    
-            </div>
+      <div class="parallax">
+            <video autoplay muted loop id="myVideo">
+                  <source src="media/video/video.mp4" type="video/mp4">
+            </video>
+      </div>
 
-      <div class="container">
+      <div class="container-fluid contenuto">
+            <div class="row">
+
+            
             <div class="header col-sm-12">
-                  <div><img src="media/img/arrow-rossa.png" class="arrow"></div>
-                  <div class="shadow"></div>
+                <i class="fas fa-chevron-down"></i>
             </div>
                   
-            </div>
+            
 
 
-            <h1 class="scritte_home">Le ultime news</h1>
             <div class="container bottom-bar">
                   <div class="container col-sm-12">
+                  <h1 class="scritte_home">Le ultime news</h1>
+
                         <div class="row">
                               <?php for($i = 0; $i < count($array_news); $i++){ ?> 
                                     <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
@@ -178,10 +177,11 @@ $array_progetti = getAllProgettiHome(); ?>
                   </div>
             </div>
 
-            <h1 class="scritte_home">I nostri progetti</h1>
+            
 
             <div class="container bottom-bar">
                   <div class="container col-sm-12">
+                        <h1 class="scritte_home">I nostri progetti</h1>
                         <div class="row">
                               <?php for($i = 0; $i < count($array_progetti); $i++){ ?> 
                                     <form class='col-sm-12 col-md-4' action='pages/show.php' method='post'>
@@ -203,11 +203,13 @@ $array_progetti = getAllProgettiHome(); ?>
                               <?php }?>
                         </div>
                   </div>
+                  
             </div>
 
-            <h1 class="scritte_home">Chi siamo</h1>
 
             <div class="backgroundNews">
+                  <h1 class="scritte_home">Chi siamo</h1>
+
                   <div class="row" id="testoDonazioni">
                         <p>
                               <b>Fondazione Edulife Onlus</b> nasce nell’ambito di una rete mondiale dedicata alla educazione dei giovani ed ha come finalità aiutare i giovani nella scoperta del proprio progetto di vita e promuovere gli adulti nel loro ruolo educativo.
@@ -218,7 +220,9 @@ $array_progetti = getAllProgettiHome(); ?>
                         </p>
                   </div>
             </div>
-      <canvas class="background"></canvas>
+            </div>
+            </div>
+            
 
       <script type="text/javascript">
 
