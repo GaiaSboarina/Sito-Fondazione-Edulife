@@ -34,7 +34,7 @@ img{
 }
 
 #imgLogo {
-      max-width: 40%;
+      max-width: 55%;
 }
 
 .scritte_home{
@@ -259,6 +259,18 @@ h1 {
 
 .fa{
       font-size: 25px !important;
+}
+
+.fa:hover{
+      font-size: 40px !important;
+}
+
+.fab{
+      font-size: 25px !important;
+}
+
+.fab:hover{
+      font-size: 40px !important;
 }
 
 .header {     
