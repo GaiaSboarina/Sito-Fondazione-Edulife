@@ -40,7 +40,8 @@ img{
 
 .scritte_home{
     color: #E6DA31;
-    margin-bottom: 5%;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .scritteParagrafoHome {
@@ -323,7 +324,7 @@ from {
 }
 
 to {
-  width: 9em;
+  width: 10em;
 }
 }
 
