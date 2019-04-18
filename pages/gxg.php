@@ -15,7 +15,7 @@ $array = getGxg();
       <link rel="icon" href="../media/img/gxg_icon.png" type="image/png">
 
       <!-- font -->
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -130,7 +130,7 @@ $array = getGxg();
             </div>
       
             <div class="scritta" class="container">
-                  <h3 class="scritte_home">GxG, una piattaforma fatta dai giovani per i giovani</h3>
+                  <h3 class="scritte_home">Giovani per Giovani</h3>
             </div>
             <div class="space"></div>
                   <?php for($i = 0; $i < count($array); $i++){ ?>

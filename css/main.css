@@ -3,7 +3,7 @@ html, body {
       padding: 0;
       width: 100%;
       height: 100%;
-      font-family: 'Raleway' !important;
+      font-family: 'Quicksand' !important;
       text-align: justify;
 }
 
@@ -39,6 +39,8 @@ img{
 
 .scritte_home{
       color: #e21212;
+      font-size: 40px;
+      font-weight: bold;
 }
 
 .scritteParagrafoHome {
@@ -335,7 +337,7 @@ h1 {
       left: 50%;
       transform: translate(-50%, -50%);
       color: rgb(255, 255, 255);
-      font-size: 32px;
+      font-size: 36px;
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
@@ -350,7 +352,7 @@ h1 {
       }
       
       to {
-      width: 7.7em;
+      width: 9.7em;
       }
 }
 
@@ -370,11 +372,11 @@ h1 {
 
 .scrittaNews {
       position: absolute;
-      top: 5%;
+      top: 8%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: rgb(255, 255, 255);
-      font-size: 32px;
+      font-size: 36px;
       border-right: 1px solid rgb(255, 255, 255);
       white-space: nowrap;
       overflow: hidden;
@@ -389,7 +391,7 @@ h1 {
       }
       
       to {
-      width: 2.3em;
+      width: 2.8em;
       }
 }
 

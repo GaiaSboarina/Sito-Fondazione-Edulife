@@ -11,7 +11,7 @@
       <title>Fondazione Edulife</title>
 
       <!-- font -->
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">

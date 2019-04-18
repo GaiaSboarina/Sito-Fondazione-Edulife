@@ -17,7 +17,7 @@ $array_progetti = getAllProgettiHome(); ?>
       <link rel="icon" href="/media/img/effe_icon.png" type="image/png">
 
       <!-- font -->
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
       <!-- bootstrap -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
